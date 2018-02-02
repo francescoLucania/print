@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+// Responsive
+$mq-breakpoints: ( // for example: xs, sm, md, lg, xl
+        'xs': 767px,
+        'sm': 768px,
+        'md': 1420px
+);
+
+$mq-indents: (
+        'xs': 2rem,
+        'sm': 2rem,
+        'md': 3rem
+);
+
+$mq-container-widths: (
+        'xs': 100%,
+        'sm': 768px,
+        'md': 1420px
+);
+
+$mq-container-indents: (
+        'xs': map-get($mq-indents, 'xs'),
+        'sm': map-get($mq-indents, 'sm'),
+        'md': map-get($mq-indents, 'md')
+);
+
+$mq-grid-gutters: (
+        'xs': map-get($mq-indents, 'xs'),
+        'sm': map-get($mq-indents, 'sm'),
+        'md': map-get($mq-indents, 'md')
+);
+
+// Not responsive
+$indent: 2rem;
+
+$container-width:  1440px;
+$container-indent: $indent;
+
+$grid-gutter: $indent;
+
+// Border radius
+$border-radius-small: .25rem;
+$border-radius-base:   .5rem;
+$border-radius-large: .75rem;
+
+// Colors
+$color-base:          #121314;
+$color-light:    rgba($color-base, .8);
+$color-lighter:  rgba($color-base, .6);
+$color-lightest: rgba($color-base, .4);
+
+$color-brand:         #5409ff;
+$color-sound:         #9280bc;
+
+$color-error:         red;
+$color-warning:       orange;
+$color-success:       green;
+
+// Fonts
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500|Roboto:400,700,900');
+
+$font-family-text:  "Roboto Mono","HelveticaNeue","Helvetica Neue",sans-serif;
+$font-family-title: "Roboto","HelveticaNeue","Helvetica Neue",sans-serif;
+$font-weight-text:  400;
+$font-weight-title: 700;
+
+// Forms
+$checkbox-size: 3rem;
+$radio-size:    3rem;
+
+// Links
+$color-link: rgba(blue, .8);
+
+// Transitions
+$transition-duration-base: .2s;

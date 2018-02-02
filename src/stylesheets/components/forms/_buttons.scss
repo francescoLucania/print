@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+@if $enable-buttons == true {
+    .button {
+        @include interact(background,$color-light);
+        position: relative;
+        display: inline-block;
+        padding: 1rem 2rem;
+        background: #000;
+        //border: 2px dashed $color-base;
+        color: #fff;
+        text-align: center;
+        transition: .6s;
+
+        @at-root a#{&} {
+            text-decoration: none;
+        }
+
+        &:disabled {
+            opacity: .2;
+        }
+
+        &:active {
+            transform: translateY(.2rem);
+        }
+
+        &--medium {
+            padding: 1rem 3rem;
+            min-width: 12rem;
+        }
+    }
+}
