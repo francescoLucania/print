@@ -25,18 +25,24 @@
             @include interact(background, transparent);
             @include interact(opacity, .85);
             padding: 1.7rem 2.45rem;
-            border: solid .3rem $color-brand;
+            border: solid .3rem;
             background: transparent;
+            box-shadow: none;
+            color:  $color-brand;
+
+            > span {
+                display: block;
+            }
+        }
+
+        &--transparent-alternative {
+            color: #fff;
         }
 
         &--map {
             display: inline-flex;
             align-items: center;
             padding: 1.2rem 2.45rem;
-
-            @include mq(md) {
-                padding: 1.2rem 2.45rem;
-            }
 
             > img {
                 margin-right: 1.5rem;
@@ -46,10 +52,15 @@
                     display: none;
                 }
             }
+        }
 
-            > span {
-                display: block;
-                color: $color-brand;
+        &--next {
+            display: inline-flex;
+            align-items: center;
+            padding: 1.2rem 2.45rem;
+
+            > img {
+                vertical-align: top;
             }
         }
 

@@ -2,4 +2,64 @@
 
 .site-footer {
 
+  &__promo {
+    padding: 5.5rem 0;
+    background: $color-brand;
+  }
+
+  &__navigate {
+    display: flex;
+    justify-content: center;
+
+    @include mq(xs) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @include mq(sm) {
+      justify-content: space-between;
+    }
+
+    @include mq(md) {
+      justify-content: center;
+    }
+
+    > .button {
+      @include mq(xs) {
+        margin-top: 3rem;;
+      }
+
+      @include mq(sm) {
+        margin-left: 3rem;;
+      }
+    }
+  }
+
+  &__next-link {
+    @include interact(opacity, .85);
+    transition: $transition-duration-medium;
+    text-align: center;
+    color: #fff;
+
+    @include mq(sm) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @include mq(md) {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    > span {
+      @include font(2.4rem, 3rem);
+
+      > b {
+        font-family: "roxima-Nova-Bold", "HelveticaNeue", "Helvetica Neue", sans-serif;
+      }
+    }
+  }
+
 }
