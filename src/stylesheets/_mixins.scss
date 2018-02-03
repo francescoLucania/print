@@ -168,15 +168,15 @@
 
 // Text
 @mixin text-large {
-    @include font(2rem, 2.5rem);
+    @include font(1.8rem, 2.6rem);
 }
 
 @mixin text-base {
-    @include font(1.4rem, 2.1rem);
+    @include font(1.4rem, 2.2rem);
 }
 
 @mixin text-small {
-    @include font(1rem, 1.5rem);
+    @include font(1.6rem, 2.4rem);
 }
 
 // Headings
@@ -198,9 +198,10 @@
     }
 }
 
-@mixin h2($font-weight: $font-weight-title) {
+@mixin h2($font-weight: $font-weight-bold) {
     @include heading;
-    @include font(5rem, 5rem);
+    @include font(18rem, 2.4rem);
+    text-transform: uppercase;
     font-weight: $font-weight;
 }
 

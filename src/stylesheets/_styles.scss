@@ -18,15 +18,23 @@ html {
 }
 
 body {
-    @include text-base;
+    @include text-small;
     position: relative;
     display: flex;
     min-height: 100vh;
-    background: #fff;
+    background: $color-body-background;
     color: $color-base;
     font: {
         family: $font-family-text;
         weight: $font-weight-text;
+    }
+
+    @include mq(sm) {
+        @include text-base;
+    }
+
+    @include mq(md) {
+        @include text-large;
     }
 }
 

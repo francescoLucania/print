@@ -74,4 +74,26 @@
             line-height: normal;
         }
     }
+
+    @font-face {
+        font-family: 'Proxima-Nova-Bold';
+        src: url('fonts/ProximaNova/ProximaNova-Bold.woff') format('woff');
+    font-weight: 700;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Proxima-Nova-Lt';
+        src: url('fonts/ProximaNova/ProximaNova-Light.woff') format('woff');
+    font-weight: 300;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Proxima-Nova-Rg';
+        src: url('fonts/ProximaNova/ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+        font-style: normal;
+    }
 }
+

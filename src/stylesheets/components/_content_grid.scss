@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+.content-grid {
+  @include mq(md) {
+    @include grid(flex-start,center,2);
+  }
+
+  &__header {
+    > h2 {
+      @include h2;
+
+      @include mq(md) {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  &__image {
+    @include mq(md) {
+      @include grid-col(2);
+      @include col-size(1/2);
+    }
+  }
+
+  &__description {
+
+    @include mq(md) {
+      @include grid-col();
+      @include col-size(1/2);
+    }
+  }
+
+}

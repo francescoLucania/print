@@ -1,5 +1,4 @@
 @import url(stylesheets/vendors/normalize.css);
-@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500|Roboto:400,700,900");
 *,
 *::before,
 *::after {
@@ -9,21 +8,29 @@
 
 ::selection {
   color: #fff;
-  background: #5409ff; }
+  background: #095dbb; }
 
 html {
   font-size: 62.5%; }
 
 body {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 1.5;
   position: relative;
   display: flex;
   min-height: 100vh;
-  background: #fff;
-  color: #121314;
-  font-family: "Roboto Mono", "HelveticaNeue", "Helvetica Neue", sans-serif;
-  font-weight: 400; }
+  background: #f7f7f7;
+  color: #121212;
+  font-family: "Proxima-Nova-Lt", "HelveticaNeue", "Helvetica Neue", sans-serif;
+  font-weight: 300; }
+  @media all and (min-width: 768px) {
+    body {
+      font-size: 1.4rem;
+      line-height: 1.57143; } }
+  @media all and (min-width: 1760px) {
+    body {
+      font-size: 1.8rem;
+      line-height: 1.44444; } }
 
 #root {
   display: flex;
@@ -68,8 +75,8 @@ textarea {
   resize: none; }
 
 h1 {
-  font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", sans-serif;
-  font-weight: 700;
+  font-family: "Proxima-Nova-Lt", "HelveticaNeue", "Helvetica Neue", sans-serif;
+  font-weight: 300;
   font-size: 3.6rem;
   line-height: 1.16667;
   margin: 0; }
@@ -81,18 +88,19 @@ h1 {
       line-height: 1.08108; } }
 
 h2 {
-  font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", sans-serif;
-  font-size: 5rem;
-  line-height: 1;
+  font-family: "Proxima-Nova-Lt", "HelveticaNeue", "Helvetica Neue", sans-serif;
+  font-size: 18rem;
+  line-height: 0.13333;
+  text-transform: uppercase;
   font-weight: 700; }
   h2 a {
     text-decoration: none; }
 
 h3 {
-  font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", sans-serif;
+  font-family: "Proxima-Nova-Lt", "HelveticaNeue", "Helvetica Neue", sans-serif;
   font-size: 3.2rem;
   line-height: 1.1875;
-  font-weight: 700; }
+  font-weight: 300; }
   h3 a {
     text-decoration: none; }
   @media all and (min-width: 768px) {
@@ -101,26 +109,26 @@ h3 {
       line-height: 1; } }
 
 h4 {
-  font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", sans-serif;
+  font-family: "Proxima-Nova-Lt", "HelveticaNeue", "Helvetica Neue", sans-serif;
   font-size: 3rem;
   line-height: 1;
-  font-weight: 700; }
+  font-weight: 300; }
   h4 a {
     text-decoration: none; }
 
 h5 {
-  font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", sans-serif;
-  font-size: 2rem;
-  line-height: 1.25;
-  font-weight: 700; }
+  font-family: "Proxima-Nova-Lt", "HelveticaNeue", "Helvetica Neue", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.44444;
+  font-weight: 300; }
   h5 a {
     text-decoration: none; }
 
 h6 {
-  font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", sans-serif;
+  font-family: "Proxima-Nova-Lt", "HelveticaNeue", "Helvetica Neue", sans-serif;
   font-size: 1.4rem;
-  line-height: 1.5;
-  font-weight: 700; }
+  line-height: 1.57143;
+  font-weight: 300; }
   h6 a {
     text-decoration: none; }
 
@@ -140,7 +148,7 @@ ul {
   list-style: none; }
 
 small {
-  font-size: 1rem;
+  font-size: 1.6rem;
   line-height: 1.5; }
 
 table {
@@ -162,9 +170,9 @@ table {
   max-height: 20rem;
   overflow-y: auto;
   background: #fff;
-  border-right: 1px solid rgba(18, 19, 20, 0.4);
-  border-bottom: 1px solid rgba(18, 19, 20, 0.4);
-  border-left: 1px solid rgba(18, 19, 20, 0.4); }
+  border-right: 1px solid rgba(18, 18, 18, 0.4);
+  border-bottom: 1px solid rgba(18, 18, 18, 0.4);
+  border-left: 1px solid rgba(18, 18, 18, 0.4); }
   .ui-autocomplete .ui-menu-item-wrapper {
     padding: .5rem .75rem; }
     .ui-autocomplete .ui-menu-item-wrapper.ui-state-active {
@@ -176,9 +184,9 @@ table {
   display: none;
   padding: .75rem 1rem 1rem;
   background: #fff;
-  border-right: 1px solid rgba(18, 19, 20, 0.4);
-  border-bottom: 1px solid rgba(18, 19, 20, 0.4);
-  border-left: 1px solid rgba(18, 19, 20, 0.4); }
+  border-right: 1px solid rgba(18, 18, 18, 0.4);
+  border-bottom: 1px solid rgba(18, 18, 18, 0.4);
+  border-left: 1px solid rgba(18, 18, 18, 0.4); }
   .ui-datepicker .ui-datepicker-header {
     display: flex;
     justify-content: space-between;
@@ -192,7 +200,7 @@ table {
         display: block;
         border-top: .5rem solid transparent;
         border-bottom: .5rem solid transparent;
-        border-right: 0.75rem solid rgba(18, 19, 20, 0.6); }
+        border-right: 0.75rem solid rgba(18, 18, 18, 0.6); }
     .ui-datepicker .ui-datepicker-header .ui-datepicker-title {
       order: 2;
       flex: 1;
@@ -207,7 +215,7 @@ table {
         display: block;
         border-top: .5rem solid transparent;
         border-bottom: .5rem solid transparent;
-        border-left: 0.75rem solid rgba(18, 19, 20, 0.6); }
+        border-left: 0.75rem solid rgba(18, 18, 18, 0.6); }
 
 .ui-datepicker-calendar {
   width: 100%; }
@@ -223,7 +231,7 @@ table {
   .ui-datepicker-calendar tbody td.ui-datepicker-today .ui-state-default {
     background: #eee; }
   .ui-datepicker-calendar tbody td.ui-datepicker-current-day .ui-state-default {
-    background: rgba(18, 19, 20, 0.8);
+    background: rgba(18, 18, 18, 0.8);
     color: #fff; }
 
 .ui-selectmenu-button {
@@ -231,7 +239,7 @@ table {
   display: block;
   width: 100%;
   padding: .5rem 2.5rem .5rem .75rem;
-  border: 1px solid rgba(18, 19, 20, 0.4);
+  border: 1px solid rgba(18, 18, 18, 0.4);
   cursor: default; }
   .ui-selectmenu-button .ui-selectmenu-icon {
     width: 0;
@@ -242,7 +250,7 @@ table {
     transform: translateY(-50%);
     display: block;
     pointer-events: none;
-    border-top: 0.4rem solid rgba(18, 19, 20, 0.6);
+    border-top: 0.4rem solid rgba(18, 18, 18, 0.6);
     border-right: .4rem solid transparent;
     border-left: .4rem solid transparent; }
   .ui-selectmenu-button .ui-selectmenu-text {
@@ -254,7 +262,7 @@ table {
     word-wrap: normal;
     vertical-align: top; }
     .ui-selectmenu-button .ui-selectmenu-text.ui-state-placeholder {
-      color: rgba(18, 19, 20, 0.6); }
+      color: rgba(18, 18, 18, 0.6); }
 
 .ui-selectmenu-menu {
   position: absolute;
@@ -265,9 +273,9 @@ table {
   .ui-selectmenu-menu .ui-menu {
     max-height: calc(14.5rem + 1px);
     background: #fff;
-    border-right: 1px solid rgba(18, 19, 20, 0.4);
-    border-bottom: 1px solid rgba(18, 19, 20, 0.4);
-    border-left: 1px solid rgba(18, 19, 20, 0.4);
+    border-right: 1px solid rgba(18, 18, 18, 0.4);
+    border-bottom: 1px solid rgba(18, 18, 18, 0.4);
+    border-left: 1px solid rgba(18, 18, 18, 0.4);
     overflow: auto; }
   .ui-selectmenu-menu .ui-menu-item.ui-state-disabled {
     display: none; }
@@ -285,7 +293,7 @@ table {
   text-align: center;
   transition: .6s; }
   .mod_no-touchevents .button:hover, .mod_no-touchevents .button.hover {
-    background: rgba(18, 19, 20, 0.8); }
+    background: rgba(18, 18, 18, 0.8); }
   a.button {
     text-decoration: none; }
   .button:disabled {
@@ -300,7 +308,7 @@ table {
   display: block;
   width: 100%;
   padding: .5rem .75rem;
-  border: 1px solid rgba(18, 19, 20, 0.4); }
+  border: 1px solid rgba(18, 18, 18, 0.4); }
   .input > input:disabled {
     opacity: .2; }
 
@@ -313,7 +321,7 @@ table {
     display: block;
     width: 100%;
     padding: .5rem 2.5rem .5rem .75rem;
-    border: 1px solid rgba(18, 19, 20, 0.4); }
+    border: 1px solid rgba(18, 18, 18, 0.4); }
     .select__tag + .select__arrow {
       width: 0;
       height: 0;
@@ -323,7 +331,7 @@ table {
       transform: translateY(-50%);
       display: block;
       pointer-events: none;
-      border-top: 0.4rem solid rgba(18, 19, 20, 0.6);
+      border-top: 0.4rem solid rgba(18, 18, 18, 0.6);
       border-right: .4rem solid transparent;
       border-left: .4rem solid transparent; }
     .select__tag:disabled {
@@ -335,7 +343,7 @@ table {
   display: block;
   width: 100%;
   padding: .5rem .75rem;
-  border: 1px solid rgba(18, 19, 20, 0.4); }
+  border: 1px solid rgba(18, 18, 18, 0.4); }
   .textarea > textarea:disabled {
     opacity: .2; }
 
@@ -364,7 +372,7 @@ table {
       left: 0;
       z-index: 1;
       background: #fff;
-      border: 1px solid rgba(18, 19, 20, 0.4); }
+      border: 1px solid rgba(18, 18, 18, 0.4); }
       .checkbox__tag + .checkbox__box::after {
         width: 0;
         height: 0;
@@ -372,7 +380,7 @@ table {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background: #121314;
+        background: #121212;
         content: "";
         transition: all 0.2s; }
     .checkbox__tag:checked + .checkbox__box::after {
@@ -405,7 +413,7 @@ table {
       left: 0;
       z-index: 1;
       background: #fff;
-      border: 1px solid rgba(18, 19, 20, 0.4);
+      border: 1px solid rgba(18, 18, 18, 0.4);
       border-radius: 50%; }
       .radio__tag + .radio__box::after {
         width: 0;
@@ -414,7 +422,7 @@ table {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background: #121314;
+        background: #121212;
         border-radius: 50%;
         content: "";
         transition: all 0.2s; }
@@ -500,8 +508,26 @@ table {
   font-family: ALSRubl-Times, "Times New Roman", Times, serif;
   line-height: normal; }
 
+@font-face {
+  font-family: 'Proxima-Nova-Bold';
+  src: url("fonts/ProximaNova/ProximaNova-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima-Nova-Lt';
+  src: url("fonts/ProximaNova/ProximaNova-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima-Nova-Rg';
+  src: url("fonts/ProximaNova/ProximaNova-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 .icon {
-  fill: #121314;
+  fill: #121212;
   fill-rule: evenodd;
   transition: fill 0.2s; }
   .icon.icon--20 {
@@ -535,14 +561,14 @@ table {
 
 .wysiwyg > blockquote {
   padding-left: 4rem;
-  border-left: 1px solid rgba(18, 19, 20, 0.4); }
+  border-left: 1px solid rgba(18, 18, 18, 0.4); }
   .wysiwyg > blockquote:not(:first-child) {
     margin-top: 4rem; }
   .wysiwyg > blockquote:not(:last-child) {
     margin-bottom: 4rem; }
   .wysiwyg > blockquote > p {
-    font-size: 2rem;
-    line-height: 1.25; }
+    font-size: 1.8rem;
+    line-height: 1.44444; }
   .wysiwyg > blockquote > footer {
     margin-top: 1rem; }
 
@@ -560,7 +586,7 @@ table {
 
 .wysiwyg > figure > figcaption {
   margin-top: 1rem;
-  color: rgba(18, 19, 20, 0.6); }
+  color: rgba(18, 18, 18, 0.6); }
 
 .wysiwyg > img:not(:first-child) {
   margin-top: 4rem; }
@@ -576,7 +602,7 @@ table {
 
 .wysiwyg > dl > dt {
   margin-bottom: 1rem;
-  font-weight: 700; }
+  font-weight: 300; }
 
 .wysiwyg > ol {
   list-style: decimal; }
@@ -633,7 +659,7 @@ table {
     width: 100%;
     table-layout: fixed; }
     .wysiwyg__table > table caption {
-      color: rgba(18, 19, 20, 0.6);
+      color: rgba(18, 18, 18, 0.6);
       text-align: right; }
     .wysiwyg__table > table th {
       border-bottom: 1px solid #ccc;
@@ -684,7 +710,7 @@ table {
   @media all and (min-width: 768px) {
     .container {
       max-width: 768px; } }
-  @media all and (min-width: 1420px) {
+  @media all and (min-width: 1760px) {
     .container {
       max-width: 1420px; } }
   @media all and (max-width: 767px) {
@@ -695,7 +721,77 @@ table {
     .container {
       padding-right: 2rem;
       padding-left: 2rem; } }
-  @media all and (min-width: 1420px) {
+  @media all and (min-width: 1760px) {
     .container {
-      padding-right: 3rem;
-      padding-left: 3rem; } }
+      padding-right: 4rem;
+      padding-left: 4rem; } }
+
+.section-box {
+  padding: 6rem 0; }
+  @media all and (min-width: 1760px) {
+    .section-box {
+      padding: 12rem 0; } }
+  .section-box--alternative {
+    background: #f0f0f0; }
+
+@media all and (min-width: 1760px) {
+  .content-grid {
+    display: flex;
+    justify-content: center;
+    align-items: 2; } }
+  @media all and (min-width: 1760px) and (max-width: 767px) {
+    .content-grid {
+      margin-right: -1rem;
+      margin-left: -1rem; } }
+  @media all and (min-width: 1760px) and (min-width: 768px) {
+    .content-grid {
+      margin-right: -1rem;
+      margin-left: -1rem; } }
+  @media all and (min-width: 1760px) and (min-width: 1760px) {
+    .content-grid {
+      margin-right: -2rem;
+      margin-left: -2rem; } }
+
+.content-grid__header > h2 {
+  font-family: "Proxima-Nova-Lt", "HelveticaNeue", "Helvetica Neue", sans-serif;
+  font-size: 18rem;
+  line-height: 0.13333;
+  text-transform: uppercase;
+  font-weight: 700; }
+  .content-grid__header > h2 a {
+    text-decoration: none; }
+  @media all and (min-width: 1760px) {
+    .content-grid__header > h2 {
+      margin-bottom: 3rem; } }
+
+@media all and (min-width: 1760px) {
+  .content-grid__image {
+    width: 50%; } }
+  @media all and (min-width: 1760px) and (max-width: 767px) {
+    .content-grid__image {
+      padding-right: 2rem;
+      padding-left: 2rem; } }
+  @media all and (min-width: 1760px) and (min-width: 768px) {
+    .content-grid__image {
+      padding-right: 2rem;
+      padding-left: 2rem; } }
+  @media all and (min-width: 1760px) and (min-width: 1760px) {
+    .content-grid__image {
+      padding-right: 4rem;
+      padding-left: 4rem; } }
+
+@media all and (min-width: 1760px) {
+  .content-grid__description {
+    width: 50%; } }
+  @media all and (min-width: 1760px) and (max-width: 767px) {
+    .content-grid__description {
+      padding-right: 1rem;
+      padding-left: 1rem; } }
+  @media all and (min-width: 1760px) and (min-width: 768px) {
+    .content-grid__description {
+      padding-right: 1rem;
+      padding-left: 1rem; } }
+  @media all and (min-width: 1760px) and (min-width: 1760px) {
+    .content-grid__description {
+      padding-right: 2rem;
+      padding-left: 2rem; } }

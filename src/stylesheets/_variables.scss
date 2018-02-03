@@ -4,13 +4,13 @@
 $mq-breakpoints: ( // for example: xs, sm, md, lg, xl
         'xs': 767px,
         'sm': 768px,
-        'md': 1420px
+        'md': 1760px
 );
 
 $mq-indents: (
         'xs': 2rem,
         'sm': 2rem,
-        'md': 3rem
+        'md': 4rem
 );
 
 $mq-container-widths: (
@@ -34,7 +34,7 @@ $mq-grid-gutters: (
 // Not responsive
 $indent: 2rem;
 
-$container-width:  1440px;
+$container-width:  1680px;
 $container-indent: $indent;
 
 $grid-gutter: $indent;
@@ -45,12 +45,15 @@ $border-radius-base:   .5rem;
 $border-radius-large: .75rem;
 
 // Colors
-$color-base:          #121314;
+$color-base:          #121212;
 $color-light:    rgba($color-base, .8);
 $color-lighter:  rgba($color-base, .6);
 $color-lightest: rgba($color-base, .4);
 
-$color-brand:         #5409ff;
+$color-body-background: #f7f7f7;
+$color-section-background: #f0f0f0;
+
+$color-brand:         #095dbb;
 $color-sound:         #9280bc;
 
 $color-error:         red;
@@ -59,12 +62,12 @@ $color-success:       green;
 
 // Fonts
 
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500|Roboto:400,700,900');
-
-$font-family-text:  "Roboto Mono","HelveticaNeue","Helvetica Neue",sans-serif;
-$font-family-title: "Roboto","HelveticaNeue","Helvetica Neue",sans-serif;
-$font-weight-text:  400;
-$font-weight-title: 700;
+$font-family-text:  "Proxima-Nova-Lt","HelveticaNeue","Helvetica Neue",sans-serif;
+$font-family-title: "Proxima-Nova-Lt","HelveticaNeue","Helvetica Neue",sans-serif;
+$font-family-bold: 'roxima-Nova-Bold',"HelveticaNeue","Helvetica Neue",sans-serif;
+$font-weight-text:  300;
+$font-weight-title: 300;
+$font-weight-bold: 700;
 
 // Forms
 $checkbox-size: 3rem;

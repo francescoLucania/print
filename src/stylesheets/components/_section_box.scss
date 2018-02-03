@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.section-box {
+  padding: 6rem 0;
+
+  @include mq(md) {
+    padding: 12rem 0;
+  }
+
+  &--alternative {
+    background: #f0f0f0;
+  }
+}
