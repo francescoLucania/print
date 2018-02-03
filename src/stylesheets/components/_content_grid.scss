@@ -36,11 +36,10 @@
   &__description {
 
     @include mq(sm) {
-      @include grid-col(2);
+
     }
 
     @include mq(md) {
-      @include col-size(1/2);
     }
   }
 
@@ -51,21 +50,27 @@
       overflow: hidden;
     }
 
+    @include mq(sm) {
+      @include grid-col(2);
+      @include col-size(3.5/10);
+    }
+
     @include mq(md) {
+      @include col-size(1/2);
       display: flex;
       justify-content: flex-end;
     }
 
-    @include mq(sm) {
-      @include col-size(3.5/10);
-    }
 
     > img {
-      display: block;
       width: auto;
+      height: auto;
       vertical-align: top;
 
       @include mq(xs) {
+        transform: translateX(8%);
+      }
+      @include mq(sm) {
         transform: translateX(8%);
       }
     }
@@ -74,11 +79,12 @@
   &__description {
 
     @include mq(sm) {
+      @include grid-col(2);
       @include col-size(6.5/10);
     }
 
     @include mq(md) {
-
+      @include col-size(1/2);
     }
   }
 

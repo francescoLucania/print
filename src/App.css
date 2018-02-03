@@ -813,50 +813,63 @@ table {
     .content-grid__header > h2 {
       margin-bottom: 3rem; } }
 
-@media all and (min-width: 768px) and (max-width: 767px) {
-  .content-grid__image, .content-grid__description {
-    padding-right: 1.5rem;
-    padding-left: 1.5rem; } }
-
-@media all and (min-width: 768px) and (min-width: 768px) {
-  .content-grid__image, .content-grid__description {
-    padding-right: 2rem;
-    padding-left: 2rem; } }
-
-@media all and (min-width: 768px) and (min-width: 1760px) {
-  .content-grid__image, .content-grid__description {
-    padding-right: 4rem;
-    padding-left: 4rem; } }
-
-@media all and (min-width: 1760px) {
-  .content-grid__image, .content-grid__description {
-    width: 50%; } }
-
 @media all and (max-width: 767px) {
   .content-grid__image {
     margin: 0 -1.5rem 3rem;
     overflow: hidden; } }
 
-@media all and (min-width: 1760px) {
-  .content-grid__image {
-    display: flex;
-    justify-content: flex-end; } }
-
 @media all and (min-width: 768px) {
   .content-grid__image {
     width: 35%; } }
+  @media all and (min-width: 768px) and (max-width: 767px) {
+    .content-grid__image {
+      padding-right: 1.5rem;
+      padding-left: 1.5rem; } }
+  @media all and (min-width: 768px) and (min-width: 768px) {
+    .content-grid__image {
+      padding-right: 2rem;
+      padding-left: 2rem; } }
+  @media all and (min-width: 768px) and (min-width: 1760px) {
+    .content-grid__image {
+      padding-right: 4rem;
+      padding-left: 4rem; } }
+
+@media all and (min-width: 1760px) {
+  .content-grid__image {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end; } }
 
 .content-grid__image > img {
-  display: block;
   width: auto;
+  height: auto;
   vertical-align: top; }
   @media all and (max-width: 767px) {
+    .content-grid__image > img {
+      transform: translateX(8%); } }
+  @media all and (min-width: 768px) {
     .content-grid__image > img {
       transform: translateX(8%); } }
 
 @media all and (min-width: 768px) {
   .content-grid__description {
     width: 65%; } }
+  @media all and (min-width: 768px) and (max-width: 767px) {
+    .content-grid__description {
+      padding-right: 1.5rem;
+      padding-left: 1.5rem; } }
+  @media all and (min-width: 768px) and (min-width: 768px) {
+    .content-grid__description {
+      padding-right: 2rem;
+      padding-left: 2rem; } }
+  @media all and (min-width: 768px) and (min-width: 1760px) {
+    .content-grid__description {
+      padding-right: 4rem;
+      padding-left: 4rem; } }
+
+@media all and (min-width: 1760px) {
+  .content-grid__description {
+    width: 50%; } }
 
 .content-grid__button-box {
   margin-top: 3rem; }
