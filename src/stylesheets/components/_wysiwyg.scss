@@ -127,6 +127,9 @@
                     background: $color-brand;
                     content: '';
 
+                    @include mq(sm) {
+                        top: .75rem;
+                    }
                     @include mq(md) {
                         top: .95rem;
                     }

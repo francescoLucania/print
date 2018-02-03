@@ -8,7 +8,7 @@
   &__header {
 
     @include mq(md) {
-      padding-top: 5rem;
+      padding-top: 4rem;
     }
 
     > h1,
@@ -58,20 +58,18 @@
     @include mq(md) {
       @include col-size(1/2);
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
+      padding-left: 12rem; // magic number
     }
-
 
     > img {
       width: auto;
       height: auto;
       vertical-align: top;
+      transform: translateX(8%);
 
-      @include mq(xs) {
-        transform: translateX(8%);
-      }
-      @include mq(sm) {
-        transform: translateX(8%);
+      @include mq(md) {
+        transform: translateX(0);
       }
     }
   }

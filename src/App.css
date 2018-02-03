@@ -27,7 +27,7 @@ body {
     body {
       font-size: 1.4rem;
       line-height: 1.57143; } }
-  @media all and (min-width: 1760px) {
+  @media all and (min-width: 1440px) {
     body {
       font-size: 1.8rem;
       line-height: 1.44444; } }
@@ -47,7 +47,8 @@ main {
 a {
   color: rgba(0, 0, 255, 0.8);
   text-decoration: none;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  outline: none !important; }
   a.is-current {
     cursor: default; }
     a.is-current:visited, a.is-current:hover, a.is-current:active {
@@ -82,7 +83,7 @@ h1 {
   margin: 0; }
   h1 a {
     text-decoration: none; }
-  @media all and (min-width: 1760px) {
+  @media all and (min-width: 1440px) {
     h1 {
       font-size: 3.8rem;
       line-height: 1.15789; } }
@@ -93,7 +94,7 @@ h2 {
   font-family: "roxima-Nova-Bold", "HelveticaNeue", "Helvetica Neue", sans-serif;
   text-transform: uppercase;
   font-weight: 700; }
-  @media all and (min-width: 1760px) {
+  @media all and (min-width: 1440px) {
     h2 {
       font-size: 1.8rem;
       line-height: 1.33333; } }
@@ -291,7 +292,7 @@ table {
   line-height: 1;
   position: relative;
   display: inline-block;
-  padding: 2rem 3rem;
+  padding: 2rem 2.75rem;
   background: #095dbb;
   box-shadow: 0 1.3rem 2.8rem 0 rgba(9, 93, 187, 0.16);
   border-radius: 2.5rem;
@@ -301,7 +302,7 @@ table {
   color: #fff;
   transition: 0.6s; }
   .mod_no-touchevents .button:hover, .mod_no-touchevents .button.hover {
-    background: rgba(9, 93, 187, 0.9); }
+    background: rgba(9, 93, 187, 0.85); }
   a.button {
     text-decoration: none; }
   .button:disabled {
@@ -631,7 +632,10 @@ table {
       border-radius: 50%;
       background: #095dbb;
       content: ''; }
-      @media all and (min-width: 1760px) {
+      @media all and (min-width: 768px) {
+        .wysiwyg > ul > li::before {
+          top: .75rem; } }
+      @media all and (min-width: 1440px) {
         .wysiwyg > ul > li::before {
           top: .95rem; } }
 
@@ -735,27 +739,27 @@ table {
   @media all and (min-width: 768px) {
     .container {
       max-width: 768px; } }
-  @media all and (min-width: 1760px) {
+  @media all and (min-width: 1440px) {
     .container {
-      max-width: 1420px; } }
+      max-width: 1440px; } }
   @media all and (max-width: 767px) {
     .container {
       padding-right: 1.5rem;
       padding-left: 1.5rem; } }
   @media all and (min-width: 768px) {
     .container {
-      padding-right: 2rem;
-      padding-left: 2rem; } }
-  @media all and (min-width: 1760px) {
+      padding-right: 3rem;
+      padding-left: 3rem; } }
+  @media all and (min-width: 1440px) {
     .container {
       padding-right: 4rem;
       padding-left: 4rem; } }
 
 .section-box {
   padding: 6rem 0; }
-  @media all and (min-width: 1760px) {
+  @media all and (min-width: 1440px) {
     .section-box {
-      padding: 12rem 0; } }
+      padding: 7rem 0 10rem; } }
   .section-box--alternative {
     background: #f0f0f0; }
   .section-box:nth-child(2n) {
@@ -773,16 +777,16 @@ table {
       margin-left: -1.5rem; } }
   @media all and (min-width: 768px) and (min-width: 768px) {
     .content-grid {
-      margin-right: -2rem;
-      margin-left: -2rem; } }
-  @media all and (min-width: 768px) and (min-width: 1760px) {
+      margin-right: -3rem;
+      margin-left: -3rem; } }
+  @media all and (min-width: 768px) and (min-width: 1440px) {
     .content-grid {
       margin-right: -4rem;
       margin-left: -4rem; } }
 
-@media all and (min-width: 1760px) {
+@media all and (min-width: 1440px) {
   .content-grid__header {
-    padding-top: 5rem; } }
+    padding-top: 4rem; } }
 
 .content-grid__header > h1 {
   font-family: "Proxima-Nova-Lt", "HelveticaNeue", "Helvetica Neue", sans-serif;
@@ -791,11 +795,11 @@ table {
   line-height: 1.46667; }
   .content-grid__header > h1 a {
     text-decoration: none; }
-  @media all and (min-width: 1760px) {
+  @media all and (min-width: 1440px) {
     .content-grid__header > h1 {
       font-size: 3.8rem;
       line-height: 1.15789; } }
-  @media all and (min-width: 1760px) {
+  @media all and (min-width: 1440px) {
     .content-grid__header > h1 {
       margin-bottom: 1rem; } }
 
@@ -805,11 +809,11 @@ table {
   font-family: "roxima-Nova-Bold", "HelveticaNeue", "Helvetica Neue", sans-serif;
   text-transform: uppercase;
   font-weight: 700; }
-  @media all and (min-width: 1760px) {
+  @media all and (min-width: 1440px) {
     .content-grid__header > h2 {
       font-size: 1.8rem;
       line-height: 1.33333; } }
-  @media all and (min-width: 1760px) {
+  @media all and (min-width: 1440px) {
     .content-grid__header > h2 {
       margin-bottom: 3rem; } }
 
@@ -827,29 +831,28 @@ table {
       padding-left: 1.5rem; } }
   @media all and (min-width: 768px) and (min-width: 768px) {
     .content-grid__image {
-      padding-right: 2rem;
-      padding-left: 2rem; } }
-  @media all and (min-width: 768px) and (min-width: 1760px) {
+      padding-right: 3rem;
+      padding-left: 3rem; } }
+  @media all and (min-width: 768px) and (min-width: 1440px) {
     .content-grid__image {
       padding-right: 4rem;
       padding-left: 4rem; } }
 
-@media all and (min-width: 1760px) {
+@media all and (min-width: 1440px) {
   .content-grid__image {
     width: 50%;
     display: flex;
-    justify-content: flex-end; } }
+    justify-content: center;
+    padding-left: 12rem; } }
 
 .content-grid__image > img {
   width: auto;
   height: auto;
-  vertical-align: top; }
-  @media all and (max-width: 767px) {
+  vertical-align: top;
+  transform: translateX(8%); }
+  @media all and (min-width: 1440px) {
     .content-grid__image > img {
-      transform: translateX(8%); } }
-  @media all and (min-width: 768px) {
-    .content-grid__image > img {
-      transform: translateX(8%); } }
+      transform: translateX(0); } }
 
 @media all and (min-width: 768px) {
   .content-grid__description {
@@ -860,14 +863,14 @@ table {
       padding-left: 1.5rem; } }
   @media all and (min-width: 768px) and (min-width: 768px) {
     .content-grid__description {
-      padding-right: 2rem;
-      padding-left: 2rem; } }
-  @media all and (min-width: 768px) and (min-width: 1760px) {
+      padding-right: 3rem;
+      padding-left: 3rem; } }
+  @media all and (min-width: 768px) and (min-width: 1440px) {
     .content-grid__description {
       padding-right: 4rem;
       padding-left: 4rem; } }
 
-@media all and (min-width: 1760px) {
+@media all and (min-width: 1440px) {
   .content-grid__description {
     width: 50%; } }
 
@@ -876,6 +879,6 @@ table {
   @media all and (max-width: 767px) {
     .content-grid__button-box {
       text-align: center; } }
-  @media all and (min-width: 1760px) {
+  @media all and (min-width: 1440px) {
     .content-grid__button-box {
       margin-top: 5rem; } }
