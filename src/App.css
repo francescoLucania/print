@@ -24,7 +24,8 @@ body {
   font-family: "Proxima-Nova-Lt", "HelveticaNeue", "Helvetica Neue", sans-serif;
   font-weight: 300;
   opacity: 0;
-  animation: body-animation .3s linear .5s 1 alternate forwards; }
+  will-change: opacity transform;
+  animation: body-animation .6s linear 0s 1 alternate forwards; }
   @media all and (min-width: 768px) {
     body {
       font-size: 1.4rem;
@@ -37,7 +38,7 @@ body {
 @keyframes body-animation {
   from {
     opacity: 0;
-    transform: translate(0.7rem, 1.5rem); }
+    transform: translate(0, 1rem); }
   to {
     opacity: 1;
     transform: translate(0, 0); } }
