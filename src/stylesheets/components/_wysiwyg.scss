@@ -109,7 +109,29 @@
         }
 
         > ul {
-            list-style: disc;
+            list-style: none;
+
+            > li {
+                position: relative;
+                padding-left: 2rem;
+
+                @include mq(sm) {
+                    padding-left: 2.4rem;
+                }
+
+                &::before {
+                    @include size(.4rem);
+                    position: absolute;
+                    left: 1rem;
+                    border-radius: 50%;
+                    background: $color-brand;
+                    content: '';
+
+                    @include mq(md) {
+                        top: .95rem;
+                    }
+                }
+            }
         }
 
         > ol,
@@ -119,7 +141,7 @@
             }
 
             ul {
-                list-style: disc;
+                list-style: none;
             }
 
             @include wysiwyg-indents-md;

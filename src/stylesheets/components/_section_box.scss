@@ -8,6 +8,10 @@
   }
 
   &--alternative {
-    background: #f0f0f0;
+    background: $color-section-background;
+  }
+
+  &:nth-child(2n) {
+    background: $color-section-background;
   }
 }

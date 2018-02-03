@@ -8,7 +8,7 @@ $mq-breakpoints: ( // for example: xs, sm, md, lg, xl
 );
 
 $mq-indents: (
-        'xs': 2rem,
+        'xs': 1.5rem,
         'sm': 2rem,
         'md': 4rem
 );
@@ -78,3 +78,4 @@ $color-link: rgba(blue, .8);
 
 // Transitions
 $transition-duration-base: .2s;
+$transition-duration-medium: .6s;
