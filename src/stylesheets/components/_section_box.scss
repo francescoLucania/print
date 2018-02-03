@@ -3,6 +3,12 @@
 .section-box {
   padding: 6rem 0;
 
+  &:first-child {
+    @include mq(md) {
+      padding-top: 16rem;
+    }
+  }
+
   @include mq(md) {
     padding: 7rem 0 10rem;
   }

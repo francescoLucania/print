@@ -21,17 +21,44 @@
             text-decoration: none;
         }
 
+        &--transparent {
+            @include interact(background, transparent);
+            @include interact(opacity, .85);
+            padding: 1.7rem 2.45rem;
+            border: solid .3rem $color-brand;
+            background: transparent;
+        }
+
+        &--map {
+            display: inline-flex;
+            align-items: center;
+            padding: 1.2rem 2.45rem;
+
+            @include mq(md) {
+                padding: 1.2rem 2.45rem;
+            }
+
+            > img {
+                margin-right: 1.5rem;
+                vertical-align: top;
+
+                @include mq(xs) {
+                    display: none;
+                }
+            }
+
+            > span {
+                display: block;
+                color: $color-brand;
+            }
+        }
+
         &:disabled {
             opacity: .2;
         }
 
         &:active {
             transform: translateY(.2rem);
-        }
-
-        &--medium {
-            padding: 1rem 3rem;
-            min-width: 12rem;
         }
     }
 }

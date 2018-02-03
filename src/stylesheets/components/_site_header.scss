@@ -1,5 +1,30 @@
 @charset "UTF-8";
 
 .site-header {
+  line-height: 1;
 
+  &__grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+  }
+
+  &__logo-box {
+    max-width: 11.5rem;
+    display: block;
+
+    @include mq(sm) {
+      max-width: 16rem;
+    }
+
+    > img {
+      width: auto;
+      vertical-align: top;
+    }
+  }
+
+  &__button-box {
+
+  }
 }
