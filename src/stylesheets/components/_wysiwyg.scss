@@ -113,11 +113,7 @@
 
             > li {
                 position: relative;
-                padding-left: 2rem;
-
-                @include mq(sm) {
-                    padding-left: 2.4rem;
-                }
+                padding-left: 2.4rem;
 
                 &::before {
                     @include size(.4rem);
@@ -127,6 +123,9 @@
                     background: $color-brand;
                     content: '';
 
+                    @include mq(xs) {
+                        top: 1rem;
+                    }
                     @include mq(sm) {
                         top: .75rem;
                     }
@@ -155,7 +154,6 @@
             }
 
             li {
-                margin-left: 2rem;
                 margin-top: 1rem;
             }
         }

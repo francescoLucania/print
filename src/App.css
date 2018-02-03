@@ -22,7 +22,9 @@ body {
   background: #f7f7f7;
   color: #121212;
   font-family: "Proxima-Nova-Lt", "HelveticaNeue", "Helvetica Neue", sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  opacity: 0;
+  animation: body-animation .3s linear .5s 1 alternate forwards; }
   @media all and (min-width: 768px) {
     body {
       font-size: 1.4rem;
@@ -31,6 +33,14 @@ body {
     body {
       font-size: 1.8rem;
       line-height: 1.44444; } }
+
+@keyframes body-animation {
+  from {
+    opacity: 0;
+    transform: translate(0.7rem, 1.5rem); }
+  to {
+    opacity: 1;
+    transform: translate(0, 0); } }
 
 #root {
   display: flex;
@@ -203,7 +213,7 @@ table {
         display: block;
         border-top: .5rem solid transparent;
         border-bottom: .5rem solid transparent;
-        border-right: 0.75rem solid rgba(18, 18, 18, 0.6); }
+        border-right: 0.75rem solid #969696; }
     .ui-datepicker .ui-datepicker-header .ui-datepicker-title {
       order: 2;
       flex: 1;
@@ -218,7 +228,7 @@ table {
         display: block;
         border-top: .5rem solid transparent;
         border-bottom: .5rem solid transparent;
-        border-left: 0.75rem solid rgba(18, 18, 18, 0.6); }
+        border-left: 0.75rem solid #969696; }
 
 .ui-datepicker-calendar {
   width: 100%; }
@@ -234,7 +244,7 @@ table {
   .ui-datepicker-calendar tbody td.ui-datepicker-today .ui-state-default {
     background: #eee; }
   .ui-datepicker-calendar tbody td.ui-datepicker-current-day .ui-state-default {
-    background: rgba(18, 18, 18, 0.8);
+    background: #636363;
     color: #fff; }
 
 .ui-selectmenu-button {
@@ -253,7 +263,7 @@ table {
     transform: translateY(-50%);
     display: block;
     pointer-events: none;
-    border-top: 0.4rem solid rgba(18, 18, 18, 0.6);
+    border-top: 0.4rem solid #969696;
     border-right: .4rem solid transparent;
     border-left: .4rem solid transparent; }
   .ui-selectmenu-button .ui-selectmenu-text {
@@ -265,7 +275,7 @@ table {
     word-wrap: normal;
     vertical-align: top; }
     .ui-selectmenu-button .ui-selectmenu-text.ui-state-placeholder {
-      color: rgba(18, 18, 18, 0.6); }
+      color: #969696; }
 
 .ui-selectmenu-menu {
   position: absolute;
@@ -367,7 +377,7 @@ table {
       transform: translateY(-50%);
       display: block;
       pointer-events: none;
-      border-top: 0.4rem solid rgba(18, 18, 18, 0.6);
+      border-top: 0.4rem solid #969696;
       border-right: .4rem solid transparent;
       border-left: .4rem solid transparent; }
     .select__tag:disabled {
@@ -622,7 +632,7 @@ table {
 
 .wysiwyg > figure > figcaption {
   margin-top: 1rem;
-  color: rgba(18, 18, 18, 0.6); }
+  color: #969696; }
 
 .wysiwyg > img:not(:first-child) {
   margin-top: 4rem; }
@@ -647,10 +657,7 @@ table {
   list-style: none; }
   .wysiwyg > ul > li {
     position: relative;
-    padding-left: 2rem; }
-    @media all and (min-width: 768px) {
-      .wysiwyg > ul > li {
-        padding-left: 2.4rem; } }
+    padding-left: 2.4rem; }
     .wysiwyg > ul > li::before {
       width: 0.4rem;
       height: 0.4rem;
@@ -659,6 +666,9 @@ table {
       border-radius: 50%;
       background: #095dbb;
       content: ''; }
+      @media all and (max-width: 767px) {
+        .wysiwyg > ul > li::before {
+          top: 1rem; } }
       @media all and (min-width: 768px) {
         .wysiwyg > ul > li::before {
           top: .75rem; } }
@@ -696,7 +706,6 @@ table {
 
 .wysiwyg > ol li,
 .wysiwyg > ul li {
-  margin-left: 2rem;
   margin-top: 1rem; }
 
 .wysiwyg > p:not(:first-child) {
@@ -715,7 +724,7 @@ table {
     width: 100%;
     table-layout: fixed; }
     .wysiwyg__table > table caption {
-      color: rgba(18, 18, 18, 0.6);
+      color: #969696;
       text-align: right; }
     .wysiwyg__table > table th {
       border-bottom: 1px solid #ccc;
@@ -852,6 +861,57 @@ table {
     line-height: 1.25; }
     .site-footer__next-link > span > b {
       font-family: "roxima-Nova-Bold", "HelveticaNeue", "Helvetica Neue", sans-serif; }
+
+.site-footer__contact {
+  padding: 3.5rem 0; }
+  @media all and (min-width: 768px) {
+    .site-footer__contact {
+      padding: 2rem 0; } }
+
+.site-footer__contact-grid {
+  display: flex; }
+  @media all and (max-width: 767px) {
+    .site-footer__contact-grid {
+      flex-direction: column;
+      text-align: center; }
+      .site-footer__contact-grid > p {
+        order: 2; } }
+  @media all and (min-width: 768px) {
+    .site-footer__contact-grid {
+      justify-content: space-between;
+      align-items: center; }
+      .site-footer__contact-grid > p {
+        font-size: 2.4rem;
+        line-height: 1.25;
+        order: 1; } }
+  .site-footer__contact-grid > p {
+    font-size: 1.4rem;
+    line-height: 1.42857;
+    color: #969696; }
+    @media all and (min-width: 768px) {
+      .site-footer__contact-grid > p > br {
+        display: none; } }
+
+.site-footer__mail-link {
+  font-size: 1.6rem;
+  line-height: 1;
+  order: 1;
+  display: inline-flex;
+  align-items: center;
+  color: #636363; }
+  .mod_no-touchevents .site-footer__mail-link:hover, .mod_no-touchevents .site-footer__mail-link.hover {
+    opacity: 0.85; }
+  @media all and (max-width: 767px) {
+    .site-footer__mail-link {
+      margin: 0 auto 1rem; } }
+  @media all and (min-width: 768px) {
+    .site-footer__mail-link {
+      order: 2; } }
+  .site-footer__mail-link > img {
+    margin-right: 1rem;
+    vertical-align: top; }
+  .site-footer__mail-link > span {
+    display: block; }
 
 .section-box {
   padding: 6rem 0;

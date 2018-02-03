@@ -28,6 +28,8 @@ body {
         family: $font-family-text;
         weight: $font-weight-text;
     }
+    opacity: 0;
+    animation: body-animation .3s linear .5s 1 alternate forwards;
 
     @include mq(sm) {
         @include text-base;
@@ -35,6 +37,19 @@ body {
 
     @include mq(md) {
         @include text-large;
+    }
+}
+
+@keyframes body-animation {
+
+    from {
+        opacity: 0;
+        transform: translate(.7rem,1.5rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0,0);
     }
 }
 
