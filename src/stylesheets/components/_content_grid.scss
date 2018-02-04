@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 .content-grid {
+
   @include mq(sm) {
     @include grid(x,flex-start,flex-start,2);
   }
@@ -44,6 +45,7 @@
   }
 
   &__image {
+    position: relative;
 
     @include mq(xs) {
       margin: 0 -1.5rem 3rem;
@@ -63,6 +65,8 @@
     }
 
     > img {
+      display: block;
+      margin: 0 auto;
       width: auto;
       height: auto;
       vertical-align: top;
@@ -95,6 +99,40 @@
 
     @include mq(md) {
       margin-top: 5rem;
+    }
+  }
+
+  &--promo {
+    margin: 0;
+
+    .content-grid__image {
+      @include mq(xs) {
+        margin-bottom: 0;
+        padding-bottom: 8rem;
+      }
+    }
+
+    .content-grid__description {
+      @include mq(xs) {
+        margin-top: -5rem;
+      }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1759px) {
+      display: block;
+
+      .content-grid__image, .content-grid__description {
+        width: 100%;
+        padding: 0;
+      }
+
+      .content-grid__image {
+        width: 33rem;
+        margin: 0 auto 3rem;
+
+        > img {
+        }
+      }
     }
   }
 }

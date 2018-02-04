@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import ReactTooltip from 'react-tooltip'
 
 import imageOne from '../../../img/image1.png';
 import imageTwo from '../../../img/image2.png';
@@ -22,7 +23,8 @@ const printContent = [
         ],
         shopLink: false,
         shopUrl: '',
-        shopLinkLabel: ''
+        shopLinkLabel: '',
+        promoBlock: true
     },
 
     {
@@ -123,7 +125,7 @@ const printContent = [
 
 ];
 
-console.log(printContent[0].listTypes);
+const tooltipContentType1 = '<h6>Привет</h6>';
 
 class Content extends Component {
 
@@ -137,15 +139,49 @@ class Content extends Component {
 
                     <section className="section-box" key={index}>
                         <div className="container">
-                            <article className="content-grid">
+                            <article  className={item.promoBlock ? 'content-grid content-grid--promo' : 'content-grid'}>
 
                                 <div className="content-grid__image">
                                     <img src={item.image} alt={item.title} />
+
+                                    <div className={item.promoBlock ? "tooltip-box" : "tooltip-box is-not"}>
+
+                                        <div className="tooltip-link" data-title="Удобство использования" type="light"  data-tip data-for='tooltip-1' data-delay-show='200' data-type="1">
+                                            <ReactTooltip className="tooltip tooltip--type-1" id="tooltip-1" place="left" type="light" effect="solid">
+                                                <h6>Удобство использования</h6><p>Удобная панель управления</p>
+                                            </ReactTooltip>
+                                        </div>
+
+
+                                        <div className="tooltip-link" data-title="Защита ваших документов" type="light"  data-tip data-for='tooltip-2' data-delay-show='200' data-type="2">
+                                            <ReactTooltip className="tooltip tooltip--type-2" id="tooltip-2" place="bottom" type="light" effect="solid">
+                                                <h6>Защита ваших документов</h6><p>Защита ваших документов от разных угроз</p>
+                                            </ReactTooltip>
+
+                                        </div>
+
+                                        <div className="tooltip-link" data-title="Печать без проблем" type="light"  data-tip data-for='tooltip-3' data-delay-show='200' data-type="3">
+                                            <ReactTooltip className="tooltip tooltip--type-3" id="tooltip-3" place="bottom" type="light" effect="solid">
+                                                <h6>Печать без проблем</h6><p>Забудьте о замятии бумаги</p>
+                                            </ReactTooltip>
+                                        </div>
+
+
+                                        <div className="tooltip-link" data-title="Надежная работа" type="light"  data-tip data-for='tooltip-4' data-delay-show='200' data-type="4">
+                                            <ReactTooltip className="tooltip tooltip--type-4" id="tooltip-4" place="bottom" type="light" effect="solid">
+                                                <h6>Надежная работа</h6><p>Надежная и стабильная работа без замятий бумаги и зависаний</p>
+                                            </ReactTooltip>
+                                        </div>
+
+
+                                    </div>
+
+
                                 </div>
                                 <div className="content-grid__description wysiwyg">
                                     <div className="content-grid__header">
 
-                                        {item.heading === 'h1' ? <h1>{item.title}</h1> : <h2>{item.title}</h2>}
+                                        {item.heading === 'h1' ? <h1>{String(item.title)}</h1> : <h2>{item.title}</h2>}
 
 
                                     </div>

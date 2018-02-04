@@ -24,13 +24,9 @@ body {
   font-family: "Proxima-Nova-Lt", "HelveticaNeue", "Helvetica Neue", sans-serif;
   font-weight: 300;
   opacity: 0;
-  will-change: opacity transform;
+  will-change: transform;
   animation: body-animation .6s linear 0s 1 alternate forwards; }
-  @media all and (min-width: 768px) {
-    body {
-      font-size: 1.4rem;
-      line-height: 1.57143; } }
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1760px) {
     body {
       font-size: 1.8rem;
       line-height: 1.44444; } }
@@ -94,7 +90,7 @@ h1 {
   margin: 0; }
   h1 a {
     text-decoration: none; }
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1760px) {
     h1 {
       font-size: 3.8rem;
       line-height: 1.15789; } }
@@ -102,10 +98,10 @@ h1 {
 h2 {
   font-size: 1.6rem;
   line-height: 1.5;
-  font-family: "roxima-Nova-Bold", "HelveticaNeue", "Helvetica Neue", sans-serif;
+  font-family: "Proxima-Nova-Bold", "HelveticaNeue", "Helvetica Neue", sans-serif;
   text-transform: uppercase;
   font-weight: 700; }
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1760px) {
     h2 {
       font-size: 1.8rem;
       line-height: 1.33333; } }
@@ -140,8 +136,8 @@ h5 {
 
 h6 {
   font-family: "Proxima-Nova-Lt", "HelveticaNeue", "Helvetica Neue", sans-serif;
-  font-size: 1.4rem;
-  line-height: 1.57143;
+  font-size: 1.6rem;
+  line-height: 1.5;
   font-weight: 300; }
   h6 a {
     text-decoration: none; }
@@ -162,8 +158,8 @@ ul {
   list-style: none; }
 
 small {
-  font-size: 1.6rem;
-  line-height: 1.5; }
+  font-size: 1.4rem;
+  line-height: 1.57143; }
 
 table {
   border-collapse: collapse;
@@ -307,7 +303,7 @@ table {
   background: #095dbb;
   box-shadow: 0 1.3rem 2.8rem 0 rgba(9, 93, 187, 0.16);
   border-radius: 2.5rem;
-  font-family: "roxima-Nova-Bold", "HelveticaNeue", "Helvetica Neue", sans-serif;
+  font-family: "Proxima-Nova-Bold", "HelveticaNeue", "Helvetica Neue", sans-serif;
   text-align: center;
   text-transform: uppercase;
   color: #fff;
@@ -673,7 +669,7 @@ table {
       @media all and (min-width: 768px) {
         .wysiwyg > ul > li::before {
           top: .75rem; } }
-      @media all and (min-width: 1440px) {
+      @media all and (min-width: 1760px) {
         .wysiwyg > ul > li::before {
           top: .95rem; } }
 
@@ -776,9 +772,9 @@ table {
   @media all and (min-width: 768px) {
     .container {
       max-width: 768px; } }
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1760px) {
     .container {
-      max-width: 1440px; } }
+      max-width: 1760px; } }
   @media all and (max-width: 767px) {
     .container {
       padding-right: 1.5rem;
@@ -787,7 +783,7 @@ table {
     .container {
       padding-right: 3rem;
       padding-left: 3rem; } }
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1760px) {
     .container {
       padding-right: 4rem;
       padding-left: 4rem; } }
@@ -796,7 +792,7 @@ table {
   line-height: 1;
   border-bottom: 1px solid #e0e0e0;
   background: #f0f0f0; }
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1760px) {
     .site-header {
       border: 0; } }
   .site-header__grid {
@@ -804,7 +800,7 @@ table {
     justify-content: space-between;
     align-items: center;
     padding: 3rem 0 2.9rem; }
-    @media all and (min-width: 1440px) {
+    @media all and (min-width: 1760px) {
       .site-header__grid {
         padding: 3rem 0; } }
   .site-header__logo-box {
@@ -831,7 +827,7 @@ table {
   @media all and (min-width: 768px) {
     .site-footer__navigate {
       justify-content: space-between; } }
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1760px) {
     .site-footer__navigate {
       justify-content: center; } }
   @media all and (max-width: 767px) {
@@ -852,7 +848,7 @@ table {
       display: flex;
       justify-content: space-between;
       align-items: center; } }
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1760px) {
     .site-footer__next-link {
       display: inline-flex;
       justify-content: center;
@@ -917,10 +913,10 @@ table {
 .section-box {
   padding: 6rem 0;
   background: #f0f0f0; }
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1760px) {
     .section-box:first-child {
       padding-top: 16rem; } }
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1760px) {
     .section-box {
       padding: 7rem 0 10rem; } }
   .section-box:nth-child(2n) {
@@ -940,12 +936,12 @@ table {
     .content-grid {
       margin-right: -3rem;
       margin-left: -3rem; } }
-  @media all and (min-width: 768px) and (min-width: 1440px) {
+  @media all and (min-width: 768px) and (min-width: 1760px) {
     .content-grid {
       margin-right: -4rem;
       margin-left: -4rem; } }
 
-@media all and (min-width: 1440px) {
+@media all and (min-width: 1760px) {
   .content-grid__header {
     padding-top: 4rem; } }
 
@@ -956,36 +952,37 @@ table {
   line-height: 1.46667; }
   .content-grid__header > h1 a {
     text-decoration: none; }
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1760px) {
     .content-grid__header > h1 {
       font-size: 3.8rem;
       line-height: 1.15789; } }
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1760px) {
     .content-grid__header > h1 {
       margin-bottom: 1rem; } }
 
 .content-grid__header > h2 {
   font-size: 1.6rem;
   line-height: 1.5;
-  font-family: "roxima-Nova-Bold", "HelveticaNeue", "Helvetica Neue", sans-serif;
+  font-family: "Proxima-Nova-Bold", "HelveticaNeue", "Helvetica Neue", sans-serif;
   text-transform: uppercase;
   font-weight: 700; }
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1760px) {
     .content-grid__header > h2 {
       font-size: 1.8rem;
       line-height: 1.33333; } }
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1760px) {
     .content-grid__header > h2 {
       margin-bottom: 3rem; } }
 
-@media all and (max-width: 767px) {
-  .content-grid__image {
-    margin: 0 -1.5rem 3rem;
-    overflow: hidden; } }
-
-@media all and (min-width: 768px) {
-  .content-grid__image {
-    width: 35%; } }
+.content-grid__image {
+  position: relative; }
+  @media all and (max-width: 767px) {
+    .content-grid__image {
+      margin: 0 -1.5rem 3rem;
+      overflow: hidden; } }
+  @media all and (min-width: 768px) {
+    .content-grid__image {
+      width: 35%; } }
   @media all and (min-width: 768px) and (max-width: 767px) {
     .content-grid__image {
       padding-right: 1.5rem;
@@ -994,26 +991,26 @@ table {
     .content-grid__image {
       padding-right: 3rem;
       padding-left: 3rem; } }
-  @media all and (min-width: 768px) and (min-width: 1440px) {
+  @media all and (min-width: 768px) and (min-width: 1760px) {
     .content-grid__image {
       padding-right: 4rem;
       padding-left: 4rem; } }
-
-@media all and (min-width: 1440px) {
-  .content-grid__image {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    padding-left: 12rem; } }
-
-.content-grid__image > img {
-  width: auto;
-  height: auto;
-  vertical-align: top;
-  transform: translateX(8%); }
-  @media all and (min-width: 1440px) {
-    .content-grid__image > img {
-      transform: translateX(0); } }
+  @media all and (min-width: 1760px) {
+    .content-grid__image {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      padding-left: 12rem; } }
+  .content-grid__image > img {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    vertical-align: top;
+    transform: translateX(8%); }
+    @media all and (min-width: 1760px) {
+      .content-grid__image > img {
+        transform: translateX(0); } }
 
 @media all and (min-width: 768px) {
   .content-grid__description {
@@ -1026,12 +1023,12 @@ table {
     .content-grid__description {
       padding-right: 3rem;
       padding-left: 3rem; } }
-  @media all and (min-width: 768px) and (min-width: 1440px) {
+  @media all and (min-width: 768px) and (min-width: 1760px) {
     .content-grid__description {
       padding-right: 4rem;
       padding-left: 4rem; } }
 
-@media all and (min-width: 1440px) {
+@media all and (min-width: 1760px) {
   .content-grid__description {
     width: 50%; } }
 
@@ -1040,6 +1037,208 @@ table {
   @media all and (max-width: 767px) {
     .content-grid__button-box {
       text-align: center; } }
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1760px) {
     .content-grid__button-box {
       margin-top: 5rem; } }
+
+.content-grid--promo {
+  margin: 0; }
+  @media all and (max-width: 767px) {
+    .content-grid--promo .content-grid__image {
+      margin-bottom: 0;
+      padding-bottom: 8rem; } }
+  @media all and (max-width: 767px) {
+    .content-grid--promo .content-grid__description {
+      margin-top: -5rem; } }
+  @media screen and (min-width: 768px) and (max-width: 1759px) {
+    .content-grid--promo {
+      display: block; }
+      .content-grid--promo .content-grid__image, .content-grid--promo .content-grid__description {
+        width: 100%;
+        padding: 0; }
+      .content-grid--promo .content-grid__image {
+        width: 33rem;
+        margin: 0 auto 3rem; } }
+
+@keyframes tooltip-box {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.tooltip-box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: tooltip-box .6s linear 1s 1 alternate forwards; }
+  .tooltip-box.is-not {
+    display: none; }
+
+.tooltip-link {
+  width: 3.2rem;
+  height: 3.2rem;
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  background: #095dbb;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(9, 93, 187, 0.4);
+  animation: pulse 2s infinite; }
+  .tooltip-link:hover {
+    animation: none; }
+  .tooltip-link::before {
+    font-size: 1.8rem;
+    line-height: 1.44444;
+    position: absolute;
+    top: 50%;
+    left: -1.5rem;
+    transform: translate(-100%, -50%);
+    padding: 2rem 0;
+    font-family: "Proxima-Nova-Bold", "HelveticaNeue", "Helvetica Neue", sans-serif;
+    color: #095dbb;
+    white-space: nowrap;
+    content: attr(data-title); }
+    @media all and (max-width: 767px) {
+      .tooltip-link::before {
+        display: none; } }
+  .tooltip-link::after {
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0.3rem 0.4rem 0 rgba(7, 7, 7, 0.28);
+    content: ''; }
+  .tooltip-link[data-type="1"] {
+    top: 8%;
+    left: 8%; }
+    @media all and (min-width: 768px) {
+      .tooltip-link[data-type="1"] {
+        left: 8%; } }
+    @media all and (min-width: 1760px) {
+      .tooltip-link[data-type="1"] {
+        top: 9%;
+        left: 25%; } }
+  .tooltip-link[data-type="3"] {
+    top: 48%;
+    left: 12%; }
+    @media all and (min-width: 768px) {
+      .tooltip-link[data-type="3"] {
+        top: 48%;
+        left: 7%; } }
+    @media all and (min-width: 1760px) {
+      .tooltip-link[data-type="3"] {
+        top: 53%;
+        left: 22%; } }
+  .tooltip-link[data-type="2"] {
+    top: 14%;
+    left: 75%; }
+    @media all and (min-width: 768px) {
+      .tooltip-link[data-type="2"] {
+        top: 14%;
+        left: 75%; }
+        .tooltip-link[data-type="2"]::before {
+          left: auto;
+          right: -1.5rem;
+          transform: translate(100%, -50%); } }
+    @media all and (min-width: 1760px) {
+      .tooltip-link[data-type="2"] {
+        top: 14%;
+        left: 66%; } }
+  .tooltip-link[data-type="4"] {
+    top: 51%;
+    left: 73%; }
+    @media all and (min-width: 768px) {
+      .tooltip-link[data-type="4"] {
+        top: 59%;
+        left: 72%; }
+        .tooltip-link[data-type="4"]::before {
+          left: auto;
+          right: -1.5rem;
+          transform: translate(100%, -50%); } }
+    @media all and (min-width: 1760px) {
+      .tooltip-link[data-type="4"] {
+        top: 62%;
+        left: 68%; } }
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(9, 93, 187, 0.4); }
+  70% {
+    -webkit-box-shadow: 0 0 0 1.5rem rgba(9, 93, 187, 0); }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(9, 93, 187, 0); } }
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(9, 93, 187, 0.4);
+    box-shadow: 0 0 0 0 rgba(9, 93, 187, 0.4); }
+  70% {
+    -moz-box-shadow: 0 0 0 1.5rem rgba(9, 93, 187, 0);
+    box-shadow: 0 0 0 1.5rem rgba(9, 93, 187, 0); }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(9, 93, 187, 0);
+    box-shadow: 0 0 0 0 rgba(9, 93, 187, 0); } }
+
+.tooltip {
+  position: absolute !important;
+  display: none;
+  margin: 0 !important;
+  padding: 2rem !important;
+  width: 23rem;
+  border-radius: 1rem !important;
+  background-color: white;
+  opacity: 1 !important;
+  text-align: center; }
+  .tooltip > h6 {
+    font-size: 1.8rem;
+    line-height: 1.44444;
+    margin-bottom: .5rem;
+    display: block;
+    font-family: "Proxima-Nova-Bold", "HelveticaNeue", "Helvetica Neue", sans-serif;
+    color: #095dbb; }
+    @media all and (min-width: 768px) {
+      .tooltip > h6 {
+        display: none; } }
+  .tooltip > p {
+    font-size: 1.8rem;
+    line-height: 1.44444; }
+  .tooltip--type-1, .tooltip--type-3 {
+    left: 0 !important;
+    bottom: -1.5rem !important;
+    top: auto !important;
+    right: auto !important;
+    transform: translate(0, 100%) !important; }
+    @media all and (max-width: 767px) {
+      .tooltip--type-1, .tooltip--type-3 {
+        bottom: auto !important;
+        left: auto !important;
+        right: -.5rem !important;
+        transform: translate(100%, 0) !important; } }
+    @media all and (min-width: 768px) {
+      .tooltip--type-1, .tooltip--type-3 {
+        left: 100% !important;
+        bottom: -1.5rem !important;
+        transform: translate(-100%, 100%) !important; } }
+  .tooltip--type-2, .tooltip--type-4 {
+    left: 0 !important;
+    bottom: auto !important;
+    top: auto !important;
+    right: auto !important;
+    transform: translate(-100%, 100%) !important; }
+    @media all and (max-width: 767px) {
+      .tooltip--type-2, .tooltip--type-4 {
+        bottom: auto !important;
+        left: -.5rem !important;
+        right: auto !important;
+        transform: translate(-100%, 0) !important; } }
+    @media all and (min-width: 768px) {
+      .tooltip--type-2, .tooltip--type-4 {
+        bottom: -1.5rem !important;
+        transform: translate(0, 100%) !important; } }

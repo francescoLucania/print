@@ -1,0 +1,244 @@
+@charset "UTF-8";
+
+@keyframes tooltip-box {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+.tooltip-box {
+  @include size(100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: tooltip-box .6s linear 1s 1 alternate forwards;
+
+  &.is-not {
+    display: none;
+  }
+}
+
+.tooltip-link {
+  @include size(3.2rem);
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  background: $color-brand;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba($color-brand, 0.4);
+  animation: pulse 2s infinite;
+
+
+  &:hover {
+    animation: none;
+  }
+
+  &::before {
+    @include text-large;
+    position: absolute;
+    top: 50%;
+    left: -1.5rem;
+    transform: translate(-100%,-50%);
+    padding: 2rem 0;
+    font-family: $font-family-bold;
+    color: $color-brand;
+    white-space: nowrap;
+    content: attr(data-title);
+
+    @include mq(xs) {
+      display: none;
+    }
+  }
+
+  &::after {
+    @include size(1.2rem);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 .3rem .4rem 0 rgba(7, 7, 7, 0.28);
+    content: '';
+  }
+
+  &[data-type="1"] {
+    top: 8%;
+    left: 8%;
+
+    @include mq(sm) {
+      left: 8%;
+    }
+
+    @include mq(md) {
+      top: 9%;
+      left: 25%;
+    }
+  }
+
+  &[data-type="3"] {
+    top: 48%;
+    left: 12%;
+
+    @include mq(sm) {
+      top: 48%;
+      left: 7%;
+    }
+
+    @include mq(md) {
+      top: 53%;
+      left: 22%;
+    }
+  }
+
+  &[data-type="2"] {
+    top: 14%;
+    left: 75%;
+
+    @include mq(sm) {
+      top: 14%;
+      left: 75%;
+
+      &::before {
+        left: auto;
+        right: -1.5rem;
+        transform: translate(100%,-50%);
+      }
+    }
+
+    @include mq(md) {
+      top: 14%;
+      left: 66%;
+    }
+  }
+
+  &[data-type="4"] {
+    top: 51%;
+    left: 73%;
+
+    @include mq(sm) {
+      top: 59%;
+      left: 72%;
+
+      &::before {
+        left: auto;
+        right: -1.5rem;
+        transform: translate(100%,-50%);
+      }
+    }
+
+    @include mq(md) {
+      top: 62%;
+      left: 68%;
+    }
+  }
+
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba($color-brand, 0.4);
+    }
+    70% {
+      -webkit-box-shadow: 0 0 0 1.5rem rgba($color-brand, 0);
+    }
+    100% {
+      -webkit-box-shadow: 0 0 0 0 rgba($color-brand, 0);
+    }
+  }
+
+  @keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba($color-brand, 0.4);
+      box-shadow: 0 0 0 0 rgba($color-brand, 0.4);
+    }
+    70% {
+      -moz-box-shadow: 0 0 0 1.5rem rgba($color-brand, 0);
+      box-shadow: 0 0 0 1.5rem rgba($color-brand, 0);
+    }
+    100% {
+      -moz-box-shadow: 0 0 0 0 rgba($color-brand, 0);
+      box-shadow: 0 0 0 0 rgba($color-brand, 0);
+    }
+  }
+}
+
+.tooltip {
+  position: absolute !important;
+  display: none;
+  margin: 0 !important;
+  padding: 2rem !important;
+  width: 23rem;
+  border-radius: 1rem !important;
+  background-color: rgb(255, 255, 255);
+  //box-shadow: 0 3rem 5.5rem rgba(0,0,0,0.15), 0 1rem 1rem rgba(0,0,0,0.15);
+  opacity: 1 !important;
+  text-align: center;
+
+  > h6 {
+    @include text-large;
+    margin-bottom: .5rem;
+    display: block;
+    font-family: $font-family-bold;
+    color: $color-brand;
+
+    @include mq(sm) {
+      display: none;
+    }
+  }
+
+  > p {
+    @include text-large;
+  }
+
+  &--type-1,
+  &--type-3 {
+    left: 0 !important;
+    bottom: -1.5rem !important;
+    top: auto !important;
+    right: auto !important;
+    transform: translate(0,100%) !important;
+
+    @include mq(xs) {
+      bottom: auto !important;
+      left: auto !important;
+      right: -.5rem !important;
+      transform: translate(100%,0) !important;
+    }
+
+    @include mq(sm) {
+      left: 100% !important;
+      bottom: -1.5rem !important;
+      transform: translate(-100%,100%) !important;
+    }
+  }
+
+  &--type-2,
+  &--type-4 {
+    left: 0 !important;
+    bottom: auto !important;
+    top: auto !important;
+    right: auto !important;
+    transform: translate(-100%,100%) !important;
+
+    @include mq(xs) {
+      bottom: auto !important;
+      left: -.5rem !important;
+      right: auto !important;
+      transform: translate(-100%,0) !important;
+    }
+
+    @include mq(sm) {
+      bottom: -1.5rem !important;
+      transform: translate(0,100%) !important;
+    }
+  }
+
+
+}

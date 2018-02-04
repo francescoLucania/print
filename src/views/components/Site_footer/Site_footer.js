@@ -28,7 +28,7 @@ class Site_footer extends Component {
                 <div className="site-footer__contact">
                     <div className="container">
                         <div className="site-footer__contact-grid">
-                            <p>©2018 Brother.<br/>Копирование материалов<br/>сайта запрещено.</p>
+                            <p>©2018 Brother.<br/> Копирование материалов<br/>сайта запрещено.</p>
                             <a href="mailto:info@brother.ru" className="site-footer__mail-link"><img src={MailPin} alt="info@brother.ru"/>info@brother.ru</a>
                         </div>
                     </div>

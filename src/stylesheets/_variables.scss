@@ -4,7 +4,7 @@
 $mq-breakpoints: ( // for example: xs, sm, md, lg, xl
         'xs': 767px,
         'sm': 768px,
-        'md': 1440px
+        'md': 1760px
 );
 
 $mq-indents: (
@@ -16,7 +16,7 @@ $mq-indents: (
 $mq-container-widths: (
         'xs': 100%,
         'sm': 768px,
-        'md': 1440px
+        'md': 1760px
 );
 
 $mq-container-indents: (
@@ -66,7 +66,7 @@ $color-success:       green;
 
 $font-family-text:  "Proxima-Nova-Lt","HelveticaNeue","Helvetica Neue",sans-serif;
 $font-family-title: "Proxima-Nova-Lt","HelveticaNeue","Helvetica Neue",sans-serif;
-$font-family-bold: 'roxima-Nova-Bold',"HelveticaNeue","Helvetica Neue",sans-serif;
+$font-family-bold: "Proxima-Nova-Bold","HelveticaNeue","Helvetica Neue",sans-serif;
 $font-weight-text:  300;
 $font-weight-title: 300;
 $font-weight-bold: 700;
