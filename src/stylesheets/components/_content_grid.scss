@@ -136,7 +136,7 @@
       }
 
       &.is-sm {
-        display: none;
+        display: block;
 
         @include mq(xs) {
           display: block;

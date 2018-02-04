@@ -25,7 +25,7 @@ body {
   font-weight: 300;
   opacity: 0;
   will-change: transform;
-  animation: body-animation .6s linear 0s 1 alternate forwards; }
+  animation: body-animation .6s linear .5s 1 alternate forwards; }
   @media all and (min-width: 1760px) {
     body {
       font-size: 1.8rem;
@@ -299,7 +299,7 @@ table {
   line-height: 1;
   position: relative;
   display: inline-block;
-  padding: 2rem 2.75rem;
+  padding: 2.1rem 2.75rem 1.9rem;
   background: #095dbb;
   box-shadow: 0 1.3rem 2.8rem 0 rgba(9, 93, 187, 0.16);
   border-radius: 2.5rem;
@@ -1065,7 +1065,7 @@ table {
       .content-grid--promo .content-grid__header.is-xs {
         display: none; } }
   .content-grid--promo .content-grid__header.is-sm {
-    display: none; }
+    display: block; }
     @media all and (max-width: 767px) {
       .content-grid--promo .content-grid__header.is-sm {
         display: block;
@@ -1111,7 +1111,7 @@ table {
   top: 0;
   left: 0;
   opacity: 0;
-  animation: tooltip-box .6s linear 1s 1 alternate forwards; }
+  animation: tooltip-box .6s linear 1.4s 1 alternate forwards; }
   .tooltip-box.is-not {
     display: none; }
 

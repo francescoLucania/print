@@ -30,7 +30,7 @@ body {
     }
     opacity: 0;
     will-change: transform;
-    animation: body-animation .6s linear 0s 1 alternate forwards;
+    animation: body-animation .6s linear .5s 1 alternate forwards;
 
     @include mq(md) {
         @include text-large;
