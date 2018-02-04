@@ -8,10 +8,37 @@ const siteName = 'brother';
 
 class Site_header extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = { isFixed: false };
+    }
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+    }
+
+    componentWillUnmount () {
+        window.removeEventListener('scroll', this.handleScroll);
+    }
+
+    handleScroll(event) {
+
+        var bodyScrollTop = document.documentElement.scrollTop;
+
+        if (bodyScrollTop > 118) {
+            this.state = { isFixed: true };
+        } else {
+            this.state = { isFixed: false };
+        }
+
+        console.log(this.state.isFixed);
+        return false
+    }
+
     render() {
 
         return (
-            <header className="site-header">
+            <header className={this.state.isFixed ? "site-header is-fixed" : "site-header"}>
                 <div className="container">
                     <div className="site-header__grid">
                         <a href="index.html" className="site-header__logo-box">

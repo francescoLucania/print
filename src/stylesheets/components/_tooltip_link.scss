@@ -11,7 +11,20 @@
   }
 }
 
-
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba($color-brand, 0.4);
+    box-shadow: 0 0 0 0 rgba($color-brand, 0.4);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 1.5rem rgba($color-brand, 0);
+    box-shadow: 0 0 0 1.5rem rgba($color-brand, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba($color-brand, 0);
+    box-shadow: 0 0 0 0 rgba($color-brand, 0);
+  }
+}
 
 .tooltip-box {
   @include size(100%);
@@ -122,7 +135,7 @@
 
   &[data-type="4"] {
     top: 51%;
-    left: 73%;
+    left: 76%;
 
     @include mq(sm) {
       top: 59%;
@@ -140,34 +153,9 @@
       left: 68%;
     }
   }
-
-  @-webkit-keyframes pulse {
-    0% {
-      -webkit-box-shadow: 0 0 0 0 rgba($color-brand, 0.4);
-    }
-    70% {
-      -webkit-box-shadow: 0 0 0 1.5rem rgba($color-brand, 0);
-    }
-    100% {
-      -webkit-box-shadow: 0 0 0 0 rgba($color-brand, 0);
-    }
-  }
-
-  @keyframes pulse {
-    0% {
-      -moz-box-shadow: 0 0 0 0 rgba($color-brand, 0.4);
-      box-shadow: 0 0 0 0 rgba($color-brand, 0.4);
-    }
-    70% {
-      -moz-box-shadow: 0 0 0 1.5rem rgba($color-brand, 0);
-      box-shadow: 0 0 0 1.5rem rgba($color-brand, 0);
-    }
-    100% {
-      -moz-box-shadow: 0 0 0 0 rgba($color-brand, 0);
-      box-shadow: 0 0 0 0 rgba($color-brand, 0);
-    }
-  }
 }
+
+// overrides react-tooltip
 
 .tooltip {
   position: absolute !important;
@@ -239,6 +227,4 @@
       transform: translate(0,100%) !important;
     }
   }
-
-
 }

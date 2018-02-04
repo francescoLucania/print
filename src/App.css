@@ -941,6 +941,22 @@ table {
       margin-right: -4rem;
       margin-left: -4rem; } }
 
+.content-grid__header.is-xs {
+  display: none; }
+  @media all and (max-width: 767px) {
+    .content-grid__header.is-xs {
+      display: block; } }
+
+.content-grid__header.is-sm {
+  display: none; }
+  @media all and (min-width: 768px) {
+    .content-grid__header.is-sm {
+      display: block; } }
+
+@media all and (max-width: 767px) {
+  .content-grid__header {
+    margin-bottom: 5rem; } }
+
 @media all and (min-width: 1760px) {
   .content-grid__header {
     padding-top: 4rem; } }
@@ -1043,6 +1059,17 @@ table {
 
 .content-grid--promo {
   margin: 0; }
+  .content-grid--promo .content-grid__header.is-xs {
+    display: none; }
+    @media all and (max-width: 767px) {
+      .content-grid--promo .content-grid__header.is-xs {
+        display: none; } }
+  .content-grid--promo .content-grid__header.is-sm {
+    display: none; }
+    @media all and (max-width: 767px) {
+      .content-grid--promo .content-grid__header.is-sm {
+        display: block;
+        margin-bottom: 1.5rem; } }
   @media all and (max-width: 767px) {
     .content-grid--promo .content-grid__image {
       margin-bottom: 0;
@@ -1065,6 +1092,17 @@ table {
     opacity: 0; }
   to {
     opacity: 1; } }
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(9, 93, 187, 0.4);
+    box-shadow: 0 0 0 0 rgba(9, 93, 187, 0.4); }
+  70% {
+    -moz-box-shadow: 0 0 0 1.5rem rgba(9, 93, 187, 0);
+    box-shadow: 0 0 0 1.5rem rgba(9, 93, 187, 0); }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(9, 93, 187, 0);
+    box-shadow: 0 0 0 0 rgba(9, 93, 187, 0); } }
 
 .tooltip-box {
   width: 100%;
@@ -1153,7 +1191,7 @@ table {
         left: 66%; } }
   .tooltip-link[data-type="4"] {
     top: 51%;
-    left: 73%; }
+    left: 76%; }
     @media all and (min-width: 768px) {
       .tooltip-link[data-type="4"] {
         top: 59%;
@@ -1166,25 +1204,6 @@ table {
       .tooltip-link[data-type="4"] {
         top: 62%;
         left: 68%; } }
-
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-box-shadow: 0 0 0 0 rgba(9, 93, 187, 0.4); }
-  70% {
-    -webkit-box-shadow: 0 0 0 1.5rem rgba(9, 93, 187, 0); }
-  100% {
-    -webkit-box-shadow: 0 0 0 0 rgba(9, 93, 187, 0); } }
-
-@keyframes pulse {
-  0% {
-    -moz-box-shadow: 0 0 0 0 rgba(9, 93, 187, 0.4);
-    box-shadow: 0 0 0 0 rgba(9, 93, 187, 0.4); }
-  70% {
-    -moz-box-shadow: 0 0 0 1.5rem rgba(9, 93, 187, 0);
-    box-shadow: 0 0 0 1.5rem rgba(9, 93, 187, 0); }
-  100% {
-    -moz-box-shadow: 0 0 0 0 rgba(9, 93, 187, 0);
-    box-shadow: 0 0 0 0 rgba(9, 93, 187, 0); } }
 
 .tooltip {
   position: absolute !important;

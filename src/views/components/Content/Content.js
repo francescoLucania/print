@@ -141,6 +141,12 @@ class Content extends Component {
                         <div className="container">
                             <article  className={item.promoBlock ? 'content-grid content-grid--promo' : 'content-grid'}>
 
+                                <div className="content-grid__header is-xs">
+
+                                    {item.heading === 'h1' ? <h1>{String(item.title)}</h1> : <h2>{item.title}</h2>}
+
+                                </div>
+
                                 <div className="content-grid__image">
                                     <img src={item.image} alt={item.title} />
 
@@ -179,10 +185,9 @@ class Content extends Component {
 
                                 </div>
                                 <div className="content-grid__description wysiwyg">
-                                    <div className="content-grid__header">
+                                    <div className="content-grid__header is-sm">
 
                                         {item.heading === 'h1' ? <h1>{String(item.title)}</h1> : <h2>{item.title}</h2>}
-
 
                                     </div>
 

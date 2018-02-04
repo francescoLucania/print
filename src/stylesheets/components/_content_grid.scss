@@ -8,6 +8,26 @@
 
   &__header {
 
+    &.is-xs {
+      display: none;
+
+      @include mq(xs) {
+        display: block;
+      }
+    }
+
+    &.is-sm {
+      display: none;
+
+      @include mq(sm) {
+        display: block;
+      }
+    }
+
+    @include mq(xs) {
+      margin-bottom: 5rem;
+    }
+
     @include mq(md) {
       padding-top: 4rem;
     }
@@ -104,6 +124,26 @@
 
   &--promo {
     margin: 0;
+
+    .content-grid__header {
+
+      &.is-xs {
+        display: none;
+
+        @include mq(xs) {
+          display: none
+        }
+      }
+
+      &.is-sm {
+        display: none;
+
+        @include mq(xs) {
+          display: block;
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
 
     .content-grid__image {
       @include mq(xs) {
