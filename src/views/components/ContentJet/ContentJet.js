@@ -8,8 +8,11 @@ import Site_header from '../Site_header/Site_header';
 import Site_footer from '../Site_footer/Site_footer';
 
 import imageOne from '../../../img/image2-1.png';
+import imageOneM from '../../../img/image2-1m.png';
 import imageTwo from '../../../img/image2-2.png';
+import imageTwoM from '../../../img/image2-2m.png';
 import imageThree from '../../../img/image2-3.png';
+import imageThreeM from '../../../img/image2-3m.png';
 
 import NextPin from '../../../img/next.svg';
 
@@ -19,6 +22,8 @@ const printContent = [
         heading: 'h1',
         title: 'Струйные',
         image: imageOne,
+        imageMin: true,
+        imageMinUrl: imageOneM,
         description: 'Новые МФУ бизнес-класса созданы на основе технологии InkBenefit, обеспечивающей быстродействие, экономичность и профессиональное качество печати. Эти МФУ имеют расширенные возможности подключения и широкий набор функций для эффективной работы в рабочей среде предприятия. Поддержка формата A3 позволяет выполнять на профессиональном уровне печать и сканирование важных документов и материалов (например, рекламных буклетов и постеров, годового плана и т. п.). Функция Wi-Fi Direct™ обеспечивает подключение к беспроводной сети для печати со смартфона, планшета,ноутбука или ПК без маршрутизатора.',
         listTypes: [
             {printType: 'Автоматическая двусторонняя печать в формате А4. '},
@@ -39,6 +44,8 @@ const printContent = [
         heading: 'h2',
         title: 'MFC-J3530DW',
         image: imageTwo,
+        imageMin: true,
+        imageMinUrl: imageTwoM,
         description: 'Отличное качество и большие объемы печати идеально подходит для Вашего офиса, наше цветное лазерное МФУ имеет ряд возможностей, включая встроенную мобильную печать и сканирования, а также двустороннюю печать.',
         listTypes: [
             {printType: 'МФУ с поддержкой A3'},
@@ -65,6 +72,8 @@ const printContent = [
         heading: 'h2',
         title: 'MFC-J3930DW',
         image: imageThree,
+        imageMin: true,
+        imageMinUrl: imageThreeM,
         description: 'Такой же набор функций, плюс:',
         listTypes: [
             {printType: 'МФУ с поддержкой A3'},
@@ -116,11 +125,10 @@ class ContentJet extends Component {
                                 </div>
 
                                 <div className="content-grid__image">
+                                    {item.imageMin ? <img className="is-xs" src={item.imageMinUrl} alt={item.title} /> : ''}
                                     <img src={item.image} alt={item.title} />
 
                                     <div className={item.promoBlock ? "tooltip-box" : "tooltip-box is-not"}>
-
-
 
                                         <a className="tooltip-link" data-title="Удобство использования" type="light"  data-tip data-for='tooltip-1' data-delay-show='200' data-type="5">
                                             <ReactTooltip className="tooltip tooltip--type-1" id="tooltip-1" place="left" type="light" effect="solid">

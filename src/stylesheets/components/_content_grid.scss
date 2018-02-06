@@ -2,7 +2,11 @@
 
 .content {
   background: $color-section-background;
-  padding-top: 14rem; // magic number
+  padding-top: 10.4rem; // magic number
+
+  @include mq(md) {
+    padding-top: 14rem; // magic number
+  }
 
   @include mq(md) {
     padding-top: 19rem; // magic number
@@ -93,7 +97,7 @@
       padding-left: 12rem; // magic number
     }
 
-    > img {
+    img {
       display: block;
       margin: 0 auto;
       width: auto;
@@ -104,7 +108,23 @@
       @include mq(xl) {
         transform: translateX(0);
       }
+
+      &.is-xs {
+        display: none;
+
+        @include mq(xs) {
+          display: block;
+        }
+
+
+        + img {
+          @include mq(xs) {
+            display: none !important;
+          }
+        }
+      }
     }
+
   }
 
   &__description {

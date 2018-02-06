@@ -1062,7 +1062,10 @@ table {
 
 .content {
   background: #f0f0f0;
-  padding-top: 14rem; }
+  padding-top: 10.4rem; }
+  @media all and (min-width: 1760px) {
+    .content {
+      padding-top: 14rem; } }
   @media all and (min-width: 1760px) {
     .content {
       padding-top: 19rem; } }
@@ -1173,7 +1176,7 @@ table {
     .content-grid__image {
       width: 50%;
       padding-left: 12rem; } }
-  .content-grid__image > img {
+  .content-grid__image img {
     display: block;
     margin: 0 auto;
     width: auto;
@@ -1181,8 +1184,16 @@ table {
     vertical-align: top;
     transform: translateX(8%); }
     @media all and (min-width: 1440px) {
-      .content-grid__image > img {
+      .content-grid__image img {
         transform: translateX(0); } }
+    .content-grid__image img.is-xs {
+      display: none; }
+      @media all and (max-width: 767px) {
+        .content-grid__image img.is-xs {
+          display: block; } }
+      @media all and (max-width: 767px) {
+        .content-grid__image img.is-xs + img {
+          display: none !important; } }
 
 @media all and (min-width: 768px) {
   .content-grid__description {
@@ -1410,8 +1421,8 @@ table {
         top: 62%;
         left: 68%; } }
   .tooltip-link[data-type="5"] {
-    top: 8%;
-    left: 8%; }
+    top: 2%;
+    left: 10%; }
     @media all and (min-width: 768px) {
       .tooltip-link[data-type="5"] {
         left: 8%; } }
@@ -1424,11 +1435,11 @@ table {
         top: 0%;
         left: 23%; } }
   .tooltip-link[data-type="6"] {
-    top: 14%;
-    left: 75%; }
+    top: 6%;
+    left: 78%; }
     @media all and (min-width: 768px) {
       .tooltip-link[data-type="6"] {
-        top: 14%;
+        top: 8%;
         left: 75%; }
         .tooltip-link[data-type="6"]::before {
           left: auto;
@@ -1443,8 +1454,8 @@ table {
         top: 6%;
         left: 66%; } }
   .tooltip-link[data-type="7"] {
-    top: 48%;
-    left: 12%; }
+    top: 40%;
+    left: 9%; }
     @media all and (min-width: 768px) {
       .tooltip-link[data-type="7"] {
         top: 48%;
@@ -1458,12 +1469,12 @@ table {
         top: 42%;
         left: 20%; } }
   .tooltip-link[data-type="8"] {
-    top: 51%;
-    left: 76%; }
+    top: 53%;
+    left: 84%; }
     @media all and (min-width: 768px) {
       .tooltip-link[data-type="8"] {
-        top: 59%;
-        left: 72%; }
+        top: 55%;
+        left: 81%; }
         .tooltip-link[data-type="8"]::before {
           left: auto;
           right: -1.5rem;
