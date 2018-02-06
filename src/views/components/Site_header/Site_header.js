@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types'
+import {Link} from 'react-router-dom';
 
 import Logo from '../../../img/logo.svg';
 import MapPin from '../../../img/pin.svg';
 
 const siteName = 'brother';
-
 class Site_header extends Component {
 
     constructor(props) {
@@ -36,8 +36,6 @@ class Site_header extends Component {
             document.getElementById('site-header').classList.remove('is-fixed');
         }
 
-
-
         return false;
     }
 
@@ -47,9 +45,9 @@ class Site_header extends Component {
             <header className={this.state.isFixed ? "site-header is-fixed" : "site-header"} id="site-header">
                 <div className="container">
                     <div className="site-header__grid">
-                        <a href="index.html" className="site-header__logo-box">
+                        <Link to="/home" className="site-header__logo-box">
                             <img src={Logo} alt={siteName}/>
-                        </a>
+                        </Link>
                         <div className="site-header__button-box">
                             <a href="#" className="button button--transparent button--map">
                                 <img src={MapPin} alt=""/>

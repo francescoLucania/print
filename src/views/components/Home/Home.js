@@ -6,7 +6,7 @@ import Site_footer from '../Site_footer/Site_footer';
 
 import NextPin from '../../../img/next.svg';
 import jetImage from '../../../img/h1.png';
-import jetImage2 from '../../../img/h1.png';
+import jetImage2 from '../../../img/h2.png';
 
 const Home = (props) => {
 

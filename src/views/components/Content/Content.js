@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import ReactTooltip from 'react-tooltip'
+import {Link} from 'react-router-dom';
 
 import Site_header from '../Site_header/Site_header';
 import Site_footer from '../Site_footer/Site_footer';
@@ -11,6 +12,8 @@ import imageThree from '../../../img/image3.png';
 import imageFour from '../../../img/image4.png';
 import imageFive from '../../../img/image5.png';
 import imageSix from '../../../img/image6.png';
+
+import NextPin from '../../../img/next.svg';
 
 const printContent = [
 
@@ -128,15 +131,14 @@ const printContent = [
 
 ];
 
-const tooltipContentType1 = '<h6>Привет</h6>';
-
 class Content extends Component {
 
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
 
     render() {
         return (
-
-
 
             <div className="content">
                 <Site_header/>
@@ -212,11 +214,25 @@ class Content extends Component {
                     </section>
                 )}
 
+                <div className="bottom-navigate">
+                    <div className="container">
+                        <div className="bottom-navigate__navigate">
+                            <Link to="/jet" className="bottom-navigate__next-link">
+                                <span>
+                                Перейти на раздел <b>Струйных<span>&nbsp;</span>принтеров</b>
+                                </span>
+                            </Link>
+
+                            <Link to="/jet" className="button button--transparent button--next button--transparent-alternative">
+                                <img src={NextPin} alt=""/>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+
                 <Site_footer/>
 
             </div>
-
-
 
         )
     }

@@ -1,14 +1,9 @@
 @charset "UTF-8";
 
-.site-footer {
-  margin-top: auto;
-  z-index: 1;
-  border-top: 1px solid #cccccc;
 
-  &__promo {
-    padding: 5.5rem 0;
-    background: $color-brand;
-  }
+.bottom-navigate {
+  padding: 5.5rem 0;
+  background: $color-brand;
 
   &__navigate {
     display: flex;
@@ -64,6 +59,12 @@
       }
     }
   }
+}
+
+.site-footer {
+  margin-top: auto;
+  z-index: 1;
+  border-top: 1px solid #cccccc;
 
   &__contact {
     padding: 3.5rem 0;

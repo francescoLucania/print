@@ -11,9 +11,9 @@
 }
 
 .content-grid {
-
   @include mq(sm) {
     @include grid(x,flex-start,flex-start,2);
+    flex-wrap: wrap;
   }
 
   &__header {
@@ -59,6 +59,13 @@
       @include h2;
       @include mq(xl) {
         margin-bottom: 3rem;
+      }
+    }
+
+    &--not-top-gutter {
+
+      @include mq(xl) {
+        padding-top: 0;
       }
     }
   }
@@ -110,6 +117,20 @@
     @include mq(xl) {
       @include col-size(1/2);
     }
+
+    &:empty {
+      display: none;
+    }
+  }
+
+  &__option-box {
+    display: none;
+    width: 100%;
+    text-align: center;
+
+    @include mq(xl) {
+      display: block;
+    }
   }
 
   &__button-box {
@@ -121,6 +142,17 @@
 
     @include mq(xl) {
       margin-top: 5rem;
+    }
+
+    > .button {
+      &:not(:first-child) {
+        display: none;
+
+        @include mq(xl) {
+          display: inline-block;
+          margin-left: 5rem;
+        }
+      }
     }
   }
 

@@ -309,6 +309,8 @@ table {
     text-decoration: none; }
   .button--read-more {
     min-width: 17rem; }
+  .button--next-more {
+    min-width: 19rem; }
   .button--transparent {
     padding: 1.7rem 2.45rem;
     border: solid .3rem;
@@ -851,53 +853,54 @@ table {
     will-change: transform;
     animation: header-animation .6s linear .5s 1 alternate forwards; }
 
-.site-footer {
-  margin-top: auto;
-  z-index: 1;
-  border-top: 1px solid #cccccc; }
-  .site-footer__promo {
-    padding: 5.5rem 0;
-    background: #095dbb; }
-  .site-footer__navigate {
+.bottom-navigate {
+  padding: 5.5rem 0;
+  background: #095dbb; }
+  .bottom-navigate__navigate {
     display: flex;
     justify-content: center; }
     @media all and (max-width: 767px) {
-      .site-footer__navigate {
+      .bottom-navigate__navigate {
         flex-direction: column;
         align-items: center; } }
     @media all and (min-width: 768px) {
-      .site-footer__navigate {
+      .bottom-navigate__navigate {
         justify-content: space-between; } }
     @media all and (min-width: 1760px) {
-      .site-footer__navigate {
+      .bottom-navigate__navigate {
         justify-content: center; } }
     @media all and (max-width: 767px) {
-      .site-footer__navigate > .button {
+      .bottom-navigate__navigate > .button {
         margin-top: 3rem; } }
     @media all and (min-width: 768px) {
-      .site-footer__navigate > .button {
+      .bottom-navigate__navigate > .button {
         margin-left: 3rem; } }
-  .site-footer__next-link {
+  .bottom-navigate__next-link {
     transition: 0.6s;
     text-align: center;
     color: #fff; }
-    .mod_no-touchevents .site-footer__next-link:hover, .mod_no-touchevents .site-footer__next-link.hover {
+    .mod_no-touchevents .bottom-navigate__next-link:hover, .mod_no-touchevents .bottom-navigate__next-link.hover {
       opacity: 0.85; }
     @media all and (min-width: 768px) {
-      .site-footer__next-link {
+      .bottom-navigate__next-link {
         display: flex;
         justify-content: space-between;
         align-items: center; } }
     @media all and (min-width: 1760px) {
-      .site-footer__next-link {
+      .bottom-navigate__next-link {
         display: inline-flex;
         justify-content: center;
         align-items: center; } }
-    .site-footer__next-link > span {
+    .bottom-navigate__next-link > span {
       font-size: 2.4rem;
       line-height: 1.25; }
-      .site-footer__next-link > span > b {
+      .bottom-navigate__next-link > span > b {
         font-family: "roxima-Nova-Bold", "HelveticaNeue", "Helvetica Neue", sans-serif; }
+
+.site-footer {
+  margin-top: auto;
+  z-index: 1;
+  border-top: 1px solid #cccccc; }
   .site-footer__contact {
     padding: 3.5rem 0; }
     @media all and (min-width: 768px) {
@@ -1069,7 +1072,8 @@ table {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    flex-flow: row wrap; } }
+    flex-flow: row wrap;
+    flex-wrap: wrap; } }
   @media all and (min-width: 768px) and (max-width: 767px) {
     .content-grid {
       margin-right: -1.5rem;
@@ -1136,6 +1140,10 @@ table {
     .content-grid__header > h2 {
       margin-bottom: 3rem; } }
 
+@media all and (min-width: 1440px) {
+  .content-grid__header--not-top-gutter {
+    padding-top: 0; } }
+
 .content-grid__image {
   position: relative; }
   @media all and (max-width: 767px) {
@@ -1200,6 +1208,17 @@ table {
   .content-grid__description {
     width: 50%; } }
 
+.content-grid__description:empty {
+  display: none; }
+
+.content-grid__option-box {
+  display: none;
+  width: 100%;
+  text-align: center; }
+  @media all and (min-width: 1440px) {
+    .content-grid__option-box {
+      display: block; } }
+
 .content-grid__button-box {
   margin-top: 3rem; }
   @media all and (max-width: 767px) {
@@ -1208,6 +1227,12 @@ table {
   @media all and (min-width: 1440px) {
     .content-grid__button-box {
       margin-top: 5rem; } }
+  .content-grid__button-box > .button:not(:first-child) {
+    display: none; }
+    @media all and (min-width: 1440px) {
+      .content-grid__button-box > .button:not(:first-child) {
+        display: inline-block;
+        margin-left: 5rem; } }
 
 .content-grid--promo {
   margin: 0; }

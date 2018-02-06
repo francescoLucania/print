@@ -25,6 +25,10 @@
             min-width: 17rem;
         }
 
+        &--next-more {
+            min-width: 19rem;
+        }
+
         &--transparent {
             @include interact(background, transparent);
             @include interact(opacity, .85);
