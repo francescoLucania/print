@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+.content {
+  background: $color-section-background;
+  padding-top: 14rem; // magic number
+
+  @include mq(md) {
+    padding-top: 19rem; // magic number
+  }
+
+}
+
 .content-grid {
 
   @include mq(sm) {
@@ -28,7 +38,7 @@
       margin-bottom: 5rem;
     }
 
-    @include mq(md) {
+    @include mq(xl) {
       padding-top: 4rem;
     }
 
@@ -40,14 +50,14 @@
     > h1 {
       @include h1;
 
-      @include mq(md) {
+      @include mq(xl) {
         margin-bottom: 1rem;
       }
     }
 
     > h2 {
       @include h2;
-      @include mq(md) {
+      @include mq(xl) {
         margin-bottom: 3rem;
       }
     }
@@ -56,12 +66,6 @@
   &__image,
   &__description {
 
-    @include mq(sm) {
-
-    }
-
-    @include mq(md) {
-    }
   }
 
   &__image {
@@ -77,7 +81,7 @@
       @include col-size(3.5/10);
     }
 
-    @include mq(md) {
+    @include mq(xl) {
       @include col-size(1/2);
       padding-left: 12rem; // magic number
     }
@@ -90,7 +94,7 @@
       vertical-align: top;
       transform: translateX(8%);
 
-      @include mq(md) {
+      @include mq(xl) {
         transform: translateX(0);
       }
     }
@@ -103,7 +107,7 @@
       @include col-size(6.5/10);
     }
 
-    @include mq(md) {
+    @include mq(xl) {
       @include col-size(1/2);
     }
   }
@@ -115,7 +119,7 @@
       text-align: center;
     }
 
-    @include mq(md) {
+    @include mq(xl) {
       margin-top: 5rem;
     }
   }
@@ -156,7 +160,7 @@
       }
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1759px) {
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
       display: block;
 
       .content-grid__image, .content-grid__description {

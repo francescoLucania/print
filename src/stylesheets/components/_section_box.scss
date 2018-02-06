@@ -2,7 +2,7 @@
 
 .section-box {
   padding: 6rem 0;
-  background: $color-section-background;
+  background: $color-body-background;
 
   &:first-child {
     @include mq(md) {
@@ -15,6 +15,6 @@
   }
 
   &:nth-child(2n) {
-    background: $color-body-background;
+    background: $color-section-background;
   }
 }

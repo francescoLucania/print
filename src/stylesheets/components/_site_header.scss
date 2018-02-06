@@ -21,17 +21,18 @@
   line-height: 1;
   padding: 3rem 0 2.9rem;
   border-bottom: 1px solid $color-border;
-  background: $color-section-background;
-  transition: padding $transition-duration-medium;
+  background-color: $color-section-background;
+  transition: padding  $transition-duration-medium;
 
   @include mq(xl) {
     border-color: transparent;
-    background: transparent;
+    background-color: transparent;
   }
 
   &.is-fixed {
     padding: 2rem 0 1.9rem;
     border-color: $color-border;
+    background: $color-section-background;
   }
 
   &__grid {

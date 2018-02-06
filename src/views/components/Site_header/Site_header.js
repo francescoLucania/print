@@ -25,7 +25,7 @@ class Site_header extends Component {
 
         var bodyScrollTop = document.documentElement.scrollTop;
 
-        if (bodyScrollTop > 118) {
+        if (bodyScrollTop > 70) {
             this.state = { isFixed: true };
 
             document.getElementById('site-header').classList.add('is-fixed');
