@@ -120,26 +120,6 @@
 
   }
 
-  &[data-type="3"] {
-    top: 48%;
-    left: 12%;
-
-    @include mq(sm) {
-      top: 48%;
-      left: 7%;
-    }
-
-    @include mq(xl) {
-      top: 53%;
-      left: 18%;
-    }
-
-    @include mq(md) {
-      top: 53%;
-      left: 22%;
-    }
-  }
-
   &[data-type="2"] {
     top: 14%;
     left: 75%;
@@ -163,6 +143,26 @@
     @include mq(md) {
       top: 14%;
       left: 66%;
+    }
+  }
+
+  &[data-type="3"] {
+    top: 48%;
+    left: 12%;
+
+    @include mq(sm) {
+      top: 48%;
+      left: 7%;
+    }
+
+    @include mq(xl) {
+      top: 53%;
+      left: 18%;
+    }
+
+    @include mq(md) {
+      top: 53%;
+      left: 22%;
     }
   }
 
@@ -191,6 +191,102 @@
       left: 68%;
     }
   }
+
+  &[data-type="5"] {
+    top: 8%;
+    left: 8%;
+
+    @include mq(sm) {
+      left: 8%;
+    }
+
+    @include mq(xl) {
+      top: 0%;
+      left: 23%;
+    }
+
+    @include mq(md) {
+      top: 0%;
+      left: 23%;
+    }
+
+
+  }
+
+  &[data-type="6"] {
+    top: 14%;
+    left: 75%;
+
+    @include mq(sm) {
+      top: 14%;
+      left: 75%;
+
+      &::before {
+        left: auto;
+        right: -1.5rem;
+        transform: translate(100%,-50%);
+      }
+    }
+
+    @include mq(xl) {
+      top: 6%;
+      left: 69%;
+    }
+
+    @include mq(md) {
+      top: 6%;
+      left: 66%;
+    }
+  }
+
+  &[data-type="7"] {
+    top: 48%;
+    left: 12%;
+
+    @include mq(sm) {
+      top: 48%;
+      left: 7%;
+    }
+
+    @include mq(xl) {
+      top: 41%;
+      left: 18%;
+    }
+
+    @include mq(md) {
+      top: 42%;
+      left: 20%;
+    }
+  }
+
+  &[data-type="8"] {
+    top: 51%;
+    left: 76%;
+
+    @include mq(sm) {
+      top: 59%;
+      left: 72%;
+
+      &::before {
+        left: auto;
+        right: -1.5rem;
+        transform: translate(100%,-50%);
+      }
+    }
+
+    @include mq(xl) {
+      top: 60%;
+      left: 75%;
+    }
+
+    @include mq(md) {
+      top: 60%;
+      left: 73%;
+    }
+  }
+
+
+
 }
 
 // overrides react-tooltip

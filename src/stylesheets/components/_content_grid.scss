@@ -184,6 +184,10 @@
         margin-bottom: 0;
         padding-bottom: 8rem;
       }
+
+      @include mq(xl) {
+        z-index: 99;
+      }
     }
 
     .content-grid__description {

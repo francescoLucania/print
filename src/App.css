@@ -1251,6 +1251,9 @@ table {
     .content-grid--promo .content-grid__image {
       margin-bottom: 0;
       padding-bottom: 8rem; } }
+  @media all and (min-width: 1440px) {
+    .content-grid--promo .content-grid__image {
+      z-index: 99; } }
   @media all and (max-width: 767px) {
     .content-grid--promo .content-grid__description {
       margin-top: -5rem; } }
@@ -1353,21 +1356,6 @@ table {
       .tooltip-link[data-type="1"] {
         top: 9%;
         left: 25%; } }
-  .tooltip-link[data-type="3"] {
-    top: 48%;
-    left: 12%; }
-    @media all and (min-width: 768px) {
-      .tooltip-link[data-type="3"] {
-        top: 48%;
-        left: 7%; } }
-    @media all and (min-width: 1440px) {
-      .tooltip-link[data-type="3"] {
-        top: 53%;
-        left: 18%; } }
-    @media all and (min-width: 1760px) {
-      .tooltip-link[data-type="3"] {
-        top: 53%;
-        left: 22%; } }
   .tooltip-link[data-type="2"] {
     top: 14%;
     left: 75%; }
@@ -1387,6 +1375,21 @@ table {
       .tooltip-link[data-type="2"] {
         top: 14%;
         left: 66%; } }
+  .tooltip-link[data-type="3"] {
+    top: 48%;
+    left: 12%; }
+    @media all and (min-width: 768px) {
+      .tooltip-link[data-type="3"] {
+        top: 48%;
+        left: 7%; } }
+    @media all and (min-width: 1440px) {
+      .tooltip-link[data-type="3"] {
+        top: 53%;
+        left: 18%; } }
+    @media all and (min-width: 1760px) {
+      .tooltip-link[data-type="3"] {
+        top: 53%;
+        left: 22%; } }
   .tooltip-link[data-type="4"] {
     top: 51%;
     left: 76%; }
@@ -1406,6 +1409,73 @@ table {
       .tooltip-link[data-type="4"] {
         top: 62%;
         left: 68%; } }
+  .tooltip-link[data-type="5"] {
+    top: 8%;
+    left: 8%; }
+    @media all and (min-width: 768px) {
+      .tooltip-link[data-type="5"] {
+        left: 8%; } }
+    @media all and (min-width: 1440px) {
+      .tooltip-link[data-type="5"] {
+        top: 0%;
+        left: 23%; } }
+    @media all and (min-width: 1760px) {
+      .tooltip-link[data-type="5"] {
+        top: 0%;
+        left: 23%; } }
+  .tooltip-link[data-type="6"] {
+    top: 14%;
+    left: 75%; }
+    @media all and (min-width: 768px) {
+      .tooltip-link[data-type="6"] {
+        top: 14%;
+        left: 75%; }
+        .tooltip-link[data-type="6"]::before {
+          left: auto;
+          right: -1.5rem;
+          transform: translate(100%, -50%); } }
+    @media all and (min-width: 1440px) {
+      .tooltip-link[data-type="6"] {
+        top: 6%;
+        left: 69%; } }
+    @media all and (min-width: 1760px) {
+      .tooltip-link[data-type="6"] {
+        top: 6%;
+        left: 66%; } }
+  .tooltip-link[data-type="7"] {
+    top: 48%;
+    left: 12%; }
+    @media all and (min-width: 768px) {
+      .tooltip-link[data-type="7"] {
+        top: 48%;
+        left: 7%; } }
+    @media all and (min-width: 1440px) {
+      .tooltip-link[data-type="7"] {
+        top: 41%;
+        left: 18%; } }
+    @media all and (min-width: 1760px) {
+      .tooltip-link[data-type="7"] {
+        top: 42%;
+        left: 20%; } }
+  .tooltip-link[data-type="8"] {
+    top: 51%;
+    left: 76%; }
+    @media all and (min-width: 768px) {
+      .tooltip-link[data-type="8"] {
+        top: 59%;
+        left: 72%; }
+        .tooltip-link[data-type="8"]::before {
+          left: auto;
+          right: -1.5rem;
+          transform: translate(100%, -50%); } }
+    @media all and (min-width: 1440px) {
+      .tooltip-link[data-type="8"] {
+        top: 60%;
+        left: 75%; } }
+    @media all and (min-width: 1760px) {
+      .tooltip-link[data-type="8"] {
+        top: 60%;
+        left: 73%; } }
 
 .tooltip {
   position: absolute !important;
