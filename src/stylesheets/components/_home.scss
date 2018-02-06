@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+.home {
+
+  @include mq(sm) {
+    @include size(100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+  }
+
+  &__grid {
+
+    @include mq(sm) {
+      @include size(100%);
+      position: absolute;
+      top: 0;
+      left: 0;
+      flex: 1;
+      display: flex;
+      align-items: stretch;
+    }
+  }
+
+  &__col {
+    @include mq(sm) {
+      @include col-size(1/2);
+    }
+
+    &:first-child {
+      background: $color-body-background;
+    }
+
+    &:last-child {
+      background: $color-section-background-dark;
+    }
+  }
+}

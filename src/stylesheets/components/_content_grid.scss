@@ -79,8 +79,6 @@
 
     @include mq(md) {
       @include col-size(1/2);
-      display: flex;
-      justify-content: center;
       padding-left: 12rem; // magic number
     }
 

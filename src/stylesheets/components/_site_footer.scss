@@ -1,6 +1,9 @@
 @charset "UTF-8";
 
 .site-footer {
+  margin-top: auto;
+  z-index: 1;
+  border-top: 1px solid #cccccc;
 
   &__promo {
     padding: 5.5rem 0;

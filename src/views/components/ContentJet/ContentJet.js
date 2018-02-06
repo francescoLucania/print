@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import ReactTooltip from 'react-tooltip'
 
-import Site_header from '../Site_header/Site_header';
-import Site_footer from '../Site_footer/Site_footer';
-
 import imageOne from '../../../img/image1.png';
 import imageTwo from '../../../img/image2.png';
 import imageThree from '../../../img/image3.png';
@@ -16,7 +13,7 @@ const printContent = [
 
     {
         heading: 'h1',
-        title: 'Лазерные',
+        title: 'Струйные',
         image: imageOne,
         description: 'Отличное качество и большие объемы печати идеально подходит для Вашего офиса, наше цветное лазерное МФУ имеет ряд возможностей, включая встроенную мобильную печать и сканирования, а также двустороннюю печать. Более разумный способ ведения бизнеса. Повысьте эффективность и производительность труда на рабочем месте.',
         listTypes: [
@@ -128,18 +125,14 @@ const printContent = [
 
 ];
 
-const tooltipContentType1 = '<h6>Привет</h6>';
 
-class Content extends Component {
+class ContentJet extends Component {
 
 
     render() {
         return (
 
-
-
             <div className="content">
-                <Site_header/>
 
                 {printContent.map((item, index)=>
 
@@ -212,8 +205,6 @@ class Content extends Component {
                     </section>
                 )}
 
-                <Site_footer/>
-
             </div>
 
 
@@ -222,4 +213,4 @@ class Content extends Component {
     }
 }
 
-export default Content;
+export default ContentJet;

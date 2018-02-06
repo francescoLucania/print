@@ -1,28 +1,54 @@
 @charset "UTF-8";
 
+@keyframes header-animation {
+
+  from {
+    opacity: 0;
+    transform: translate(0,1rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0,0);
+  }
+}
+
 .site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
   line-height: 1;
-  border-bottom: 1px solid $colo-border;
+  padding: 3rem 0 2.9rem;
+  border-bottom: 1px solid $color-border;
   background: $color-section-background;
+  transition: padding $transition-duration-medium;
+
+  @include mq(sm) {
+    background: transparent;
+  }
 
   @include mq(md) {
-    border: 0;
+    border-color: transparent;
+  }
+
+  &.is-fixed {
+    padding: 2rem 0 1.9rem;
+    border-color: $color-border;
   }
 
   &__grid {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem 0 2.9rem;
-
-    @include mq(md) {
-      padding: 3rem 0;;
-    }
   }
 
   &__logo-box {
     max-width: 11.5rem;
     display: block;
+    opacity: 0;
+    will-change: transform;
+    animation: header-animation .6s linear .5s 1 alternate forwards;
 
     @include mq(sm) {
       max-width: 16rem;
@@ -35,6 +61,8 @@
   }
 
   &__button-box {
-
+    opacity: 0;
+    will-change: transform;
+    animation: header-animation .6s linear .5s 1 alternate forwards;
   }
 }

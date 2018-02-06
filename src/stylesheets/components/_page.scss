@@ -1,13 +1,30 @@
 @charset "UTF-8";
 
+@keyframes main-animation {
+
+  from {
+    opacity: 0;
+    transform: translate(0,1rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0,0);
+  }
+}
+
 .page {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  //display: block;
+  min-height: 100vh;
 
   main {
-    position: relative;
     flex: 1;
+    //margin-top: 10.4rem; // magic number (height site-header)
+    will-change: transform;
+    animation: main-animation .6s linear .5s 1 alternate forwards;
   }
 }

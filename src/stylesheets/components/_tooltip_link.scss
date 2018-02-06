@@ -54,6 +54,14 @@
     animation: none;
   }
 
+  &:focus {
+
+    > .tooltip {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
   &::before {
     @include text-large;
     position: absolute;
@@ -182,7 +190,9 @@
   }
 
   > p {
+    @include interact(color,$color-base);
     @include text-large;
+    color: $color-base;
   }
 
   &--type-1,
