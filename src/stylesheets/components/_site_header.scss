@@ -24,12 +24,9 @@
   background: $color-section-background;
   transition: padding $transition-duration-medium;
 
-  @include mq(sm) {
-    background: transparent;
-  }
-
-  @include mq(md) {
+  @include mq(xl) {
     border-color: transparent;
+    background: transparent;
   }
 
   &.is-fixed {

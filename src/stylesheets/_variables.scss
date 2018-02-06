@@ -4,30 +4,35 @@
 $mq-breakpoints: ( // for example: xs, sm, md, lg, xl
         'xs': 767px,
         'sm': 768px,
+        'xl': 1440px,
         'md': 1760px
 );
 
 $mq-indents: (
         'xs': 1.5rem,
         'sm': 3rem,
+        'xl': 3rem,
         'md': 4rem
 );
 
 $mq-container-widths: (
         'xs': 100%,
         'sm': 768px,
+        'xl': 1380px,
         'md': 1760px
 );
 
 $mq-container-indents: (
         'xs': map-get($mq-indents, 'xs'),
         'sm': map-get($mq-indents, 'sm'),
+        'xl': map-get($mq-indents, 'xl'),
         'md': map-get($mq-indents, 'md')
 );
 
 $mq-grid-gutters: (
         'xs': map-get($mq-indents, 'xs'),
         'sm': map-get($mq-indents, 'sm'),
+        'xl': map-get($mq-indents, 'xl'),
         'md': map-get($mq-indents, 'md')
 );
 
@@ -45,7 +50,8 @@ $border-radius-base:   .5rem;
 $border-radius-large: .75rem;
 
 // Colors
-$color-base:          #121212;
+$color-base:     #121212;
+$color-base-alt:     #484848;
 $color-light:    #636363;
 $color-lighter:  #969696;
 $color-lightest: rgba($color-base, .4);

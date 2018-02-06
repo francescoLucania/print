@@ -21,6 +21,10 @@
             text-decoration: none;
         }
 
+        &--read-more {
+            min-width: 17rem;
+        }
+
         &--transparent {
             @include interact(background, transparent);
             @include interact(opacity, .85);
@@ -56,11 +60,17 @@
 
         &--next {
             display: inline-flex;
+            justify-content: center;
             align-items: center;
             padding: 1.2rem 2.45rem;
 
             > img {
                 vertical-align: top;
+            }
+
+            &[data-big] {
+                padding: 2.2rem 2.45rem;
+                width: 17rem;
             }
         }
 

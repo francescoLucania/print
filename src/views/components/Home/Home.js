@@ -4,6 +4,10 @@ import {Link} from 'react-router-dom';
 import Site_header from '../Site_header/Site_header';
 import Site_footer from '../Site_footer/Site_footer';
 
+import NextPin from '../../../img/next.svg';
+import jetImage from '../../../img/h1.png';
+import jetImage2 from '../../../img/h1.png';
+
 const Home = (props) => {
 
     return (
@@ -14,10 +18,42 @@ const Home = (props) => {
             <div className="home__grid">
 
                 <div className="home__col">
+                    <article className="home__content">
+
+                        <h2>Струйные МФУ</h2>
+
+                        <p>Созданы на основе технологии InkBenefit, обеспечивающей<br/> быстродействие, экономичность и профессиональное качество печати</p>
+
+                        <div className="home__button-box">
+                            <a href="#" className="button button--read-more">подробнее</a>
+                        </div>
+
+                        <div className="home__image">
+                            <img src={jetImage} alt=""/>
+                        </div>
+
+                    </article>
 
                 </div>
 
                 <div className="home__col">
+
+                    <article className="home__content">
+
+                        <h2>Лазерные принтеры и МФУ</h2>
+
+                        <p>Повышайте производительность и эффективность вашей работы, экономьте<br/> на стоимости печати, печатайте с лучшим качеством.</p>
+
+                        <div className="home__button-box">
+                            <a href="#" className="button button--next" data-big>
+                                <img src={NextPin} alt=""/>
+                            </a>
+                        </div>
+
+                        <div className="home__image">
+                            <img src={jetImage2} alt=""/>
+                        </div>
+                    </article>
 
                 </div>
 

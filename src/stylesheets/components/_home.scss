@@ -1,18 +1,25 @@
 @charset "UTF-8";
 
 .home {
+  padding-top: 10.4rem; // magic number
 
   @include mq(sm) {
+    background: $color-body-background;
+  }
+
+  @include mq(xl) {
     @include size(100%);
     position: absolute;
     top: 0;
     left: 0;
     display: flex;
+    background: transparent;
+    padding: 0;
   }
 
   &__grid {
 
-    @include mq(sm) {
+    @include mq(xl) {
       @include size(100%);
       position: absolute;
       top: 0;
@@ -24,16 +31,100 @@
   }
 
   &__col {
-    @include mq(sm) {
-      @include col-size(1/2);
-    }
+
 
     &:first-child {
-      background: $color-body-background;
+      background: $color-section-background;
     }
 
     &:last-child {
       background: $color-section-background-dark;
     }
+
+    @include mq(xs) {
+      padding: 4rem 0 6rem;
+    }
+
+    @include mq(sm) {
+      padding: 7rem 0 10rem;
+    }
+
+    @include mq(xl) {
+      @include col-size(1/2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+    }
   }
+
+  &__content {
+    text-align: center;
+    overflow-x: hidden;
+
+    @include mq(xs) {
+      padding: 0 2rem;
+    }
+
+    @include mq(xl) {
+      @include col-size(6.5/9);
+    }
+
+    > h2 {
+      @include h1;
+      margin-bottom: 2rem;
+      text-transform: none;
+    }
+
+    > p {
+      @include text-base;
+      color: $color-base-alt;
+
+      @include mq(xs) {
+        > br {
+          display: none;
+        }
+      }
+
+      @include mq(sm) {
+        @include text-large;
+      }
+
+      @include mq(xl) {
+        > br {
+          display: none;
+        }
+      }
+
+      @include mq(md) {
+        > br {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__image {
+    display: block;
+    margin: 4rem -2rem 0;
+
+    @include mq(sm) {
+      margin: 4rem -3rem 0;
+    }
+
+    @include mq(xl) {
+      margin: 6.5rem 0 0;
+      width: 100%;
+    }
+
+    > img {
+      width: 100%;
+      vertical-align: top;
+    }
+  }
+
+  &__button-box {
+    margin-top: 3rem;
+  }
+
 }

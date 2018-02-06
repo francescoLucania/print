@@ -111,7 +111,7 @@
     @include font(1.6rem,1.6rem);
     @include interact(opacity, .85);
     order: 1;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     color: $color-light;
 
@@ -121,6 +121,7 @@
 
     @include mq(sm) {
       order: 2;
+      display: inline-flex;
     }
 
     > img {

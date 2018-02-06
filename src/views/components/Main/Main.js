@@ -6,14 +6,14 @@ import Content from '../Content/Content';
 import ContentJet from '../ContentJet/ContentJet';
 
 const Main = () => (
-    <main>
+    <div className="main">
         <Switch>
             <Route exact path='/home' component={Home}/>
             <Route path='/laser' component={Content}/>
             <Route path='/jet' component={ContentJet}/>
             <Redirect from="/" exact to="/home" />
         </Switch>
-    </main>
+    </div>
 );
 
 export default Main;

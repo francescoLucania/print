@@ -21,10 +21,10 @@
   //display: block;
   min-height: 100vh;
 
-  main {
+  .main {
     flex: 1;
     //margin-top: 10.4rem; // magic number (height site-header)
-    will-change: transform;
-    animation: main-animation .6s linear .5s 1 alternate forwards;
+    //will-change: transform;
+    //animation: main-animation .6s linear .5s 1 alternate forwards;
   }
 }
