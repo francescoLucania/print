@@ -188,13 +188,13 @@ class ContentJet extends Component {
                 <div className="bottom-navigate">
                     <div className="container">
                         <div className="bottom-navigate__navigate">
-                            <Link to="/Laser" className="bottom-navigate__next-link">
+                            <Link to="/laser" className="bottom-navigate__next-link">
                                 <span>
                                 Перейти на раздел <b>Лазерных<span>&nbsp;</span>принтеров</b>
                                 </span>
                             </Link>
 
-                            <Link to="/Laser" className="button button--transparent button--next button--transparent-alternative">
+                            <Link to="/laser" className="button button--transparent button--next button--transparent-alternative">
                                 <img src={NextPin} alt=""/>
                             </Link>
                         </div>
