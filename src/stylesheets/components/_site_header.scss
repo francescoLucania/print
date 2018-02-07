@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@keyframes header-animation {
+@keyframes main-animation {
 
   from {
     opacity: 0;
@@ -17,12 +17,18 @@
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   z-index: 100;
   line-height: 1;
   padding: 3rem 0 2.9rem;
+  width: auto;
   border-bottom: 1px solid $color-border;
   background-color: $color-section-background;
   transition: padding  $transition-duration-medium;
+
+  &.is-hidden {
+    right: 1.7rem;
+  }
 
   @include mq(xl) {
     border-color: transparent;
@@ -44,9 +50,7 @@
   &__logo-box {
     max-width: 11.5rem;
     display: block;
-    opacity: 0;
-    will-change: transform;
-    animation: header-animation .6s linear .5s 1 alternate forwards;
+
 
     @include mq(sm) {
       max-width: 16rem;
@@ -59,8 +63,6 @@
   }
 
   &__button-box {
-    opacity: 0;
-    will-change: transform;
-    animation: header-animation .6s linear .5s 1 alternate forwards;
+    position: relative;
   }
 }

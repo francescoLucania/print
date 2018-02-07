@@ -308,6 +308,14 @@
     @include mq(sm) {
       display: none;
     }
+
+    @include mq(xl) {
+      display: block;
+    }
+
+    @include mq(md) {
+      display: none;
+    }
   }
 
   > p {

@@ -11,6 +11,7 @@ class Site_header extends Component {
     constructor(props) {
         super(props);
         this.state = { isFixed: false };
+        this.state = { isOpenPopup: false };
     }
 
     componentDidMount() {
@@ -19,6 +20,23 @@ class Site_header extends Component {
 
     componentWillUnmount () {
         window.removeEventListener('scroll', this.handleScroll);
+    }
+
+    popupState() {
+        this.setState({ isOpenPopup: !this.state.isOpenPopup });
+
+        if (this.state.isOpenPopup) {
+
+            document.getElementById('body').classList.remove('is-hidden');
+            document.getElementById('site-header').classList.remove('is-hidden');
+
+        } else {
+
+            document.getElementById('body').classList.add('is-hidden');
+            document.getElementById('site-header').classList.add('is-hidden');
+        }
+
+        return false
     }
 
     handleScroll(event) {
@@ -41,6 +59,8 @@ class Site_header extends Component {
 
     render() {
 
+        console.log('state', this.state.isOpenPopup);
+
         return (
             <header className={this.state.isFixed ? "site-header is-fixed" : "site-header"} id="site-header">
                 <div className="container">
@@ -49,10 +69,21 @@ class Site_header extends Component {
                             <img src={Logo} alt={siteName}/>
                         </Link>
                         <div className="site-header__button-box">
-                            <a href="#" className="button button--transparent button--map">
+                            <a className={this.state.isOpenPopup ? 'button button--transparent button--map switch-popup-button is-active' : 'button button--transparent button--map'} onClick={this.popupState.bind(this)}>
                                 <img src={MapPin} alt=""/>
                                 <span>Где купить?</span>
                             </a>
+                            <div className="information-popup-fade" onClick={this.popupState.bind(this)}></div>
+                            <div className="information-popup" >
+                                <div className="information-popup__body">
+                                    <h2>Где купить?</h2>
+                                    <p>Подберите подходящего вам реселлера на официальном сайте Brother. Выберите наиболее удобный способ приобретения техники Brother. Найдите ближайшего к Вам реселлера, введя свой адрес на официальном сайте Brother.</p>
+                                    <div className="information-popup__button-box">
+                                        <a href="https://www.brother.ru/dealer-locator" className="button" target="_blank">Посетить сайт</a>
+                                    </div>
+                                    <a className="information-popup__close"  onClick={this.popupState.bind(this)}></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
