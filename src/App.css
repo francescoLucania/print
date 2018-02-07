@@ -901,6 +901,7 @@ table {
         font-family: "roxima-Nova-Bold", "HelveticaNeue", "Helvetica Neue", sans-serif; }
 
 .site-footer {
+  align-self: flex-end;
   margin-top: auto;
   z-index: 1;
   border-top: 1px solid #cccccc; }
