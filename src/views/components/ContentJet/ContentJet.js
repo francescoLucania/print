@@ -62,7 +62,7 @@ const printContent = [
         shopUrl: 'https://www.buro247.ru/fashion',
         shopLinkLabel: 'заказать онлайн',
 
-        moreLink: true,
+        moreLink: false,
         moreUrl: 'https://www.buro247.ru/fashion',
         moreLinkLabel: 'Подробнее'
 
@@ -89,7 +89,7 @@ const printContent = [
         shopUrl: 'https://www.buro247.ru/fashion',
         shopLinkLabel: 'заказать онлайн',
 
-        moreLink: true,
+        moreLink: false,
         moreUrl: 'https://www.buro247.ru/fashion',
         moreLinkLabel: 'Подробнее'
     }

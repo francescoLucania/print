@@ -25,7 +25,10 @@ const Home = (props) => {
                         <p>Созданы на основе технологии InkBenefit, обеспечивающей<br/> быстродействие, экономичность и профессиональное качество печати</p>
 
                         <div className="home__button-box">
-                            <Link to="/jet" className="button button--read-more">подробнее</Link>
+                            <Link to="/jet" className="button button--read-more">
+                                <span>подробнее</span>
+                                <img src={NextPin} alt=""/>
+                            </Link>
                         </div>
 
                         <div className="home__image">
@@ -45,7 +48,8 @@ const Home = (props) => {
                         <p>Повышайте производительность и эффективность вашей работы, экономьте<br/> на стоимости печати, печатайте с лучшим качеством.</p>
 
                         <div className="home__button-box">
-                            <Link to="/laser" className="button button--next" data-big>
+                            <Link to="/laser" className="button button--read-more">
+                                <span>подробнее</span>
                                 <img src={NextPin} alt=""/>
                             </Link>
                         </div>
