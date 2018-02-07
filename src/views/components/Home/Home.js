@@ -13,7 +13,7 @@ const Home = (props) => {
     return (
         <div className="home">
 
-            <Site_header/>
+
 
             <div className="home__grid">
 
@@ -63,7 +63,7 @@ const Home = (props) => {
 
             </div>
 
-            <Site_footer/>
+
         </div>
     );
 };

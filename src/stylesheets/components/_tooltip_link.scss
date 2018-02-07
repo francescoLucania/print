@@ -48,6 +48,7 @@
   cursor: pointer;
   box-shadow: 0 0 0 rgba($color-brand, 0.4);
   animation: pulse 2s infinite;
+  outline: none !important;
 
   &:hover {
     animation: none;
@@ -344,6 +345,19 @@
       bottom: -1.5rem !important;
       transform: translate(-100%,100%) !important;
     }
+
+    @include mq(xl) {
+      bottom: auto !important;
+      left: auto !important;
+      right: -.5rem !important;
+      transform: translate(100%,0) !important;
+    }
+
+    @include mq(md) {
+      left: 100% !important;
+      bottom: -1.5rem !important;
+      transform: translate(-100%,100%) !important;
+    }
   }
 
   &--type-2,
@@ -362,6 +376,18 @@
     }
 
     @include mq(sm) {
+      bottom: -1.5rem !important;
+      transform: translate(0,100%) !important;
+    }
+
+    @include mq(xl) {
+      bottom: auto !important;
+      left: -.5rem !important;
+      right: auto !important;
+      transform: translate(-100%,0) !important;
+    }
+
+    @include mq(md) {
       bottom: -1.5rem !important;
       transform: translate(0,100%) !important;
     }

@@ -34,9 +34,10 @@ class Site_header extends Component {
             }
 
         } else {
-
-            document.getElementById('body').classList.add('is-hidden');
             document.getElementById('site-header').classList.add('is-hidden');
+            if (document.getElementsByClassName('content-grid').length) {
+                document.getElementById('body').classList.add('is-hidden');
+            }
         }
 
         return false
@@ -48,12 +49,10 @@ class Site_header extends Component {
 
         if (bodyScrollTop > 70) {
             this.state = { isFixed: true };
-
             document.getElementById('site-header').classList.add('is-fixed');
 
         } else {
             this.state = { isFixed: false };
-
             document.getElementById('site-header').classList.remove('is-fixed');
         }
 

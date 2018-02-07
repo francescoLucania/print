@@ -1,17 +1,16 @@
 @charset "UTF-8";
 
 .content {
-  background: $color-section-background;
+  background: $color-body-background;
   padding-top: 10.4rem; // magic number
 
-  @include mq(md) {
-    padding-top: 14rem; // magic number
+  @include mq(sm) {
+    padding-top: 18rem; // magic number
   }
 
   @include mq(md) {
-    padding-top: 19rem; // magic number
+    padding-top: 12rem; // magic number
   }
-
 }
 
 .content-grid {
@@ -124,7 +123,6 @@
         }
       }
     }
-
   }
 
   &__description {
@@ -216,7 +214,7 @@
       }
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1439px) {
+    @media screen and (min-width: 768px) and (max-width: 1379px) {
       display: block;
 
       .content-grid__image, .content-grid__description {
@@ -227,9 +225,6 @@
       .content-grid__image {
         width: 33rem;
         margin: 0 auto 3rem;
-
-        > img {
-        }
       }
     }
   }

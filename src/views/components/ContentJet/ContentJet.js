@@ -4,9 +4,6 @@ import ReactTooltip from 'react-tooltip'
 
 import {Link} from 'react-router-dom';
 
-import Site_header from '../Site_header/Site_header';
-import Site_footer from '../Site_footer/Site_footer';
-
 import imageOne from '../../../img/image2-1.png';
 import imageOneM from '../../../img/image2-1m.png';
 import imageTwo from '../../../img/image2-2.png';
@@ -107,10 +104,7 @@ class ContentJet extends Component {
     render() {
         return (
 
-
-
             <div className="content">
-                <Site_header/>
 
                 {printContent.map((item, index)=>
 
@@ -200,13 +194,7 @@ class ContentJet extends Component {
                         </div>
                     </div>
                 </div>
-
-                <Site_footer/>
-
             </div>
-
-
-
         )
     }
 }

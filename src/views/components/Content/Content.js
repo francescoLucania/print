@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import ReactTooltip from 'react-tooltip'
 import {Link} from 'react-router-dom';
 
-import Site_header from '../Site_header/Site_header';
-import Site_footer from '../Site_footer/Site_footer';
 
 import imageOne from '../../../img/image1.png';
 import imageTwo from '../../../img/image2.png';
@@ -141,7 +139,6 @@ class Content extends Component {
         return (
 
             <div className="content">
-                <Site_header/>
 
                 {printContent.map((item, index)=>
 
@@ -229,9 +226,6 @@ class Content extends Component {
                         </div>
                     </div>
                 </div>
-
-                <Site_footer/>
-
             </div>
 
         )

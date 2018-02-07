@@ -5,6 +5,8 @@
   background: $color-body-background;
 
   &:first-child {
+    padding-top: 0;
+
     @include mq(md) {
       padding-top: 16rem;
     }
