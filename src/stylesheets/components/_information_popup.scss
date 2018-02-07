@@ -94,6 +94,7 @@
     display: block;
     top: 1rem;
     right: 1rem;
+    outline: none;
 
     @include mq(sm) {
       top: -4rem;

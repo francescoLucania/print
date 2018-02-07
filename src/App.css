@@ -301,6 +301,7 @@ table {
   background: #095dbb;
   box-shadow: 0 1.3rem 2.8rem 0 rgba(9, 93, 187, 0.16);
   border-radius: 2.5rem;
+  outline: none !important;
   font-family: "Proxima-Nova-Bold", "HelveticaNeue", "Helvetica Neue", sans-serif;
   text-align: center;
   text-transform: uppercase;
@@ -1636,7 +1637,8 @@ table {
   position: absolute;
   display: block;
   top: 1rem;
-  right: 1rem; }
+  right: 1rem;
+  outline: none; }
   @media all and (min-width: 768px) {
     .information-popup__close {
       top: -4rem;

@@ -28,7 +28,10 @@ class Site_header extends Component {
         if (this.state.isOpenPopup) {
 
             document.getElementById('body').classList.remove('is-hidden');
-            document.getElementById('site-header').classList.remove('is-hidden');
+
+            if (document.getElementsByClassName('content-grid').length) {
+                document.getElementById('site-header').classList.remove('is-hidden');
+            }
 
         } else {
 
@@ -69,10 +72,10 @@ class Site_header extends Component {
                             <img src={Logo} alt={siteName}/>
                         </Link>
                         <div className="site-header__button-box">
-                            <a className={this.state.isOpenPopup ? 'button button--transparent button--map switch-popup-button is-active' : 'button button--transparent button--map'} onClick={this.popupState.bind(this)}>
+                            <button href="#" className={this.state.isOpenPopup ? 'button button--transparent button--map switch-popup-button is-active' : 'button button--transparent button--map'} onClick={this.popupState.bind(this)}>
                                 <img src={MapPin} alt=""/>
                                 <span>Где купить?</span>
-                            </a>
+                            </button>
                             <div className="information-popup-fade" onClick={this.popupState.bind(this)}></div>
                             <div className="information-popup" >
                                 <div className="information-popup__body">
@@ -81,7 +84,7 @@ class Site_header extends Component {
                                     <div className="information-popup__button-box">
                                         <a href="https://www.brother.ru/dealer-locator" className="button" target="_blank">Посетить сайт</a>
                                     </div>
-                                    <a className="information-popup__close"  onClick={this.popupState.bind(this)}></a>
+                                    <button href="#" className="information-popup__close"  onClick={this.popupState.bind(this)}></button>
                                 </div>
                             </div>
                         </div>

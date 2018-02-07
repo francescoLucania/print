@@ -10,7 +10,7 @@
         background: $color-brand;
         box-shadow: 0 1.3rem 2.8rem 0 rgba(9, 93, 187, 0.16);
         border-radius: 2.5rem;
-        //border: 2px dashed $color-base;
+        outline: none !important;
         font-family: $font-family-bold;
         text-align: center;
         text-transform: uppercase;

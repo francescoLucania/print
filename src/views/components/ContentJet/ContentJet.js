@@ -130,32 +130,32 @@ class ContentJet extends Component {
 
                                     <div className={item.promoBlock ? "tooltip-box" : "tooltip-box is-not"}>
 
-                                        <a className="tooltip-link" data-title="Удобство использования" type="light"  data-tip data-for='tooltip-1' data-delay-show='200' data-type="5">
+                                        <button className="tooltip-link" data-title="Удобство использования" type="light"  data-tip data-for='tooltip-1' data-delay-show='200' data-type="5">
                                             <ReactTooltip className="tooltip tooltip--type-1" id="tooltip-1" place="left" type="light" effect="solid">
                                                 <h6>Удобство использования</h6><p>Удобная панель управления</p>
                                             </ReactTooltip>
-                                        </a>
+                                        </button>
 
 
-                                        <a className="tooltip-link" data-title="Защита ваших документов" type="light"  data-tip data-for='tooltip-2' data-delay-show='200' data-type="6">
+                                        <button className="tooltip-link" data-title="Защита ваших документов" type="light"  data-tip data-for='tooltip-2' data-delay-show='200' data-type="6">
                                             <ReactTooltip className="tooltip tooltip--type-2" id="tooltip-2" place="bottom" type="light" effect="solid">
                                                 <h6>Защита ваших документов</h6><p>Защита ваших документов от разных угроз</p>
                                             </ReactTooltip>
 
-                                        </a>
+                                        </button>
 
-                                        <a className="tooltip-link" data-title="Печать без проблем" type="light"  data-tip data-for='tooltip-3' data-delay-show='200' data-type="7">
+                                        <button className="tooltip-link" data-title="Печать без проблем" type="light"  data-tip data-for='tooltip-3' data-delay-show='200' data-type="7">
                                             <ReactTooltip className="tooltip tooltip--type-3" id="tooltip-3" place="bottom" type="light" effect="solid">
                                                 <h6>Печать без проблем</h6><p>Забудьте о замятии бумаги</p>
                                             </ReactTooltip>
-                                        </a>
+                                        </button>
 
 
-                                        <a className="tooltip-link" data-title="Надежная работа" type="light"  data-tip data-for='tooltip-4' data-delay-show='200' data-type="8">
+                                        <button className="tooltip-link" data-title="Надежная работа" type="light"  data-tip data-for='tooltip-4' data-delay-show='200' data-type="8">
                                             <ReactTooltip className="tooltip tooltip--type-4" id="tooltip-4" place="bottom" type="light" effect="solid">
                                                 <h6>Надежная работа</h6><p>Надежная и стабильная работа без замятий бумаги и зависаний</p>
                                             </ReactTooltip>
-                                        </a>
+                                        </button>
 
 
                                     </div>
