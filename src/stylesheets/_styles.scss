@@ -2,17 +2,12 @@
 
 @keyframes body-animation {
 
-    0% {
+    from {
         opacity: 0;
     }
 
-    70% {
+    to {
         opacity: 1;
-    }
-
-    100% {
-        opacity: 1;
-        overflow: auto;
     }
 }
 
@@ -44,10 +39,9 @@ body {
         family: $font-family-text;
         weight: $font-weight-text;
     }
-    overflow: hidden;
     opacity: 0;
     will-change: opacity;
-    animation: body-animation 1.8s linear .5s 1 alternate forwards;
+    animation: body-animation 1.2s linear .5s 1 alternate forwards;
 
     @include mq(md) {
         @include text-large;

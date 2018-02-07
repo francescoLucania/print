@@ -1,12 +1,9 @@
 @import url(stylesheets/vendors/normalize.css);
 @keyframes body-animation {
-  0% {
+  from {
     opacity: 0; }
-  70% {
-    opacity: 1; }
-  100% {
-    opacity: 1;
-    overflow: auto; } }
+  to {
+    opacity: 1; } }
 
 *,
 *::before,
@@ -32,10 +29,9 @@ body {
   color: #121212;
   font-family: "Proxima-Nova-Lt", "HelveticaNeue", "Helvetica Neue", sans-serif;
   font-weight: 300;
-  overflow: hidden;
   opacity: 0;
   will-change: opacity;
-  animation: body-animation 1.8s linear .5s 1 alternate forwards; }
+  animation: body-animation 1.2s linear .5s 1 alternate forwards; }
   @media all and (min-width: 1760px) {
     body {
       font-size: 1.8rem;
@@ -969,8 +965,16 @@ table {
   .section-box:nth-child(2n) {
     background: #f0f0f0; }
 
+@keyframes home-animation {
+  from {
+    overflow: hidden; }
+  to {
+    overflow: auto; } }
+
 .home {
-  padding-top: 10.4rem; }
+  padding-top: 10.4rem;
+  overflow: hidden;
+  animation: home-animation 1.2s linear .5s 1 alternate forwards; }
   @media all and (min-width: 768px) {
     .home {
       background: #f7f7f7; } }
@@ -1053,9 +1057,6 @@ table {
   .home__image {
     display: block;
     margin: 4rem -2rem 0; }
-    @media all and (min-width: 768px) {
-      .home__image {
-        margin: 4rem -3rem 0; } }
     @media all and (min-width: 1440px) {
       .home__image {
         margin: 6.5rem 0 0;
