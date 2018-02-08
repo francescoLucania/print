@@ -919,8 +919,9 @@ table {
     padding: 2rem 0 1.9rem;
     border-color: #e0e0e0;
     background: #f0f0f0; }
-  .site-header.is-hidden {
-    right: 1.5rem; }
+  @media all and (min-width: 1380px) {
+    .site-header.is-hidden {
+      right: 1.5rem; } }
   .site-header__grid {
     display: flex;
     justify-content: space-between;

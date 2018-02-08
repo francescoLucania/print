@@ -45,7 +45,10 @@
   }
 
   &.is-hidden {
-    right: 1.5rem;
+
+    @include mq(xl) {
+      right: 1.5rem;
+    }
   }
 
   &__grid {
