@@ -1163,6 +1163,10 @@ table {
       .home__image {
         width: 72.22222%;
         margin: 3.5rem auto 0; } }
+    @media all and (min-width: 768px) {
+      .home__image {
+        width: 60%;
+        margin: 6.5rem auto 0; } }
     @media all and (min-width: 1760px) {
       .home__image {
         margin: 6.5rem 0 0;

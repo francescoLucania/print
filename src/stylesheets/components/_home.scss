@@ -126,6 +126,11 @@
       margin: 3.5rem auto 0;
     }
 
+    @include mq(sm) {
+      @include col-size(6/10);
+      margin: 6.5rem auto 0;
+    }
+
     @include mq(md) {
       margin: 6.5rem 0 0;
       width: 100%;
