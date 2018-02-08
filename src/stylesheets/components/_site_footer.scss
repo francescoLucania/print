@@ -118,7 +118,8 @@
     color: $color-light;
 
     @include mq(xs) {
-      margin: 0 auto 1rem;
+      justify-content: center;
+      margin-bottom:1rem;
     }
 
     @include mq(sm) {

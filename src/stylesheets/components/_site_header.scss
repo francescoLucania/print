@@ -26,19 +26,26 @@
   background-color: $color-section-background;
   transition: padding  $transition-duration-medium;
 
-  &.is-hidden {
-    right: 1.7rem;
-  }
-
   @include mq(xl) {
     border-color: transparent;
     background-color: transparent;
+  }
+
+
+
+  &.is-fixed-alt {
+    border-color: $color-border;
+    background: $color-section-background;
   }
 
   &.is-fixed {
     padding: 2rem 0 1.9rem;
     border-color: $color-border;
     background: $color-section-background;
+  }
+
+  &.is-hidden {
+    right: 1.7rem;
   }
 
   &__grid {

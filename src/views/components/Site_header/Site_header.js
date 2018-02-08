@@ -50,10 +50,12 @@ class Site_header extends Component {
         if (bodyScrollTop > 70) {
             this.state = { isFixed: true };
             document.getElementById('site-header').classList.add('is-fixed');
+            console.log('state', this.state.isFixed);
 
         } else {
             this.state = { isFixed: false };
             document.getElementById('site-header').classList.remove('is-fixed');
+            console.log('state', this.state.isFixed);
         }
 
         return false;
@@ -61,10 +63,10 @@ class Site_header extends Component {
 
     render() {
 
-        console.log('state', this.state.isOpenPopup);
+        const headerClassName = this.state.isFixed ? "site-header is-fixed" : "site-header";
 
         return (
-            <header className={this.state.isFixed ? "site-header is-fixed" : "site-header"} id="site-header">
+            <header className={headerClassName} id="site-header">
                 <div className="container">
                     <div className="site-header__grid">
                         <Link to="/home" className="site-header__logo-box">

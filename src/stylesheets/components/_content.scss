@@ -80,6 +80,7 @@
 
   &__image {
     position: relative;
+    z-index: 90;
 
     @include mq(xs) {
       margin: 0 -1.5rem 3rem;
@@ -200,7 +201,7 @@
     .content-grid__image {
       @include mq(xs) {
         margin-bottom: 0;
-        padding-bottom: 8rem;
+        padding-bottom: 18rem;
       }
 
       @include mq(xl) {
@@ -210,7 +211,7 @@
 
     .content-grid__description {
       @include mq(xs) {
-        margin-top: -5rem;
+        margin-top: -15rem;
       }
     }
 
