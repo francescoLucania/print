@@ -34,6 +34,7 @@ body {
     display: flex;
     min-height: 100vh;
     background: $color-section-background;
+    overflow-y: scroll;
     color: $color-base;
     font: {
         family: $font-family-text;
@@ -42,14 +43,18 @@ body {
     opacity: 0;
     will-change: opacity;
     animation: body-animation 1.2s linear .5s 1 alternate forwards;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
 
     @include mq(md) {
         @include text-large;
     }
 
     &.is-hidden {
-        padding-right: 1.7rem;
-        overflow: hidden;
+        @include mq(xl) {
+            margin-right: 1.5rem;
+            overflow: hidden;
+        }
     }
 }
 

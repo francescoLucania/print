@@ -45,7 +45,7 @@
   }
 
   &.is-hidden {
-    right: 1.7rem;
+    right: 1.5rem;
   }
 
   &__grid {
@@ -71,5 +71,14 @@
 
   &__button-box {
     position: relative;
+    display: flex;
+
+    > .button--back {
+      margin-right: 2rem;
+
+      @include mq(xs) {
+        display: none;
+      }
+    }
   }
 }

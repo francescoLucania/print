@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import ReactTooltip from 'react-tooltip'
-
-import {Link} from 'react-router-dom';
+// import {Link, BrowserRouter} from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 import imageOne from '../../../img/image2-1.png';
 import imageOneM from '../../../img/image2-1m.png';
@@ -34,10 +34,13 @@ const printContent = [
 
         optionsButton: true,
         optionsButtonLabel: 'основные характеристики',
-        optionsButtonUrl: 'https://www.brother.ru/printers/all-printers'
+        optionsButtonUrl: '#sectionOne'
     },
 
     {
+        id: true,
+        idName: 'sectionOne',
+        idUrl: 'jet#aboutsectionOne',
         heading: 'h2',
         title: 'MFC-J3530DW',
         image: imageTwo,
@@ -50,13 +53,13 @@ const printContent = [
             {printType: 'Лоток на 250 листов и АПД на 50 листов'},
             {printType: 'Слот для подачи по одному листу на задней панели'},
             {printType: 'Сенсорный ЖК-дисплей 6,8 см'},
-            {printType: 'Скорость печати 22 изображений в минуту (черно-белая печать) и 20 изображений в минуту (цветная печать)'},
+            {printType: 'Скорость печати 22 изображения в минуту (черно-белая печать) и 20 изображений в минуту (цветная печать)'},
             {printType: 'Высокоскоростной факс'},
             {printType: 'Время печати первой страницы 6 секунд'}
         ],
 
         shopLink: true,
-        shopUrl: 'https://www.buro247.ru/fashion',
+        shopUrl: 'https://brother-printers.ru/product/mfu-brother-mfc-j3930-a3-22-strmin-cherno-beloj-20-strmin-cvetnoj-pechati-4800-x-1200-dpi/',
         shopLinkLabel: 'заказать онлайн',
 
         moreLink: false,
@@ -83,32 +86,36 @@ const printContent = [
             {printType: 'Поддержка стандарта NFC'}
         ],
         shopLink: true,
-        shopUrl: 'https://www.buro247.ru/fashion',
+        shopUrl: 'https://brother-printers.ru/product/mfu-brother-mfc-j3930-a3-22-strmin-cherno-beloj-20-strmin-cvetnoj-pechati-4800-x-1200-dpi/',
         shopLinkLabel: 'заказать онлайн',
 
         moreLink: false,
-        moreUrl: 'https://www.buro247.ru/fashion',
+        moreUrl: 'https://brother-printers.ru/product/mfu-brother-mfc-j3530-a3-22-strmin-cherno-beloj-20-strmin-cvetnoj-pechati-4800-x-1200-dpi/',
         moreLinkLabel: 'Подробнее'
     }
 
 ];
 
-const tooltipContentType1 = '<h6>Привет</h6>';
-
 class ContentJet extends Component {
 
     componentDidMount() {
+        document.getElementById('back').classList.remove('is-hidden');
+        document.getElementById('back-mobile').classList.remove('is-hidden');
+        document.getElementById('site-footer').classList.add('is-bottom-gutter');
         window.scrollTo(0, 0);
+        // window.scroll({top: 0, left: 0, behavior: 'smooth' });
     }
 
     render() {
         return (
 
+
             <div className="content">
 
                 {printContent.map((item, index)=>
 
-                    <section className="section-box" key={index}>
+                    <section  className="section-box" key={index}>
+                        {item.id ? <div id={item.idName} className="section-anchor"></div> : ''}
                         <div className="container">
                             <article  className={item.promoBlock ? 'content-grid content-grid--promo' : 'content-grid'}>
 
@@ -124,30 +131,30 @@ class ContentJet extends Component {
 
                                     <div className={item.promoBlock ? "tooltip-box" : "tooltip-box is-not"}>
 
-                                        <button className="tooltip-link" data-title="Удобство использования" type="light"  data-tip data-for='tooltip-1' data-delay-show='200' data-type="5">
+                                        <button className="tooltip-link" data-title="Непрерывная эффективность" type="light"  data-tip data-for='tooltip-1' data-delay-show='200' data-type="5">
                                             <ReactTooltip className="tooltip tooltip--type-1" id="tooltip-1" place="left" type="light" effect="solid">
-                                                <h6>Удобство использования</h6><p>Удобная панель управления</p>
+                                                <h6>Непрерывная эффективность</h6><p>Высокая скорость печати и сканирования</p>
                                             </ReactTooltip>
                                         </button>
 
 
-                                        <button className="tooltip-link" data-title="Защита ваших документов" type="light"  data-tip data-for='tooltip-2' data-delay-show='200' data-type="6">
+                                        <button className="tooltip-link" data-title="Сокращение расходов" type="light"  data-tip data-for='tooltip-2' data-delay-show='200' data-type="6">
                                             <ReactTooltip className="tooltip tooltip--type-2" id="tooltip-2" place="bottom" type="light" effect="solid">
-                                                <h6>Защита ваших документов</h6><p>Защита ваших документов от разных угроз</p>
+                                                <h6>Сокращение расходов</h6><p>Яркие изображения благодаря новой технологии тонера</p>
                                             </ReactTooltip>
 
                                         </button>
 
                                         <button className="tooltip-link" data-title="Печать без проблем" type="light"  data-tip data-for='tooltip-3' data-delay-show='200' data-type="7">
                                             <ReactTooltip className="tooltip tooltip--type-3" id="tooltip-3" place="bottom" type="light" effect="solid">
-                                                <h6>Печать без проблем</h6><p>Забудьте о замятии бумаги</p>
+                                                <h6>Печать без проблем</h6><p>Соответствие самым высоким требованиям</p>
                                             </ReactTooltip>
                                         </button>
 
 
-                                        <button className="tooltip-link" data-title="Надежная работа" type="light"  data-tip data-for='tooltip-4' data-delay-show='200' data-type="8">
+                                        <button className="tooltip-link" data-title="Контроль устройтсва" type="light"  data-tip data-for='tooltip-4' data-delay-show='200' data-type="8">
                                             <ReactTooltip className="tooltip tooltip--type-4" id="tooltip-4" place="bottom" type="light" effect="solid">
-                                                <h6>Надежная работа</h6><p>Надежная и стабильная работа без замятий бумаги и зависаний</p>
+                                                <h6>Контроль устройтсва</h6><p>Ограничение доступа к устройству</p>
                                             </ReactTooltip>
                                         </button>
 
@@ -173,7 +180,7 @@ class ContentJet extends Component {
 
                                 </div>
 
-                                {item.optionsButton ? <div className="content-grid__option-box"><a className="button" href={item.optionsButtonUrl} target="_blank">{item.optionsButtonLabel}</a></div> : ''}
+                                {item.optionsButton ? <div className="content-grid__option-box"><Link className="button" to='jet/#sectionOne'>{item.optionsButtonLabel}</Link></div> : ''}
                             </article>
                         </div>
                     </section>

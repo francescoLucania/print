@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import {Link} from 'react-router-dom';
 
-import NextPin from '../../../img/next.svg';
 import MailPin from '../../../img/mail.svg';
+import backPin from '../../../img/reply.png';
 
 class Site_footer extends Component {
 

@@ -57,8 +57,11 @@
   &:focus {
 
     > .tooltip {
-      opacity: 1;
-      visibility: visible;
+
+      @include mq(xs) {
+        opacity: 1;
+        visibility: visible;
+      }
     }
   }
 

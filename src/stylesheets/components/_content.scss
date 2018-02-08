@@ -2,7 +2,7 @@
 
 .content {
   background: $color-body-background;
-  padding-top: 10.4rem; // magic number
+  padding-top: 14.8rem; // magic number
 
   @include mq(sm) {
     padding-top: 18rem; // magic number

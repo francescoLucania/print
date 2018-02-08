@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 .section-box {
+  position: relative;
   padding: 6rem 0;
   background: $color-body-background;
 
@@ -19,4 +20,9 @@
   &:nth-child(2n) {
     background: $color-section-background;
   }
+}
+
+.section-anchor {
+  position: absolute;
+  top: -9.8rem; // header height
 }

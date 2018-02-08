@@ -67,6 +67,12 @@
   z-index: 1;
   border-top: 1px solid #cccccc;
 
+  &.is-bottom-gutter {
+    @include mq(xs) {
+      margin-bottom: 4.3rem; // magic number
+    }
+  }
+
   &__contact {
     padding: 3.5rem 0;
 

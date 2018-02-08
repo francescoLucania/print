@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch, Redirect,Link} from 'react-router-dom';
 import Home from '../Home/Home';
 import Content from '../Content/Content';
 import ContentJet from '../ContentJet/ContentJet';
@@ -18,6 +18,10 @@ const Main = () => (
             <Redirect from="/" exact to="/home" />
         </Switch>
         <Site_footer/>
+        <Link id="back-mobile" className="mobile-back" to="/home">
+            {/*<img src={backPin} alt=""/>*/}
+            <span>на главнаю</span>
+        </Link>
     </div>
 );
 

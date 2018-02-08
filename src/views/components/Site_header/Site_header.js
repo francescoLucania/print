@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 
 import Logo from '../../../img/logo.svg';
 import MapPin from '../../../img/pin.svg';
+import backPin from '../../../img/reply.png';
 
 const siteName = 'brother';
 class Site_header extends Component {
@@ -12,6 +13,11 @@ class Site_header extends Component {
         super(props);
         this.state = { isFixed: false };
         this.state = { isOpenPopup: false };
+        this.goBack = this.goBack.bind(this); // i think you are missing this
+    }
+
+    goBack(){
+        this.props.history.goBack();
     }
 
     componentDidMount() {
@@ -25,19 +31,16 @@ class Site_header extends Component {
     popupState() {
         this.setState({ isOpenPopup: !this.state.isOpenPopup });
 
+        console.log(document.getElementsByClassName('content-grid').length);
+
         if (this.state.isOpenPopup) {
 
             document.getElementById('body').classList.remove('is-hidden');
-
-            if (document.getElementsByClassName('content-grid').length) {
-                document.getElementById('site-header').classList.remove('is-hidden');
-            }
+            document.getElementById('site-header').classList.remove('is-hidden');
 
         } else {
             document.getElementById('site-header').classList.add('is-hidden');
-            if (document.getElementsByClassName('content-grid').length) {
-                document.getElementById('body').classList.add('is-hidden');
-            }
+            document.getElementById('body').classList.add('is-hidden');
         }
 
         return false
@@ -45,17 +48,19 @@ class Site_header extends Component {
 
     handleScroll(event) {
 
-        var bodyScrollTop = document.documentElement.scrollTop;
+        var bodyScrollTop = Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop);
+
+        document.getElementById('site-header').classList.add('is-fixed');
+
+
 
         if (bodyScrollTop > 70) {
-            this.state = { isFixed: true };
             document.getElementById('site-header').classList.add('is-fixed');
-            console.log('state', this.state.isFixed);
+            this.state = { isFixed: true };
 
         } else {
-            this.state = { isFixed: false };
             document.getElementById('site-header').classList.remove('is-fixed');
-            console.log('state', this.state.isFixed);
+            this.state = { isFixed: false };
         }
 
         return false;
@@ -73,6 +78,10 @@ class Site_header extends Component {
                             <img src={Logo} alt={siteName}/>
                         </Link>
                         <div className="site-header__button-box">
+                            <Link to="/home" id="back" className="button button--transparent button--back switch-popup-button not-animate">
+                                <img src={backPin} alt=""/>
+                                <span>Главная</span>
+                            </Link>
                             <button href="#" className={this.state.isOpenPopup ? 'button button--transparent button--map switch-popup-button is-active' : 'button button--transparent button--map'} onClick={this.popupState.bind(this)}>
                                 <img src={MapPin} alt=""/>
                                 <span>Где купить?</span>

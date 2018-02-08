@@ -8,12 +8,20 @@ import NextPin from '../../../img/next.svg';
 import jetImage from '../../../img/h1.png';
 import jetImage2 from '../../../img/h2.png';
 
-const Home = (props) => {
+class Home extends Component {
 
-    return (
+    componentDidMount() {
+        window.scrollTo(0, 0);
+        document.getElementById('back').classList.add('is-hidden');
+        document.getElementById('back-mobile').classList.add('is-hidden');
+        document.getElementById('site-footer').classList.remove('is-bottom-gutter');
+    }
+
+    render() {
+
+        return (
+
         <div className="home">
-
-
 
             <div className="home__grid">
 
@@ -22,7 +30,7 @@ const Home = (props) => {
 
                         <h2>Струйные МФУ</h2>
 
-                        <p>Созданы на основе технологии InkBenefit, обеспечивающей<br/> быстродействие, экономичность и профессиональное качество печати</p>
+                        <p>Созданы на основе технологии InkBenefit, обеспечивающей<br/> быстродействие, экономичность и профессиональное качество печати.</p>
 
                         <div className="home__button-box">
                             <Link to="/jet" className="button button--read-more">
@@ -65,7 +73,7 @@ const Home = (props) => {
 
 
         </div>
-    );
+    )}
 };
 
 export default Home;

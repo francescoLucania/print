@@ -23,11 +23,13 @@
 
         &--read-more {
             position: relative;
-            display: inline-flex;
+            display: flex;
+            margin: 0 auto;
             justify-content: center;
             align-items: center;
-            min-width: 17rem;
-            min-height: 5.4rem;
+            width: 17rem;
+            height: 5.4rem;
+            overflow: hidden;
 
             > img,
             > span {
@@ -36,6 +38,7 @@
                 left: 50%;
                 transform: translate(-50%,-50%);
                 transition: $transition-duration-base;
+                backface-visibility: hidden;
             }
 
             > img {
@@ -92,6 +95,44 @@
             }
         }
 
+        &--back {
+            display: inline-flex;
+            align-items: center;
+            padding: 1.2rem 2.45rem;
+
+            @include mq(xs) {
+                @include size(4.4rem);
+                padding: 1rem;
+            }
+
+            > img {
+                margin-right: 1.5rem;
+                width: 2.4rem;
+                vertical-align: top;
+
+                @include mq(xs) {
+                }
+            }
+
+            span {
+                @include mq(xs) {
+                    display: none;
+                }
+            }
+
+            @include mq(xs) {
+                > span {
+                    display: none;
+                }
+            }
+
+            &.is-hidden {
+                @include interact(opacity,0);
+                opacity: 0;
+            }
+
+        }
+
         &--next {
             display: inline-flex;
             justify-content: center;
@@ -116,4 +157,35 @@
             transform: translateY(.2rem);
         }
     }
+
+    .mobile-back {
+        @include interact(background, rgba($color-brand, .85));
+        @include font(1.4rem,1.4rem);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: none;
+        align-items: center;
+        padding: 1.5rem 2.75rem 1.4rem;
+        width: 100%;
+        font-family: $font-family-bold;
+        text-transform: uppercase;
+        background: $color-brand;
+        color: #fff;
+        z-index: 999;
+
+        @include mq(xs) {
+            display: flex;
+            justify-content: center;
+        }
+
+        &.is-hidden {
+
+            @include mq(xs) {
+                @include interact(opacity,0);
+                opacity: 0;
+            }
+        }
+    }
+
 }

@@ -1,39 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="30" height="10.03" viewBox="0 0 30 10.03">
-  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
-   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-      <rdf:Description rdf:about=""/>
-   </rdf:RDF>
-</x:xmpmeta>
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                           
-<?xpacket end="w"?></metadata>
-<defs>
-    <style>
-      .cls-1 {
-        fill: #fff;
-        fill-rule: evenodd;
-      }
-    </style>
-  </defs>
-  <path id="Rounded_Rectangle_2" data-name="Rounded Rectangle 2" class="cls-1" d="M1219.71,4512.31a0.942,0.942,0,0,1,0,1.35l-4.07,4.05a0.958,0.958,0,0,1-1.36-1.35l4.07-4.05A0.972,0.972,0,0,1,1219.71,4512.31Zm0,1.35a0.972,0.972,0,0,1-1.36,0l-4.07-4.05a0.958,0.958,0,1,1,1.36-1.35l4.07,4.05A0.942,0.942,0,0,1,1219.71,4513.66ZM1191,4512h26a1,1,0,0,1,0,2h-26A1,1,0,0,1,1191,4512Z" transform="translate(-1190 -4507.97)"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px"
+	 height="10px" viewBox="0 0 30 10" enable-background="new 0 0 30 10" xml:space="preserve">
+<g id="_x3C_Background_x3E__xA0_0_xA0_Image_1_" display="none">
+	
+		<image display="inline" overflow="visible" width="30" height="10" id="_x3C_Background_x3E__xA0_0_xA0_Image" xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEASABIAAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA
+EAMCAwYAAAFqAAABdQAAAZb/2wCEABALCwsMCxAMDBAXDw0PFxsUEBAUGx8XFxcXFx8eFxoaGhoX
+Hh4jJSclIx4vLzMzLy9AQEBAQEBAQEBAQEBAQEABEQ8PERMRFRISFRQRFBEUGhQWFhQaJhoaHBoa
+JjAjHh4eHiMwKy4nJycuKzU1MDA1NUBAP0BAQEBAQEBAQEBAQP/CABEIAAoAHgMBIgACEQEDEQH/
+xABeAAEBAAAAAAAAAAAAAAAAAAAABwEBAAAAAAAAAAAAAAAAAAAAABABAQAAAAAAAAAAAAAAAAAA
+EDARAQAAAAAAAAAAAAAAAAAAADASAQAAAAAAAAAAAAAAAAAAABD/2gAMAwEAAhEDEQAAAKAAD//a
+AAgBAgABBQA//9oACAEDAAEFAD//2gAIAQEAAQUAh//aAAgBAgIGPwA//9oACAEDAgY/AD//2gAI
+AQEBBj8AD//Z">
+	</image>
+</g>
+<g id="arrow_right_1_" enable-background="new    ">
+	<g id="arrow_right">
+		<g>
+			<path fill="#FFFFFF" d="M29.715,4.293l-4-4C25.52,0.098,25.264,0,25.008,0s-0.512,0.098-0.707,0.293
+				c-0.391,0.391-0.391,1.023,0,1.414L26.594,4H1.008c-0.552,0-1,0.448-1,1c0,0.553,0.448,1,1,1h25.586l-2.293,2.293
+				c-0.391,0.391-0.391,1.023,0,1.414s1.023,0.391,1.414,0l4-4C30.105,5.316,30.105,4.684,29.715,4.293z"/>
+		</g>
+	</g>
+</g>
 </svg>

@@ -17,7 +17,10 @@
 .content-grid__image,
 .content-grid__description,
 .content-grid__option-box {
-  opacity: 0;
-  will-change: transform;
-  animation: main-animation .6s linear .5s 1 alternate forwards;
+
+  &:not(.not-animate) {
+    opacity: 0;
+    will-change: transform;
+    animation: main-animation .6s linear .5s 1 alternate forwards;
+  }
 }
