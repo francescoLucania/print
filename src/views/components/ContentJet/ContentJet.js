@@ -10,6 +10,8 @@ import imageTwo from '../../../img/image2-2.png';
 import imageTwoM from '../../../img/image2-2m.png';
 import imageThree from '../../../img/image2-3.png';
 import imageThreeM from '../../../img/image2-3m.png';
+import pl1 from '../../../img/pl1.png';
+import pl2 from '../../../img/pl2.png';
 
 import NextPin from '../../../img/next.svg';
 
@@ -17,15 +19,13 @@ const printContent = [
 
     {
         heading: 'h1',
-        title: 'Струйные',
+        title: 'Цветные струйные устройства',
         image: imageOne,
         imageMin: true,
         imageMinUrl: imageOneM,
-        description: 'Новые МФУ бизнес-класса созданы на основе технологии InkBenefit, обеспечивающей быстродействие, экономичность и профессиональное качество печати. Эти МФУ имеют расширенные возможности подключения и широкий набор функций для эффективной работы в рабочей среде предприятия. Поддержка формата A3 позволяет выполнять на профессиональном уровне печать и сканирование важных документов и материалов (например, рекламных буклетов и постеров, годового плана и т. п.). Функция Wi-Fi Direct™ обеспечивает подключение к беспроводной сети для печати со смартфона, планшета,ноутбука или ПК без маршрутизатора.',
+        description: 'Новые МФУ бизнес-класса созданы на основе технологии InkBenefit, обеспечивающей быстродействие, экономичность и профессиональное качество печати. Поддержка формата A3 позволяет выполнять на профессиональном уровне печать и сканирование важных документов и материалов (например, рекламных буклетов и постеров, годового плана и т. п.). Функция Wi-Fi Direct™ обеспечивает подключение к беспроводной сети для печати со смартфона, планшета,ноутбука или ПК без маршрутизатора.',
         listTypes: [
-            {printType: 'Автоматическая двусторонняя печать в формате А4. '},
-            {printType: 'Печать напрямую с USB-накопителя. '},
-            {printType:'Автоподатчик на 50 листов.'}
+          
         ],
         shopLink: false,
         shopUrl: '',
@@ -34,7 +34,10 @@ const printContent = [
 
         optionsButton: true,
         optionsButtonLabel: 'основные характеристики',
-        optionsButtonUrl: '#sectionOne'
+        optionsButtonUrl: '#sectionOne',
+        pl: true,
+        plTitle: 'Большие картриджи - большая экономия',
+        plText: 'Сократите расходы на печать за счет использования картриджей повышенной емкости.Печатайте больше документов с меньшими затратами.'
     },
 
     {
@@ -42,11 +45,11 @@ const printContent = [
         idName: 'sectionOne',
         idUrl: 'jet#aboutsectionOne',
         heading: 'h2',
-        title: 'MFC-J3530DW',
+        title: 'МФУ MFC-J3530DW',
         image: imageTwo,
         imageMin: true,
         imageMinUrl: imageTwoM,
-        description: 'Отличное качество и большие объемы печати идеально подходит для Вашего офиса, наше цветное лазерное МФУ имеет ряд возможностей, включая встроенную мобильную печать и сканирования, а также двустороннюю печать.',
+        description: '',
         listTypes: [
             {printType: 'МФУ с поддержкой A3'},
             {printType: 'Автоматическая двусторонняя печать'},
@@ -70,7 +73,7 @@ const printContent = [
 
     {
         heading: 'h2',
-        title: 'MFC-J3930DW',
+        title: 'МФУ MFC-J3930DW',
         image: imageThree,
         imageMin: true,
         imageMinUrl: imageThreeM,
@@ -133,28 +136,28 @@ class ContentJet extends Component {
 
                                         <button className="tooltip-link" data-title="Непрерывная эффективность" type="light"  data-tip data-for='tooltip-1' data-delay-show='200' data-type="5">
                                             <ReactTooltip className="tooltip tooltip--type-1" id="tooltip-1" place="left" type="light" effect="solid">
-                                                <h6>Непрерывная эффективность</h6><p>Высокая скорость печати и сканирования</p>
+                                                <h6>Сенсорный дисплей</h6><p>Цветной сенсорный дисплей, до 9,3 см.</p>
                                             </ReactTooltip>
                                         </button>
 
 
                                         <button className="tooltip-link" data-title="Сокращение расходов" type="light"  data-tip data-for='tooltip-2' data-delay-show='200' data-type="6">
                                             <ReactTooltip className="tooltip tooltip--type-2" id="tooltip-2" place="bottom" type="light" effect="solid">
-                                                <h6>Сокращение расходов</h6><p>Яркие изображения благодаря новой технологии тонера</p>
+                                                <h6>Автоматическая подача документов</h6><p>Яркие изображения благодаря новой технологии тонера.</p>
                                             </ReactTooltip>
 
                                         </button>
 
                                         <button className="tooltip-link" data-title="Печать без проблем" type="light"  data-tip data-for='tooltip-3' data-delay-show='200' data-type="7">
                                             <ReactTooltip className="tooltip tooltip--type-3" id="tooltip-3" place="bottom" type="light" effect="solid">
-                                                <h6>Печать без проблем</h6><p>Соответствие самым высоким требованиям</p>
+                                                <h6>Встроенные средства авторизации</h6><p>Встроенный NFC-считыватель для модели MFC-J3930DW.</p>
                                             </ReactTooltip>
                                         </button>
 
 
                                         <button className="tooltip-link" data-title="Контроль устройтсва" type="light"  data-tip data-for='tooltip-4' data-delay-show='200' data-type="8">
                                             <ReactTooltip className="tooltip tooltip--type-4" id="tooltip-4" place="bottom" type="light" effect="solid">
-                                                <h6>Контроль устройтсва</h6><p>Ограничение доступа к устройству</p>
+                                                <h6>Богатый функционал и выбор подключения</h6><p>Печать, копирование, цветное сканирование, факс. Поддержка всех распространенных стандартов мобильной печати и сканирования. Интерфейсы USB 2.0, Ethernet, Wi-Fi, Wi-Fi Direct.</p>
                                             </ReactTooltip>
                                         </button>
 
@@ -176,6 +179,9 @@ class ContentJet extends Component {
                                             <li key={index}>{item.printType}</li>
                                         )}
                                     </ul>
+
+                                    {item.pl ? <div><h2 className="content-grid__blue-title">{item.plTitle}</h2><p>{item.plText}</p><div className="content-grid__article-grid"><img src={pl1} alt="img1" /><img src={pl2}  alt="img2"/></div></div> : ''}
+
                                     {item.shopLink ? <div className="content-grid__button-box"><a className="button" href={item.shopUrl} target="_blank">{item.shopLinkLabel}</a> {item.moreLink ? <a className="button button--next-more" href={item.moreUrl} target="_blank">{item.moreLinkLabel}</a> : ''}</div> : '' }
 
                                 </div>
@@ -191,7 +197,7 @@ class ContentJet extends Component {
                         <div className="bottom-navigate__navigate">
                             <Link to="/laser" className="bottom-navigate__next-link">
                                 <span>
-                                Перейти на раздел <b>Лазерных<span>&nbsp;</span>принтеров</b>
+                                Перейти в раздел <b>Лазерных<span>&nbsp;</span>принтеров</b>
                                 </span>
                             </Link>
 

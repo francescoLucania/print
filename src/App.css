@@ -1352,7 +1352,8 @@ table {
   text-align: center; }
   @media all and (min-width: 1380px) {
     .content-grid__option-box {
-      display: block; } }
+      display: block;
+      margin-top: 6rem; } }
 
 .content-grid__button-box {
   margin-top: 3rem; }
@@ -1368,6 +1369,39 @@ table {
       .content-grid__button-box > .button:not(:first-child) {
         display: inline-block;
         margin-left: 5rem; } }
+
+.content-grid__blue-title {
+  font-family: "Proxima-Nova-Lt", "HelveticaNeue", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  font-size: 3rem;
+  line-height: 1.46667;
+  color: #095dbb;
+  text-transform: none; }
+  .content-grid__blue-title a {
+    text-decoration: none; }
+  @media all and (min-width: 1760px) {
+    .content-grid__blue-title {
+      font-size: 3.8rem;
+      line-height: 1.15789; } }
+  @media all and (min-width: 1380px) {
+    .content-grid__blue-title {
+      margin-bottom: 1rem; } }
+
+.content-grid__article-grid {
+  margin-top: 2rem; }
+  @media all and (min-width: 768px) {
+    .content-grid__article-grid {
+      display: flex; } }
+  .content-grid__article-grid > img {
+    display: block; }
+    @media all and (max-width: 767px) {
+      .content-grid__article-grid > img {
+        margin: 0 auto; }
+        .content-grid__article-grid > img:not(:last-child) {
+          margin-bottom: 2rem; } }
+    @media all and (min-width: 768px) {
+      .content-grid__article-grid > img:not(:last-child) {
+        margin-right: 2rem; } }
 
 .content-grid--promo {
   margin: 0; }
@@ -1480,68 +1514,69 @@ table {
     box-shadow: 0 0.3rem 0.4rem 0 rgba(7, 7, 7, 0.28);
     content: ''; }
   .tooltip-link[data-type="1"] {
-    top: 8%;
+    top: 15%;
     left: 8%; }
     @media all and (min-width: 768px) {
       .tooltip-link[data-type="1"] {
+        top: 17%;
         left: 8%; } }
     @media all and (min-width: 1380px) {
       .tooltip-link[data-type="1"] {
-        top: 9%;
-        left: 20%; } }
+        top: 19%;
+        left: 23%; } }
     @media all and (min-width: 1760px) {
       .tooltip-link[data-type="1"] {
-        top: 9%;
+        top: 20%;
         left: 25%; } }
   .tooltip-link[data-type="2"] {
     top: 14%;
     left: 75%; }
     @media all and (min-width: 768px) {
       .tooltip-link[data-type="2"] {
-        top: 14%;
-        left: 75%; }
+        top: 25%;
+        left: 79%; }
         .tooltip-link[data-type="2"]::before {
           left: auto;
           right: -1.5rem;
           transform: translate(100%, -50%); } }
     @media all and (min-width: 1380px) {
       .tooltip-link[data-type="2"] {
-        top: 16%;
+        top: 27%;
         left: 70%; } }
     @media all and (min-width: 1760px) {
       .tooltip-link[data-type="2"] {
-        top: 14%;
-        left: 66%; } }
+        top: 27%;
+        left: 67%; } }
   .tooltip-link[data-type="3"] {
-    top: 48%;
-    left: 12%; }
+    top: 41%;
+    left: 10%; }
     @media all and (min-width: 768px) {
       .tooltip-link[data-type="3"] {
-        top: 48%;
+        top: 59%;
         left: 7%; } }
     @media all and (min-width: 1380px) {
       .tooltip-link[data-type="3"] {
-        top: 53%;
-        left: 18%; } }
+        top: 59%;
+        left: 21%; } }
     @media all and (min-width: 1760px) {
       .tooltip-link[data-type="3"] {
-        top: 53%;
-        left: 22%; } }
+        top: 60%;
+        left: 26%; } }
   .tooltip-link[data-type="4"] {
-    top: 51%;
-    left: 76%; }
+    top: 44%;
+    left: 78%; }
     @media all and (min-width: 768px) {
       .tooltip-link[data-type="4"] {
-        top: 59%;
-        left: 72%; }
+        top: 69%;
+        left: 77%; }
         .tooltip-link[data-type="4"]::before {
           left: auto;
           right: -1.5rem;
           transform: translate(100%, -50%); } }
     @media all and (min-width: 1380px) {
       .tooltip-link[data-type="4"] {
-        top: 62%;
-        left: 67%; } }
+        top: 70%;
+        left: 74%; } }
     @media all and (min-width: 1760px) {
       .tooltip-link[data-type="4"] {
         top: 62%;

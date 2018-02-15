@@ -103,20 +103,21 @@
   }
 
   &[data-type="1"] {
-    top: 8%;
+    top: 15%;
     left: 8%;
 
     @include mq(sm) {
+      top: 17%;
       left: 8%;
     }
 
     @include mq(xl) {
-      top: 9%;
-      left: 20%;
+      top: 19%;
+      left: 23%;
     }
 
     @include mq(md) {
-      top: 9%;
+      top: 20%;
       left: 25%;
     }
 
@@ -128,8 +129,8 @@
     left: 75%;
 
     @include mq(sm) {
-      top: 14%;
-      left: 75%;
+      top: 25%;
+      left: 79%;
 
       &::before {
         left: auto;
@@ -139,43 +140,43 @@
     }
 
     @include mq(xl) {
-      top: 16%;
+      top: 27%;
       left: 70%;
     }
 
     @include mq(md) {
-      top: 14%;
-      left: 66%;
+      top: 27%;
+      left: 67%;
     }
   }
 
   &[data-type="3"] {
-    top: 48%;
-    left: 12%;
+    top: 41%;
+    left: 10%;
 
     @include mq(sm) {
-      top: 48%;
+      top: 59%;
       left: 7%;
     }
 
     @include mq(xl) {
-      top: 53%;
-      left: 18%;
+      top: 59%;
+      left: 21%;
     }
 
     @include mq(md) {
-      top: 53%;
-      left: 22%;
+      top: 60%;
+      left: 26%;
     }
   }
 
   &[data-type="4"] {
-    top: 51%;
-    left: 76%;
+    top: 44%;
+    left: 78%;
 
     @include mq(sm) {
-      top: 59%;
-      left: 72%;
+      top: 69%;
+      left: 77%;
 
       &::before {
         left: auto;
@@ -185,8 +186,8 @@
     }
 
     @include mq(xl) {
-      top: 62%;
-      left: 67%;
+      top: 70%;
+      left: 74%;
     }
 
     @include mq(md) {

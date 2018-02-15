@@ -28,9 +28,9 @@ class Home extends Component {
                 <div className="home__col">
                     <article className="home__content">
 
-                        <h2>Струйные МФУ</h2>
+                        <h2>Цветные струйные устройства</h2>
 
-                        <p>Созданы на основе технологии InkBenefit, обеспечивающей<br/> быстродействие, экономичность и профессиональное качество печати.</p>
+                        <p>МФУ корпоративного класса с поддержкой формата А3</p>
 
                         <div className="home__button-box">
                             <Link to="/jet" className="button button--read-more">
@@ -51,9 +51,9 @@ class Home extends Component {
 
                     <article className="home__content">
 
-                        <h2>Лазерные принтеры и МФУ</h2>
+                        <h2>Цветные лазерные устройства</h2>
 
-                        <p>Повышайте производительность и эффективность вашей работы, экономьте<br/> на стоимости печати, печатайте с лучшим качеством.</p>
+                        <p>Принтеры и МФУ для офисов с высокими объемами печати</p>
 
                         <div className="home__button-box">
                             <Link to="/laser" className="button button--read-more">
