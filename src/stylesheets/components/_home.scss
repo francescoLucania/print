@@ -72,7 +72,7 @@
 
   &__content {
     text-align: center;
-    overflow-x: hidden;
+    overflow: hidden;
 
     @include mq(xs) {
       padding: 0 2rem;
