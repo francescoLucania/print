@@ -87,6 +87,14 @@
       @include h1;
       margin-bottom: 2rem;
       text-transform: none;
+
+      @include mq(xl) {
+        margin-bottom: 1rem;
+      }
+
+      @include mq(lg) {
+        margin-bottom: 2rem;
+      }
     }
 
     > p {
@@ -121,17 +129,18 @@
     display: block;
     margin: 4rem -2rem 0;
 
-    @include mq(xl) {
-      @include col-size(6.5/9);
-      margin: 3.5rem auto 0;
-    }
-
     @include mq(sm) {
       @include col-size(6/10);
       margin: 6.5rem auto 0;
     }
 
+    @include mq(xl) {
+      @include col-size(7/9);
+      margin: 3.5rem auto 0;
+    }
+
     @include mq(md) {
+      @include col-size(6.5/9);
       margin: 6.5rem 0 0;
       width: 100%;
     }
@@ -145,13 +154,16 @@
   &__button-box {
     margin-top: 3rem;
 
-    @include mq(xl) {
-      margin-top: 1.5rem;
-    }
-
     @include mq(md) {
       margin-top: 3rem;
     }
-  }
 
+    @include mq(xl) {
+      margin-bottom: 1rem;
+    }
+
+    @include mq(lg) {
+      margin-bottom: 2rem;
+    }
+  }
 }
