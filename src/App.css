@@ -1565,7 +1565,7 @@ table {
         left: 26%; } }
   .tooltip-link[data-type="4"] {
     top: 29%;
-    left: 73%; }
+    left: 75%; }
     @media all and (min-width: 768px) {
       .tooltip-link[data-type="4"] {
         top: 69%;
@@ -1577,7 +1577,7 @@ table {
     @media all and (min-width: 1380px) {
       .tooltip-link[data-type="4"] {
         top: 70%;
-        left: 74%; } }
+        left: 71%; } }
     @media all and (min-width: 1760px) {
       .tooltip-link[data-type="4"] {
         top: 62%;
