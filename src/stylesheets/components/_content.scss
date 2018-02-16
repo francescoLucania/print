@@ -240,7 +240,7 @@
     .content-grid__image {
       @include mq(xs) {
         margin-bottom: 0;
-        padding-bottom: 18rem;
+        padding-bottom: 46rem;
       }
 
       @include mq(xl) {
@@ -250,7 +250,7 @@
 
     .content-grid__description {
       @include mq(xs) {
-        margin-top: -15rem;
+        margin-top: -42rem;
       }
     }
 

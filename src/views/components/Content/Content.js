@@ -129,11 +129,10 @@ const printContent = [
             {printType: 'USB-подключение, подключение к беспроводной сети и проводной сети Gigabit Ethernet'},
             {printType: 'Поддержка стандарта NFC (для мобильной печати и аутентификации карт)'},
             {printType: 'Черный и цветные тонер-картриджи (C, M, Y) с ресурсом до 6500 страниц в комплекте'},
-            {printType: '3 дополнительных нижних лотка на 250 листов / 2 дополнительных нижних лотка на 500 листов / многолотковое устройство (приобретаются отдельно)'},
-            {printType: 'Цветной лазерный принтер Brother HL-L9310CDW удостоен престижной награды ≪Выдающийся принтер≫ независимой тестовой лаборатории Buyers Lab (BLI).'}
-
-
+            {printType: '3 дополнительных нижних лотка на 250 листов / 2 дополнительных нижних лотка на 500 листов / многолотковое устройство (приобретаются отдельно)'}
         ],
+        bli: true,
+        bliText:'Цветной лазерный принтер Brother HL-L9310CDW удостоен престижной награды ≪Выдающийся принтер≫ независимой тестовой лаборатории Buyers Lab (BLI).',
         shopLink: true,
         shopUrl: 'https://brother-printers.ru/product/brother-hl-l9310cdw-printer-cvetnoj-svetodiodnyj/',
         shopLinkLabel: 'заказать онлайн'
@@ -219,6 +218,9 @@ class Content extends Component {
                                             <li key={index}>{item.printType}</li>
                                         )}
                                     </ul>
+
+                                    {item.bli ? <p>{item.bliText}</p> : ''}
+
                                     {item.shopLink ? <div className="content-grid__button-box"><a className="button" href={item.shopUrl} target="_blank">{item.shopLinkLabel}</a></div> : ''}
                                 </div>
                                 {item.optionsButton ? <div className="content-grid__option-box"><Link className="button" to='laser/#sectionOne'>{item.optionsButtonLabel}</Link></div> : ''}

@@ -103,12 +103,12 @@
   }
 
   &[data-type="1"] {
-    top: 15%;
-    left: 8%;
+    top: 7%;
+    left: 16%;
 
     @include mq(sm) {
       top: 17%;
-      left: 8%;
+      left: 12%;
     }
 
     @include mq(xl) {
@@ -118,19 +118,17 @@
 
     @include mq(md) {
       top: 20%;
-      left: 25%;
+      left: 29%;
     }
-
-
   }
 
   &[data-type="2"] {
-    top: 14%;
+    top: 11%;
     left: 75%;
 
     @include mq(sm) {
       top: 25%;
-      left: 79%;
+      left: 74%;
 
       &::before {
         left: auto;
@@ -151,12 +149,12 @@
   }
 
   &[data-type="3"] {
-    top: 41%;
-    left: 10%;
+    top: 27%;
+    left: 14%;
 
     @include mq(sm) {
       top: 59%;
-      left: 7%;
+      left: 13%;
     }
 
     @include mq(xl) {
@@ -171,12 +169,12 @@
   }
 
   &[data-type="4"] {
-    top: 44%;
-    left: 78%;
+    top: 29%;
+    left: 73%;
 
     @include mq(sm) {
       top: 69%;
-      left: 77%;
+      left: 74%;
 
       &::before {
         left: auto;
@@ -197,21 +195,22 @@
   }
 
   &[data-type="5"] {
-    top: 2%;
-    left: 10%;
+    top: 14%;
+    left: 17%;
 
     @include mq(sm) {
-      left: 8%;
+      top: 25%;
+      left: 10%;
     }
 
     @include mq(xl) {
-      top: 0%;
-      left: 23%;
+      top: 25%;
+      left: 29%;
     }
 
     @include mq(md) {
-      top: 0%;
-      left: 23%;
+      top: 24%;
+      left: 22%;
     }
   }
 
@@ -242,7 +241,7 @@
   }
 
   &[data-type="7"] {
-    top: 40%;
+    top: 25%;
     left: 9%;
 
     @include mq(sm) {
@@ -262,8 +261,8 @@
   }
 
   &[data-type="8"] {
-    top: 53%;
-    left: 84%;
+    top: 25%;
+    left: 83%;
 
     @include mq(sm) {
       top: 55%;
