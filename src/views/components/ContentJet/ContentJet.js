@@ -12,6 +12,7 @@ import imageThree from '../../../img/image2-3.png';
 import imageThreeM from '../../../img/image2-3m.png';
 import pl1 from '../../../img/pl1.png';
 import pl2 from '../../../img/pl2.png';
+import pl3 from '../../../img/pl3.png';
 
 import NextPin from '../../../img/next.svg';
 
@@ -31,8 +32,7 @@ const printContent = [
         shopUrl: '',
         shopLinkLabel: '',
         promoBlock: true,
-
-        optionsButton: true,
+        optionsButton: false,
         optionsButtonLabel: 'основные характеристики',
         optionsButtonUrl: '#sectionOne',
         pl: true,
@@ -62,8 +62,9 @@ const printContent = [
         ],
 
         shopLink: true,
-        shopUrl: 'https://brother-printers.ru/product/mfu-brother-mfc-j3930-a3-22-strmin-cherno-beloj-20-strmin-cvetnoj-pechati-4800-x-1200-dpi/',
+        shopUrl: 'https://brother-printers.ru/product/mfu-brother-mfc-j3530-a3-22-strmin-cherno-beloj-20-strmin-cvetnoj-pechati-4800-x-1200-dpi/',
         shopLinkLabel: 'заказать онлайн',
+        shopLinkId: 'order1',
 
         moreLink: false,
         moreUrl: 'https://www.buro247.ru/fashion',
@@ -91,6 +92,7 @@ const printContent = [
         shopLink: true,
         shopUrl: 'https://brother-printers.ru/product/mfu-brother-mfc-j3930-a3-22-strmin-cherno-beloj-20-strmin-cvetnoj-pechati-4800-x-1200-dpi/',
         shopLinkLabel: 'заказать онлайн',
+        shopLinkId: 'order2',
 
         moreLink: false,
         moreUrl: 'https://brother-printers.ru/product/mfu-brother-mfc-j3530-a3-22-strmin-cherno-beloj-20-strmin-cvetnoj-pechati-4800-x-1200-dpi/',
@@ -134,28 +136,28 @@ class ContentJet extends Component {
 
                                     <div className={item.promoBlock ? "tooltip-box" : "tooltip-box is-not"}>
 
-                                        <button className="tooltip-link" data-title="Непрерывная эффективность" type="light"  data-tip data-for='tooltip-1' data-delay-show='200' data-type="5">
+                                        <button className="tooltip-link" data-title="Сенсорный дисплей" type="light"  data-tip data-for='tooltip-1' data-delay-show='200' data-type="5">
                                             <ReactTooltip className="tooltip tooltip--type-1" id="tooltip-1" place="left" type="light" effect="solid">
                                                 <h6>Сенсорный дисплей</h6><p>Цветной сенсорный дисплей, до 9,3 см.</p>
                                             </ReactTooltip>
                                         </button>
 
 
-                                        <button className="tooltip-link" data-title="Сокращение расходов" type="light"  data-tip data-for='tooltip-2' data-delay-show='200' data-type="6">
+                                        <button className="tooltip-link" data-title="Автоматическая подача документов" type="light"  data-tip data-for='tooltip-2' data-delay-show='200' data-type="6">
                                             <ReactTooltip className="tooltip tooltip--type-2" id="tooltip-2" place="bottom" type="light" effect="solid">
-                                                <h6>Автоматическая подача документов</h6><p>Яркие изображения благодаря новой технологии тонера.</p>
+                                                <h6>Автоматическая подача документов</h6><p>Автоподатчик документов на 50 листов с функциями сортировки (MFC-J3530DW) и двухстороннего сканирования (MFC-J3930DW</p>
                                             </ReactTooltip>
 
                                         </button>
 
-                                        <button className="tooltip-link" data-title="Печать без проблем" type="light"  data-tip data-for='tooltip-3' data-delay-show='200' data-type="7">
+                                        <button className="tooltip-link" data-title="Встроенные средства авторизации" type="light"  data-tip data-for='tooltip-3' data-delay-show='200' data-type="7">
                                             <ReactTooltip className="tooltip tooltip--type-3" id="tooltip-3" place="bottom" type="light" effect="solid">
                                                 <h6>Встроенные средства авторизации</h6><p>Встроенный NFC-считыватель для модели MFC-J3930DW.</p>
                                             </ReactTooltip>
                                         </button>
 
 
-                                        <button className="tooltip-link" data-title="Контроль устройтсва" type="light"  data-tip data-for='tooltip-4' data-delay-show='200' data-type="8">
+                                        <button className="tooltip-link" data-title="Богатый функционал и выбор подключения" type="light"  data-tip data-for='tooltip-4' data-delay-show='200' data-type="8">
                                             <ReactTooltip className="tooltip tooltip--type-4" id="tooltip-4" place="bottom" type="light" effect="solid">
                                                 <h6>Богатый функционал и выбор подключения</h6><p>Печать, копирование, цветное сканирование, факс. Поддержка всех распространенных стандартов мобильной печати и сканирования. Интерфейсы USB 2.0, Ethernet, Wi-Fi, Wi-Fi Direct.</p>
                                             </ReactTooltip>
@@ -180,9 +182,9 @@ class ContentJet extends Component {
                                         )}
                                     </ul>
 
-                                    {item.pl ? <div><h2 className="content-grid__blue-title">{item.plTitle}</h2><p>{item.plText}</p><div className="content-grid__article-grid"><img src={pl1} alt="img1" /><img src={pl2}  alt="img2"/></div></div> : ''}
+                                    {item.pl ? <div><h2 className="content-grid__blue-title">{item.plTitle}</h2><p>{item.plText}</p><div className="content-grid__article-grid"><img src={pl1} alt="img1" /><img src={pl2}  alt="img2"/><img src={pl3}  alt="img3"/></div></div> : ''}
 
-                                    {item.shopLink ? <div className="content-grid__button-box"><a className="button" href={item.shopUrl} target="_blank">{item.shopLinkLabel}</a> {item.moreLink ? <a className="button button--next-more" href={item.moreUrl} target="_blank">{item.moreLinkLabel}</a> : ''}</div> : '' }
+                                    {item.shopLink ? <div className="content-grid__button-box"><a className="button" id={item.shopLinkId} href={item.shopUrl} target="_blank">{item.shopLinkLabel}</a> {item.moreLink ? <a className="button button--next-more" href={item.moreUrl} target="_blank">{item.moreLinkLabel}</a> : ''}</div> : '' }
 
                                 </div>
 
@@ -197,7 +199,7 @@ class ContentJet extends Component {
                         <div className="bottom-navigate__navigate">
                             <Link to="/laser" className="bottom-navigate__next-link">
                                 <span>
-                                Перейти в раздел <b>Лазерных<span>&nbsp;</span>принтеров</b>
+                                Перейти в раздел <b>Цветных лазерных<span>&nbsp;</span>устройств</b>
                                 </span>
                             </Link>
 

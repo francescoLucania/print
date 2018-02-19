@@ -74,15 +74,15 @@ class Site_header extends Component {
             <header className={headerClassName} id="site-header">
                 <div className="container">
                     <div className="site-header__grid">
-                        <Link to="/home" className="site-header__logo-box">
+                        <Link to="/" className="site-header__logo-box">
                             <img src={Logo} alt={siteName}/>
                         </Link>
                         <div className="site-header__button-box">
-                            <Link to="/home" id="back" className="button button--transparent button--back switch-popup-button not-animate">
+                            <Link to="/" id="back" className="button button--transparent button--back switch-popup-button not-animate">
                                 <img src={backPin} alt=""/>
                                 <span>Главная</span>
                             </Link>
-                            <button href="#" className={this.state.isOpenPopup ? 'button button--transparent button--map switch-popup-button is-active' : 'button button--transparent button--map'} onClick={this.popupState.bind(this)}>
+                            <button href="#" id="where_buy1" className={this.state.isOpenPopup ? 'button button--transparent button--map switch-popup-button is-active' : 'button button--transparent button--map'} onClick={this.popupState.bind(this)}>
                                 <img src={MapPin} alt=""/>
                                 <span>Где купить?</span>
                             </button>

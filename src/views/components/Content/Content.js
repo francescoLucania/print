@@ -21,15 +21,12 @@ const printContent = [
         image: imageOne,
         description: 'Высокоскоростные принтеры и МФУ позволяют существенно повысить эффективность и продуктивность работы. С помощью расширенных функций сканирования и удобного автоподатчика документов на 80 листов можно легко и быстро сканировать документы в облачное хранилище или в сетевую папку. Одним нажатием кнопки вы можете персонализировать сенсорный дисплей для ускорения работы, а тонер-картриджи повышенной емкости позволяют не тратить много времени на замену тонера. По мере роста рабочей нагрузки в офисе вы можете адаптировать эти принтеры, увеличивая объем загрузки бумаги путем добавления лотков.',
         listTypes: [
-            {printType: 'Настраиваемый сенсорный экран с ярлыками для быстрого доступа к функциям.'},
-            {printType: 'Яркие изображения благодаря новой технологии тонера.'},
-            {printType:'Экономия времени благодаря тонер-картриджам повышенной ёмкости.'}
-        ],
+                    ],
         shopLink: false,
         shopUrl: '',
         shopLinkLabel: '',
         promoBlock: true,
-        optionsButton: true,
+        optionsButton: false,
         optionsButtonLabel: 'основные характеристики',
         optionsButtonUrl: 'https://www.brother.ru/printers/all-printers'
     },
@@ -49,11 +46,13 @@ const printContent = [
             {printType: 'Сенсорный экран 9,3 см'},
             {printType: 'Загрузка бумаги до 300 листов'},
             {printType: 'USB-подключение, подключение к беспроводной сети и проводной сети Gigabit Etherne'},
-            {printType: 'Тонер-картриджи с ресурсом до 1800 страниц в комплекте'}
+            {printType: 'Тонер-картриджи с ресурсом до 1800 страниц в комплекте'},
+             {printType: 'Черный тонер-картридж с ресурсом до 3000 страниц'}
         ],
         shopLink: true,
         shopUrl: 'https://brother-printers.ru/product/brother-mfc-l8690cdwmfu-cvetnoe-lazernoe/',
-        shopLinkLabel: 'заказать онлайн'
+        shopLinkLabel: 'заказать онлайн',
+        shopLinkId: 'L_order1',
     },
 
     {
@@ -73,7 +72,8 @@ const printContent = [
         ],
         shopLink: true,
         shopUrl: 'https://brother-printers.ru/product/brother-mfc-l9570cdw-mfu-cvetnoe-lazernoe/',
-        shopLinkLabel: 'заказать онлайн'
+        shopLinkLabel: 'заказать онлайн',
+        shopLinkId: 'L_order2',
     },
 
     {
@@ -87,7 +87,7 @@ const printContent = [
             {printType: 'Сенсорный экран 9,3 см'},
             {printType: 'Загрузка бумаги до 300 листов'},
             {printType: 'USB-подключение, подключение к беспроводной сети и проводной сети Gigabit Etherne'},
-            {printType: 'Черный тонер-картридж с ресурсом до 3000 страниц и цветные'},
+            {printType: 'Черный тонер-картридж с ресурсом до 3000 страниц '},
             
             {printType: 'Тонер-картриджи с ресурсом до 1800 страниц в комплекте'}
 
@@ -96,6 +96,7 @@ const printContent = [
         shopLink: true,
         shopUrl: 'https://brother-printers.ru/product/brother-dcp-l8410cdw-mfu-cvetnoe-lazernoe/',
         shopLinkLabel: 'заказать онлайн',
+        shopLinkId: 'L_order3',
     },
 
     {
@@ -108,13 +109,14 @@ const printContent = [
             {printType: 'ЖК-дисплей (2 строки текста)'},
             {printType: 'Загрузка бумаги до 300 листов'},
             {printType: 'USB-подключение, подключение к беспроводной сети и проводной сети Gigabit Ethernet'},
-            {printType: 'Черный тонер-картридж с ресурсом до 3000 страниц и цветные'},
+            {printType: 'Черный тонер-картридж с ресурсом до 3000 страниц'},
             {printType: 'Тонер-картриджи с ресурсом 1800 страниц в комплекте'},
 
         ],
         shopLink: true,
         shopUrl: 'https://brother-printers.ru/product/brother-hl-l8260cdw-printer-cvetnoj-svetodiodnyj/',
-        shopLinkLabel: 'заказать онлайн'
+        shopLinkLabel: 'заказать онлайн',
+        shopLinkId: 'L_order4',
     },
 
     {
@@ -135,7 +137,8 @@ const printContent = [
         bliText:'Цветной лазерный принтер Brother HL-L9310CDW удостоен престижной награды ≪Выдающийся принтер≫ независимой тестовой лаборатории Buyers Lab (BLI).',
         shopLink: true,
         shopUrl: 'https://brother-printers.ru/product/brother-hl-l9310cdw-printer-cvetnoj-svetodiodnyj/',
-        shopLinkLabel: 'заказать онлайн'
+        shopLinkLabel: 'заказать онлайн',
+        shopLinkId: 'L_order5',
     }
 
 ];
@@ -175,30 +178,30 @@ class Content extends Component {
 
 
 
-                                        <a className="tooltip-link" data-title="Удобство использования" type="light"  data-tip data-for='tooltip-1' data-delay-show='200' data-type="1">
+                                        <button className="tooltip-link" data-title="Сенсорный дисплей" type="light"  data-tip data-for='tooltip-1' data-delay-show='200' data-type="1">
                                             <ReactTooltip className="tooltip tooltip--type-1" id="tooltip-1" place="left" type="light" effect="solid">
                                                 <h6>Сенсорный дисплей</h6><p>Цветной сенсорный дисплей, размер до 17,6 см.</p>
                                             </ReactTooltip>
-                                        </a>
+                                        </button>
 
-                                        <a className="tooltip-link" data-title="Защита ваших документов" type="light"  data-tip data-for='tooltip-2' data-delay-show='200' data-type="2">
+                                        <button className="tooltip-link" data-title="Автоматическая подача документов" type="light"  data-tip data-for='tooltip-2' data-delay-show='200' data-type="2">
                                             <ReactTooltip className="tooltip tooltip--type-2" id="tooltip-2" place="bottom" type="light" effect="solid">
                                                 <h6>Автоматическая подача документов</h6><p>Автоподатчик документов емкостью до 80 листов и скоростью сканирования до 100 изобр./мин.</p>
                                             </ReactTooltip>
 
-                                        </a>
+                                        </button>
 
-                                        <a className="tooltip-link" data-title="Печать без проблем" type="light"  data-tip data-for='tooltip-3' data-delay-show='200' data-type="3">
+                                        <button className="tooltip-link" data-title="Встроенные средства авторизации" type="light"  data-tip data-for='tooltip-3' data-delay-show='200' data-type="3">
                                             <ReactTooltip className="tooltip tooltip--type-3" id="tooltip-3" place="bottom" type="light" effect="solid">
-                                                <h6>Встроенные средства авторизации»</h6><p>Встроенный NFC-считыватель для моделей MFC-L9570CDW и HL-L9310CDW.</p>
+                                                <h6>Встроенные средства авторизации</h6><p>Встроенный NFC-считыватель для моделей MFC-L9570CDW и HL-L9310CDW.</p>
                                             </ReactTooltip>
-                                        </a>
+                                        </button>
 
-                                        <a className="tooltip-link" data-title="Надежная работа" type="light"  data-tip data-for='tooltip-4' data-delay-show='200' data-type="4">
+                                        <button className="tooltip-link" data-title="Богатый функционал и выбор подключения" type="light"  data-tip data-for='tooltip-4' data-delay-show='200' data-type="4">
                                             <ReactTooltip className="tooltip tooltip--type-4" id="tooltip-4" place="bottom" type="light" effect="solid">
                                                 <h6>Богатый функционал и выбор подключения</h6><p>Печать, копирование, цветное сканирование, факс (для MFC-L9570CDW) . Поддержка всех распространенных стандартов мобильной печати и сканирования. Интерфейсы USB 2.0, Gbit Ethernet, Wi-Fi, Wi-Fi Direct, NFC.</p>
                                             </ReactTooltip>
-                                        </a>
+                                        </button>
 
 
                                     </div>
@@ -221,7 +224,7 @@ class Content extends Component {
 
                                     {item.bli ? <p>{item.bliText}</p> : ''}
 
-                                    {item.shopLink ? <div className="content-grid__button-box"><a className="button" href={item.shopUrl} target="_blank">{item.shopLinkLabel}</a></div> : ''}
+                                    {item.shopLink ? <div className="content-grid__button-box"><a className="button" id={item.shopLinkId} href={item.shopUrl} target="_blank">{item.shopLinkLabel}</a></div> : ''}
                                 </div>
                                 {item.optionsButton ? <div className="content-grid__option-box"><Link className="button" to='laser/#sectionOne'>{item.optionsButtonLabel}</Link></div> : ''}
                             </article>
@@ -234,7 +237,7 @@ class Content extends Component {
                         <div className="bottom-navigate__navigate">
                             <Link to="/jet" className="bottom-navigate__next-link">
                                 <span>
-                                Перейти в раздел <b>Струйных<span>&nbsp;</span>принтеров</b>
+                                Перейти в раздел <b>Цветных струйных<span>&nbsp;</span>устройств</b>
                                 </span>
                             </Link>
 

@@ -1490,13 +1490,14 @@ table {
     font-size: 1.8rem;
     line-height: 1.44444;
     position: absolute;
-    top: 50%;
+    top: -2rem;
     left: -1.5rem;
-    transform: translate(-100%, -50%);
+    transform: translate(-100%, 0);
     padding: 2rem 0;
     font-family: "Proxima-Nova-Bold", "HelveticaNeue", "Helvetica Neue", sans-serif;
     color: #095dbb;
-    white-space: nowrap;
+    text-align: left;
+    width: 250px;
     content: attr(data-title); }
     @media all and (max-width: 767px) {
       .tooltip-link::before {
@@ -1521,6 +1522,8 @@ table {
   .tooltip-link[data-type="1"] {
     top: 7%;
     left: 16%; }
+    .tooltip-link[data-type="1"]::before {
+      text-align: right; }
     @media all and (min-width: 768px) {
       .tooltip-link[data-type="1"] {
         top: 17%;
@@ -1543,7 +1546,7 @@ table {
         .tooltip-link[data-type="2"]::before {
           left: auto;
           right: -1.5rem;
-          transform: translate(100%, -50%); } }
+          transform: translate(100%, 0); } }
     @media all and (min-width: 1380px) {
       .tooltip-link[data-type="2"] {
         top: 27%;
@@ -1553,8 +1556,11 @@ table {
         top: 27%;
         left: 67%; } }
   .tooltip-link[data-type="3"] {
+    text-align: right;
     top: 27%;
     left: 14%; }
+    .tooltip-link[data-type="3"]::before {
+      text-align: right; }
     @media all and (min-width: 768px) {
       .tooltip-link[data-type="3"] {
         top: 59%;
@@ -1577,7 +1583,7 @@ table {
         .tooltip-link[data-type="4"]::before {
           left: auto;
           right: -1.5rem;
-          transform: translate(100%, -50%); } }
+          transform: translate(100%, 0); } }
     @media all and (min-width: 1380px) {
       .tooltip-link[data-type="4"] {
         top: 70%;
@@ -1589,6 +1595,8 @@ table {
   .tooltip-link[data-type="5"] {
     top: 14%;
     left: 17%; }
+    .tooltip-link[data-type="5"]::before {
+      text-align: right; }
     @media all and (min-width: 768px) {
       .tooltip-link[data-type="5"] {
         top: 25%;
@@ -1611,7 +1619,7 @@ table {
         .tooltip-link[data-type="6"]::before {
           left: auto;
           right: -1.5rem;
-          transform: translate(100%, -50%); } }
+          transform: translate(100%, 0); } }
     @media all and (min-width: 1380px) {
       .tooltip-link[data-type="6"] {
         top: 6%;
@@ -1619,10 +1627,12 @@ table {
     @media all and (min-width: 1760px) {
       .tooltip-link[data-type="6"] {
         top: 6%;
-        left: 66%; } }
+        left: 70%; } }
   .tooltip-link[data-type="7"] {
     top: 25%;
     left: 9%; }
+    .tooltip-link[data-type="7"]::before {
+      text-align: right; }
     @media all and (min-width: 768px) {
       .tooltip-link[data-type="7"] {
         top: 48%;
@@ -1645,7 +1655,7 @@ table {
         .tooltip-link[data-type="8"]::before {
           left: auto;
           right: -1.5rem;
-          transform: translate(100%, -50%); } }
+          transform: translate(100%, 0); } }
     @media all and (min-width: 1380px) {
       .tooltip-link[data-type="8"] {
         top: 60%;

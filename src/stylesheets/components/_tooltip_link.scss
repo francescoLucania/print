@@ -68,13 +68,14 @@
   &::before {
     @include text-large;
     position: absolute;
-    top: 50%;
+    top: -2rem;
     left: -1.5rem;
-    transform: translate(-100%,-50%);
+    transform: translate(-100%,0);
     padding: 2rem 0;
     font-family: $font-family-bold;
     color: $color-brand;
-    white-space: nowrap;
+    text-align: left;
+    width: 250px;
     content: attr(data-title);
 
     @include mq(xs) {
@@ -106,6 +107,10 @@
     top: 7%;
     left: 16%;
 
+    &::before {
+      text-align: right;
+    }
+
     @include mq(sm) {
       top: 17%;
       left: 12%;
@@ -133,7 +138,7 @@
       &::before {
         left: auto;
         right: -1.5rem;
-        transform: translate(100%,-50%);
+        transform: translate(100%,0);
       }
     }
 
@@ -149,8 +154,13 @@
   }
 
   &[data-type="3"] {
+    text-align: right;
     top: 27%;
     left: 14%;
+
+    &::before {
+      text-align: right;
+    }
 
     @include mq(sm) {
       top: 59%;
@@ -179,7 +189,7 @@
       &::before {
         left: auto;
         right: -1.5rem;
-        transform: translate(100%,-50%);
+        transform: translate(100%,0);
       }
     }
 
@@ -197,6 +207,10 @@
   &[data-type="5"] {
     top: 14%;
     left: 17%;
+
+    &::before {
+      text-align: right;
+    }
 
     @include mq(sm) {
       top: 25%;
@@ -225,7 +239,7 @@
       &::before {
         left: auto;
         right: -1.5rem;
-        transform: translate(100%,-50%);
+        transform: translate(100%,0);
       }
     }
 
@@ -236,13 +250,17 @@
 
     @include mq(md) {
       top: 6%;
-      left: 66%;
+      left: 70%;
     }
   }
 
   &[data-type="7"] {
     top: 25%;
     left: 9%;
+
+    &::before {
+      text-align: right;
+    }
 
     @include mq(sm) {
       top: 48%;
@@ -271,7 +289,7 @@
       &::before {
         left: auto;
         right: -1.5rem;
-        transform: translate(100%,-50%);
+        transform: translate(100%,0);
       }
     }
 
