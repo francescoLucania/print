@@ -145,7 +145,7 @@ class ContentJet extends Component {
 
                                         <button className="tooltip-link" data-title="Автоматическая подача документов" type="light"  data-tip data-for='tooltip-2' data-delay-show='200' data-type="6">
                                             <ReactTooltip className="tooltip tooltip--type-2" id="tooltip-2" place="bottom" type="light" effect="solid">
-                                                <h6>Автоматическая подача документов</h6><p>Автоподатчик документов на 50 листов с функциями сортировки (MFC-J3530DW) и двухстороннего сканирования (MFC-J3930DW</p>
+                                                <h6>Автоматическая подача документов</h6><p>Автоподатчик документов на 50 листов с функциями сортировки (MFC-J3530DW) и двухстороннего сканирования (MFC-J3930DW)</p>
                                             </ReactTooltip>
 
                                         </button>
