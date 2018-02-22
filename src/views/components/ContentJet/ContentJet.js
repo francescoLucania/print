@@ -163,7 +163,6 @@ class ContentJet extends Component {
                                             </ReactTooltip>
                                         </button>
 
-
                                     </div>
 
 
